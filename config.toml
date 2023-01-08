@@ -4,3 +4,5 @@ title = "Sohan's Blog"
 theme = 'ananke'
 [markup.goldmark.renderer]
  unsafe = true
+[permalinks]
+  posts = '/blog/:year/:month/:day/:filename/'

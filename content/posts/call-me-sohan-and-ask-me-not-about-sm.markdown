@@ -26,7 +26,7 @@ This first/last name convention also causes funny consequences to my friends. Fo
 
 Lot of my muslim friends go by "Md Xxxx Yyyy", where Md is a short form for Mohammed. People that aren't too familiar with it, at times think of them as doctors, which can be quite funny, and dangerous!
 
-If you aren't convinced yet, take these ones for example. [AAMS Arefin Siddique](http://en.wikipedia.org/wiki/AAMS_Arefin_Siddique) current VC of the University of Dhaka, [A. K. Fazlul Huq](http://en.wikipedia.org/wiki/A._K._Fazlul_Huq) a renowned leader in the history, [A P J Abdul Kalam](http://en.wikipedia.org/wiki/A._P._J._Abdul_Kalam) an ex-president and a nuclear scientist from India.
+If you aren't convinced yet, take these ones for example. [AAMS Arefin Siddique](http://en.wikipedia.org/wiki/AAMS_Arefin_Siddique) an ex-VC of the University of Dhaka, [A. K. Fazlul Huq](http://en.wikipedia.org/wiki/A._K._Fazlul_Huq) a renowned leader in the history, [A P J Abdul Kalam](http://en.wikipedia.org/wiki/A._P._J._Abdul_Kalam) an ex-president and a nuclear scientist from India.
 
 I hope this makes you comfortable in calling me by the name Sohan :)
 

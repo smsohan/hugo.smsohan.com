@@ -6,7 +6,7 @@ draft: false
 
 ![Cover](/images/cover.jpg)
 
-I'm Sohan, and I work at Google as an Engineering Manager. I live with my wife and two children in Redmond, WA.
+I'm S M Sohan, but [call me Sohan]({{< ref "/posts/call-me-sohan-and-ask-me-not-about-sm" >}}) if you meet me. I work at Google as an Engineering Manager. I live with my wife and two children in Redmond, WA.
 
 ### Contact Me
 

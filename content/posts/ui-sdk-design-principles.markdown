@@ -4,6 +4,7 @@ title: "UI SDK Design Principles"
 date: 2021-10-12
 comments: true
 categories: ["Software Architecture", "Frontend"]
+featured_image: "images/2022_beach.jpg"
 ---
 
 ![UI SDK Design Principles](/images/ui_sdk_principles.jpg)

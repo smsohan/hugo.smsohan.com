@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Sohan&#39;s Blog</title>
+    <link>http://smsohan.com/</link>
+    <description>Recent content on Sohan&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 08 Jan 2023 17:23:00 +0000</lastBuildDate><atom:link href="http://smsohan.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>2022, Oh My!</title>
+      <link>http://smsohan.com/posts/2022_oh_my/</link>
+      <pubDate>Sun, 08 Jan 2023 17:23:00 +0000</pubDate>
+      
+      <guid>http://smsohan.com/posts/2022_oh_my/</guid>
+      <description>I’m personally happy with where things are at the end of this year. We’re on a vacation to visit our family after three years. My kids met some of their cousins for the first time and they’re incredibly excited to get the attention from the extended family. Living in a country half a globe away from our origin means they hardly ever get to experience the warmth of the family and Covid made everything so much harder for the last few years.</description>
+    </item>
+    
+    <item>
+      <title>Home</title>
+      <link>http://smsohan.com/home/</link>
+      <pubDate>Wed, 28 Aug 2019 17:34:50 +0000</pubDate>
+      
+      <guid>http://smsohan.com/home/</guid>
+      <description>I&amp;rsquo;m Sohan, and I work at Google as an Engineering Manager. I live with my wife and two children in Redmond, WA.
+Contact Me sohan39 [@] gmail.com | @smsohan</description>
+    </item>
+    
+  </channel>
+</rss>

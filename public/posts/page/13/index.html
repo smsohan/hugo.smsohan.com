@@ -1,20 +1,342 @@
-<!doctype html><html lang=en-us><head><meta charset=utf-8><meta http-equiv=x-ua-compatible content="IE=edge,chrome=1"><title>Sohan's Blog</title><meta name=viewport content="width=device-width,minimum-scale=1"><meta name=description content="Sohan's Blog"><meta name=generator content="Hugo 0.108.0"><meta name=robots content="noindex, nofollow"><link rel=stylesheet href=/ananke/css/main.min.css><link href=/posts/index.xml rel=alternate type=application/rss+xml title="Sohan's Blog"><link href=/posts/index.xml rel=feed type=application/rss+xml title="Sohan's Blog"><meta property="og:title" content="Posts"><meta property="og:description" content="Sohan's Blog"><meta property="og:type" content="website"><meta property="og:url" content="http://smsohan.com/posts/"><meta itemprop=name content="Posts"><meta itemprop=description content="Sohan's Blog"><meta name=twitter:card content="summary"><meta name=twitter:title content="Posts"><meta name=twitter:description content="Sohan's Blog"><style>.athelas,.body-text{font-family:helvetica neue,Helvetica,Arial,sans-serif}.body-text div,p,article,section{font-size:1rem;line-height:1.4rem}.athelas.fw1{font-weight:inherit}h1.f1{line-height:4rem}</style></head><body class="ma0 body-text"><header><div class="pb3-m bg-navy"><nav class="pv3 ph3 ph4-ns" role=navigation><div class="flex-l justify-between items-center center"><a href=/ class="f3 fw2 hover-white no-underline white-90 dib">Sohan's Blog</a><div class="flex-l items-center"><ul class="pl0 mr3"><li class="list f5 f4-ns fw4 dib pr3"><a class="hover-white no-underline white-90" href=/home/ title="About page">About</a></li></ul><div class=ananke-socials></div></div></div></nav></div></header><main class=pb7 role=main><article class="pa3 pa4-ns nested-copy-line-height"><section class="cf ph3 ph5-l pv3 pv4-l f4 tc-l center measure-wide lh-copy mid-gray"></section><section class="flex-ns flex-wrap justify-around mt5"><div class="relative w-100 w-30-l mb4 bg-white"><div class="relative w-100 mb4 bg-white nested-copy-line-height"><div class="bg-white mb3 pa4 gray overflow-hidden"><span class="f6 db">Posts</span><h1 class="f3 near-black"><a href=/blog/2011/07/11/avoid-duplication-in-config-files/ class="link black dim">Avoid Duplication in Config Files</a></h1><div class="nested-links f5 lh-copy nested-copy-line-height">Any kind of configuration file, be it an ugly xml file or a prettier yml or properties file, its been a source of frustration to me. Here's a list of few such pain points:
-There are two config keys that point to the same value. e.g. db_username=master, data_source_user=masterThere are two config keys for urls that point to the same domain, but different paths. e.g. market.com/cameras and market.com/undiesConfig entries with placeholders.</div></div></div></div><div class="relative w-100 w-30-l mb4 bg-white"><div class="relative w-100 mb4 bg-white nested-copy-line-height"><div class="bg-white mb3 pa4 gray overflow-hidden"><span class="f6 db">Posts</span><h1 class="f3 near-black"><a href=/blog/2011/06/25/how-not-to-provide-feedback-when-doing/ class="link black dim">How Not To Provide Feedback When Doing Code Review</a></h1><div class="nested-links f5 lh-copy nested-copy-line-height">Code review, as any other review process, can often be an attack on someone's ego and incite anger and frustration. Being both on sending and receiving end of such code reviews for years, I have learned a few how-not-to-do-it, or as one might say, anti-patterns of providing code review feedback. Let me know if you agree/disagree with me on the following:
-You are always reviewing Adam's code while Adam is never reviewing yours.</div></div></div></div><div class="relative w-100 w-30-l mb4 bg-white"><div class="relative w-100 mb4 bg-white nested-copy-line-height"><div class="bg-white mb3 pa4 gray overflow-hidden"><span class="f6 db">Posts</span><h1 class="f3 near-black"><a href=/blog/2011/06/22/service-api-and-exceptions/ class="link black dim">Service API and Exceptions</a></h1><div class="nested-links f5 lh-copy nested-copy-line-height">Too often I see I am using a REST/SOAP API to talk to a third party system that frustrates me because of poor error messaging. Here's an example to illustrate a typical frustration:
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <title>Sohan&#39;s Blog</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta name="description" content="Sohan&#39;s Blog">
+    <meta name="generator" content="Hugo 0.121.0">
+    
+    
+    
+    
+      <meta name="robots" content="noindex, nofollow">
+    
+
+    
+<link rel="stylesheet" href="/ananke/css/main.css" >
+
+
+
+    
+    
+    
+      
+
+    
+
+    
+    
+      <link href="/posts/index.xml" rel="alternate" type="application/rss+xml" title="Sohan&#39;s Blog" />
+      <link href="/posts/index.xml" rel="feed" type="application/rss+xml" title="Sohan&#39;s Blog" />
+      
+    
+    
+    <meta property="og:title" content="Posts" />
+<meta property="og:description" content="Sohan&#39;s Blog" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="http://smsohan.com/posts/" />
+
+<meta itemprop="name" content="Posts">
+<meta itemprop="description" content="Sohan&#39;s Blog"><meta name="twitter:card" content="summary"/><meta name="twitter:title" content="Posts"/>
+<meta name="twitter:description" content="Sohan&#39;s Blog"/>
+
+	<style>
+    .athelas, .body-text {
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    }
+
+    .body-text div, p, article, section {
+        font-size: 1rem;
+        line-height: 1.4rem;
+    }
+    .athelas.fw1 {
+        font-weight: inherit;
+    }
+
+    h1.f1 {
+        line-height: 4rem;
+    }
+</style>
+  </head>
+
+  <body class="ma0 body-text">
+
+    <header>
+  <div class="pb3-m bg-navy">
+    <nav class="pv3 ph3 ph4-ns" role="navigation">
+  <div class="flex-l justify-between items-center center">
+    <a href="/" class="f3 fw2 hover-white no-underline white-90 dib">
+      
+        Sohan&#39;s Blog
+      
+    </a>
+    <div class="flex-l items-center">
+      
+
+      
+        <ul class="pl0 mr3">
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white no-underline white-90" href="/home/" title="About page">
+              About
+            </a>
+          </li>
+          
+        </ul>
+      
+      
+<div class="ananke-socials">
+  
+</div>
+
+    </div>
+  </div>
+</nav>
+
+  </div>
+</header>
+    <main class="pb7" role="main">
+      
+  <article class="pa3 pa4-ns nested-copy-line-height">
+    <section class="cf ph3 ph5-l pv3 pv4-l f4 tc-l center measure-wide lh-copy mid-gray"></section>
+    <section class="flex-ns flex-wrap justify-around mt5">
+      
+        <div class="relative w-100 w-30-l mb4 bg-white">
+          <div class="relative w-100 mb4 bg-white nested-copy-line-height">
+  <div class="bg-white mb3 pa4 gray overflow-hidden">
+    <span class="f6 db">Posts</span>
+    <h1 class="f3 near-black">
+      <a href="/blog/2011/07/11/avoid-duplication-in-config-files/" class="link black dim">
+        Avoid Duplication in Config Files
+      </a>
+    </h1>
+    <div class="nested-links f5 lh-copy nested-copy-line-height">
+      Any kind of configuration file, be it an ugly xml file or a prettier yml or properties file, its been a source of frustration to me. Here's a list of few such pain points:
+There are two config keys that point to the same value. e.g. db_username=master, data_source_user=masterThere are two config keys for urls that point to the same domain, but different paths. e.g. market.com/cameras and market.com/undiesConfig entries with placeholders.
+    </div>
+  </div>
+</div>
+
+        </div>
+      
+        <div class="relative w-100 w-30-l mb4 bg-white">
+          <div class="relative w-100 mb4 bg-white nested-copy-line-height">
+  <div class="bg-white mb3 pa4 gray overflow-hidden">
+    <span class="f6 db">Posts</span>
+    <h1 class="f3 near-black">
+      <a href="/blog/2011/06/25/how-not-to-provide-feedback-when-doing/" class="link black dim">
+        How Not To Provide Feedback When Doing Code Review
+      </a>
+    </h1>
+    <div class="nested-links f5 lh-copy nested-copy-line-height">
+      Code review, as any other review process, can often be an attack on someone's ego and incite anger and frustration. Being both on sending and receiving end of such code reviews for years, I have learned a few how-not-to-do-it, or as one might say, anti-patterns of providing code review feedback. Let me know if you agree/disagree with me on the following:
+You are always reviewing Adam's code while Adam is never reviewing yours.
+    </div>
+  </div>
+</div>
+
+        </div>
+      
+        <div class="relative w-100 w-30-l mb4 bg-white">
+          <div class="relative w-100 mb4 bg-white nested-copy-line-height">
+  <div class="bg-white mb3 pa4 gray overflow-hidden">
+    <span class="f6 db">Posts</span>
+    <h1 class="f3 near-black">
+      <a href="/blog/2011/06/22/service-api-and-exceptions/" class="link black dim">
+        Service API and Exceptions
+      </a>
+    </h1>
+    <div class="nested-links f5 lh-copy nested-copy-line-height">
+      Too often I see I am using a REST/SOAP API to talk to a third party system that frustrates me because of poor error messaging. Here's an example to illustrate a typical frustration:
 Call: city_service.update_residence_address(city_dueler, new_address)
-Response: &lt;status>Failed&lt;/status>&lt;error>Invalid address&lt;/error>
-But the address just seems right to me. So, I need to know specific reason about why the address is wrong. The error message leaves this critical detail. What happens next is, I look for the log files created by the city_service, conceptually supposed to be a third party hosted service.</div></div></div></div><div class="relative w-100 w-30-l mb4 bg-white"><div class="relative w-100 mb4 bg-white nested-copy-line-height"><div class="bg-white mb3 pa4 gray overflow-hidden"><span class="f6 db">Posts</span><h1 class="f3 near-black"><a href=/blog/2011/03/17/nuget-why-should-you-care/ class="link black dim">NuGet - Why Should You Care?</a></h1><div class="nested-links f5 lh-copy nested-copy-line-height">Traditionally the .NET community, or more appropriately the users of .NET framework relied on products from Microsoft - so, in a product stack you are likely to see almost everything coming from Microsoft. However, some community contribution made its way into the main stream - for example, NUnit or Log4Net. But you can literally count the number of such main stream non-Microsoft products in your development stacks with your fingers (sparing a few)!</div></div></div></div><div class="relative w-100 w-30-l mb4 bg-white"><div class="relative w-100 mb4 bg-white nested-copy-line-height"><div class="bg-white mb3 pa4 gray overflow-hidden"><span class="f6 db">Posts</span><h1 class="f3 near-black"><a href=/blog/2011/03/14/my-2011-q1-developer-roadmap/ class="link black dim">My 2011 Q1 developer roadmap</a></h1><div class="nested-links f5 lh-copy nested-copy-line-height">For me, 2011 Q1 has so far been a good exposure to new techniques, tools, articles and books, thanks to ThoughtWorks book allowance! However, if you are interested, here's what's keeping me busy:
-User Experience: I find a good user experience is THE thing that you want in anything you design, and if you are writing a software, its even more important. After I read a few books, I have a feeling that its not just a common sense approach, it takes some education and a deep care to produce something usable.</div></div></div></div><div class="relative w-100 w-30-l mb4 bg-white"><div class="relative w-100 mb4 bg-white nested-copy-line-height"><div class="bg-white mb3 pa4 gray overflow-hidden"><span class="f6 db">Posts</span><h1 class="f3 near-black"><a href=/blog/2011/03/07/mvcmailer-10-released/ class="link black dim">MvcMailer 1.0 Released</a></h1><div class="nested-links f5 lh-copy nested-copy-line-height">Just released MvcMailer 1.0 as promised in my previous post.&nbsp;Download your copy using the following:
-Install-Package MvcMailerOf course, you will find a comprehensive tutorial at: this github wiki page.</div></div></div></div><div class="relative w-100 w-30-l mb4 bg-white"><div class="relative w-100 mb4 bg-white nested-copy-line-height"><div class="bg-white mb3 pa4 gray overflow-hidden"><span class="f6 db">Posts</span><h1 class="f3 near-black"><a href=/blog/2011/03/04/whats-coming-in-mvcmailer-nuget-10/ class="link black dim">Whats Coming in MvcMailer NuGet 1.0?</a></h1><div class="nested-links f5 lh-copy nested-copy-line-height">Thanks to 365+ downloads of the MvcMailer NuGet before it hit version 1.0 and now its time to wrap up the NuGet package for an official first release. I got several encouraging feedback on this package and here's what you get from this first release:
-Use Scaffold Mailer to generate your mailers with views. Compose rich emails using your favorite ASP.NET MVC view engine.Use master pages and pass data using ViewData/ViewBag.</div></div></div></div><div class="relative w-100 w-30-l mb4 bg-white"><div class="relative w-100 mb4 bg-white nested-copy-line-height"><div class="bg-white mb3 pa4 gray overflow-hidden"><span class="f6 db">Posts</span><h1 class="f3 near-black"><a href=/blog/2011/01/28/actionmailer-3-why-do-you-call-instance/ class="link black dim">ActionMailer 3 - why do you call instance methods as class/self methods?</a></h1><div class="nested-links f5 lh-copy nested-copy-line-height">I didn't even notice this little trick! As long as I didn't have to call deliver_welcome_message (or deliver_*) methods that would magically call welcome_message, I was happy that now the magic is gone. Things are transparent!
+Response: &lt;status&gt;Failed&lt;/status&gt;&lt;error&gt;Invalid address&lt;/error&gt;
+But the address just seems right to me. So, I need to know specific reason about why the address is wrong. The error message leaves this critical detail. What happens next is, I look for the log files created by the city_service, conceptually supposed to be a third party hosted service.
+    </div>
+  </div>
+</div>
+
+        </div>
+      
+        <div class="relative w-100 w-30-l mb4 bg-white">
+          <div class="relative w-100 mb4 bg-white nested-copy-line-height">
+  <div class="bg-white mb3 pa4 gray overflow-hidden">
+    <span class="f6 db">Posts</span>
+    <h1 class="f3 near-black">
+      <a href="/blog/2011/03/17/nuget-why-should-you-care/" class="link black dim">
+        NuGet - Why Should You Care?
+      </a>
+    </h1>
+    <div class="nested-links f5 lh-copy nested-copy-line-height">
+      Traditionally the .NET community, or more appropriately the users of .NET framework relied on products from Microsoft - so, in a product stack you are likely to see almost everything coming from Microsoft. However, some community contribution made its way into the main stream - for example, NUnit or Log4Net. But you can literally count the number of such main stream non-Microsoft products in your development stacks with your fingers (sparing a few)!
+    </div>
+  </div>
+</div>
+
+        </div>
+      
+        <div class="relative w-100 w-30-l mb4 bg-white">
+          <div class="relative w-100 mb4 bg-white nested-copy-line-height">
+  <div class="bg-white mb3 pa4 gray overflow-hidden">
+    <span class="f6 db">Posts</span>
+    <h1 class="f3 near-black">
+      <a href="/blog/2011/03/14/my-2011-q1-developer-roadmap/" class="link black dim">
+        My 2011 Q1 developer roadmap
+      </a>
+    </h1>
+    <div class="nested-links f5 lh-copy nested-copy-line-height">
+      For me, 2011 Q1 has so far been a good exposure to new techniques, tools, articles and books, thanks to ThoughtWorks book allowance! However, if you are interested, here's what's keeping me busy:
+User Experience: I find a good user experience is THE thing that you want in anything you design, and if you are writing a software, its even more important. After I read a few books, I have a feeling that its not just a common sense approach, it takes some education and a deep care to produce something usable.
+    </div>
+  </div>
+</div>
+
+        </div>
+      
+        <div class="relative w-100 w-30-l mb4 bg-white">
+          <div class="relative w-100 mb4 bg-white nested-copy-line-height">
+  <div class="bg-white mb3 pa4 gray overflow-hidden">
+    <span class="f6 db">Posts</span>
+    <h1 class="f3 near-black">
+      <a href="/blog/2011/03/07/mvcmailer-10-released/" class="link black dim">
+        MvcMailer 1.0 Released
+      </a>
+    </h1>
+    <div class="nested-links f5 lh-copy nested-copy-line-height">
+       Just released MvcMailer 1.0 as promised in my previous post.&nbsp;Download your copy using the following:
+Install-Package MvcMailerOf course, you will find a comprehensive tutorial at: this github wiki page. 
+    </div>
+  </div>
+</div>
+
+        </div>
+      
+        <div class="relative w-100 w-30-l mb4 bg-white">
+          <div class="relative w-100 mb4 bg-white nested-copy-line-height">
+  <div class="bg-white mb3 pa4 gray overflow-hidden">
+    <span class="f6 db">Posts</span>
+    <h1 class="f3 near-black">
+      <a href="/blog/2011/03/04/whats-coming-in-mvcmailer-nuget-10/" class="link black dim">
+        Whats Coming in MvcMailer NuGet 1.0?
+      </a>
+    </h1>
+    <div class="nested-links f5 lh-copy nested-copy-line-height">
+      Thanks to 365+ downloads of the MvcMailer NuGet before it hit version 1.0 and now its time to wrap up the NuGet package for an official first release. I got several encouraging feedback on this package and here's what you get from this first release:
+Use Scaffold Mailer to generate your mailers with views. Compose rich emails using your favorite ASP.NET MVC view engine.Use master pages and pass data using ViewData/ViewBag.
+    </div>
+  </div>
+</div>
+
+        </div>
+      
+        <div class="relative w-100 w-30-l mb4 bg-white">
+          <div class="relative w-100 mb4 bg-white nested-copy-line-height">
+  <div class="bg-white mb3 pa4 gray overflow-hidden">
+    <span class="f6 db">Posts</span>
+    <h1 class="f3 near-black">
+      <a href="/blog/2011/01/28/actionmailer-3-why-do-you-call-instance/" class="link black dim">
+        ActionMailer 3 - why do you call instance methods as class/self methods?
+      </a>
+    </h1>
+    <div class="nested-links f5 lh-copy nested-copy-line-height">
+      I didn't even notice this little trick! As long as I didn't have to call deliver_welcome_message (or deliver_*) methods that would magically call welcome_message, I was happy that now the magic is gone. Things are transparent!
 Here's an example showing the change: Say you have the following mailer:
 class Notifier &lt; ActionMailer::Base
 def welcome_message(new_user)
 #a warm welcome message
 end
-endNow, prior to Rails 3, or ActionMailer 3, you would write the following to actually call this method to get the benefits of ActionMailer magics, such as finding the view based on method name and so on:</div></div></div></div><div class="relative w-100 w-30-l mb4 bg-white"><div class="relative w-100 mb4 bg-white nested-copy-line-height"><div class="bg-white mb3 pa4 gray overflow-hidden"><span class="f6 db">Posts</span><h1 class="f3 near-black"><a href=/blog/2011/01/14/social-helpers-in-aspnet-mvc3-facebook/ class="link black dim">Social Helpers in ASP.Net MVC3 (Facebook, Twitter, Gravatar etc.)</a></h1><div class="nested-links f5 lh-copy nested-copy-line-height">This site shows the examples!
+endNow, prior to Rails 3, or ActionMailer 3, you would write the following to actually call this method to get the benefits of ActionMailer magics, such as finding the view based on method name and so on:
+    </div>
+  </div>
+</div>
+
+        </div>
+      
+        <div class="relative w-100 w-30-l mb4 bg-white">
+          <div class="relative w-100 mb4 bg-white nested-copy-line-height">
+  <div class="bg-white mb3 pa4 gray overflow-hidden">
+    <span class="f6 db">Posts</span>
+    <h1 class="f3 near-black">
+      <a href="/blog/2011/01/14/social-helpers-in-aspnet-mvc3-facebook/" class="link black dim">
+        Social Helpers in ASP.Net MVC3 (Facebook, Twitter, Gravatar etc.)
+      </a>
+    </h1>
+    <div class="nested-links f5 lh-copy nested-copy-line-height">
+       This site shows the examples!
 http://www.asp.net/webmatrix/tutorials/13-adding-social-networking-to-your-web-site
-Now, the social links and buttons are no longer from a third-party source, its straight from Microsoft. I don't know if this is first-party or second-party :p</div></div></div></div><div class="relative w-100 w-30-l mb4 bg-white"><div class="relative w-100 mb4 bg-white nested-copy-line-height"><div class="bg-white mb3 pa4 gray overflow-hidden"><span class="f6 db">Posts</span><h1 class="f3 near-black"><a href=/blog/2011/01/13/my-article-at-codeproject-mvcmailer/ class="link black dim">My Article at CodeProject: MvcMailer</a></h1><div class="nested-links f5 lh-copy nested-copy-line-height">I just released a .Net NuGet package called MvcMailer and to get people super easily started, put an article at CodeProject.com. You are most welcome to the article at&nbsp;http://www.codeproject.com/KB/aspnet/MvcMailerNuGet.aspx
-I welcome your comments and suggestions! Comments Sohan Just released 0.8 and it should work. But please let me know if it doesn't.
+Now, the social links and buttons are no longer from a third-party source, its straight from Microsoft. I don't know if this is first-party or second-party :p 
+    </div>
+  </div>
+</div>
+
+        </div>
+      
+        <div class="relative w-100 w-30-l mb4 bg-white">
+          <div class="relative w-100 mb4 bg-white nested-copy-line-height">
+  <div class="bg-white mb3 pa4 gray overflow-hidden">
+    <span class="f6 db">Posts</span>
+    <h1 class="f3 near-black">
+      <a href="/blog/2011/01/13/my-article-at-codeproject-mvcmailer/" class="link black dim">
+        My Article at CodeProject: MvcMailer
+      </a>
+    </h1>
+    <div class="nested-links f5 lh-copy nested-copy-line-height">
+      I just released a .Net NuGet package called MvcMailer and to get people super easily started, put an article at CodeProject.com. You are most welcome to the article at&nbsp;http://www.codeproject.com/KB/aspnet/MvcMailerNuGet.aspx
+I welcome your comments and suggestions! Comments Sohan Just released 0.8 and it should work. But please let me know if it doesn&#39;t.
 I also added multi-part emails in version 0.8. You may check that out as well.
-One important change:</div></div></div></div></section><ul class="pagination pagination-default"><li class=page-item><a href=/posts/ aria-label=First class=page-link role=button><span aria-hidden=true>&#171;&#171;</span></a></li><li class=page-item><a href=/posts/page/12/ aria-label=Previous class=page-link role=button><span aria-hidden=true>&#171;</span></a></li><li class=page-item><a href=/posts/page/11/ aria-label="Page 11" class=page-link role=button>11</a></li><li class=page-item><a href=/posts/page/12/ aria-label="Page 12" class=page-link role=button>12</a></li><li class="page-item active"><a aria-current=page aria-label="Page 13" class=page-link role=button>13</a></li><li class=page-item><a href=/posts/page/14/ aria-label="Page 14" class=page-link role=button>14</a></li><li class=page-item><a href=/posts/page/15/ aria-label="Page 15" class=page-link role=button>15</a></li><li class=page-item><a href=/posts/page/14/ aria-label=Next class=page-link role=button><span aria-hidden=true>&#187;</span></a></li><li class=page-item><a href=/posts/page/25/ aria-label=Last class=page-link role=button><span aria-hidden=true>&#187;&#187;</span></a></li></ul></article></main><footer class="bg-navy bottom-0 w-100 pa3" role=contentinfo><div class="flex justify-between"><a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href=http://smsohan.com/>&copy; Sohan's Blog 2023</a><div><div class=ananke-socials></div></div></div></footer></body></html>
+One important change:
+    </div>
+  </div>
+</div>
+
+        </div>
+      
+    </section>
+    <ul class="pagination pagination-default">
+      <li class="page-item">
+        <a href="/posts/" aria-label="First" class="page-link" role="button"><span aria-hidden="true">&laquo;&laquo;</span></a>
+      </li>
+      <li class="page-item">
+        <a href="/posts/page/12/" aria-label="Previous" class="page-link" role="button"><span aria-hidden="true">&laquo;</span></a>
+      </li>
+      <li class="page-item">
+        <a href="/posts/page/11/" aria-label="Page 11" class="page-link" role="button">11</a>
+      </li>
+      <li class="page-item">
+        <a href="/posts/page/12/" aria-label="Page 12" class="page-link" role="button">12</a>
+      </li>
+      <li class="page-item active">
+        <a aria-current="page" aria-label="Page 13" class="page-link" role="button">13</a>
+      </li>
+      <li class="page-item">
+        <a href="/posts/page/14/" aria-label="Page 14" class="page-link" role="button">14</a>
+      </li>
+      <li class="page-item">
+        <a href="/posts/page/15/" aria-label="Page 15" class="page-link" role="button">15</a>
+      </li>
+      <li class="page-item">
+        <a href="/posts/page/14/" aria-label="Next" class="page-link" role="button"><span aria-hidden="true">&raquo;</span></a>
+      </li>
+      <li class="page-item">
+        <a href="/posts/page/25/" aria-label="Last" class="page-link" role="button"><span aria-hidden="true">&raquo;&raquo;</span></a>
+      </li>
+    </ul></article>
+
+    </main>
+    <footer class="bg-navy bottom-0 w-100 pa3" role="contentinfo">
+  <div class="flex justify-between">
+  <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="http://smsohan.com/" >
+    &copy;  Sohan's Blog 2024 
+  </a>
+    <div>
+<div class="ananke-socials">
+  
+</div>
+</div>
+  </div>
+</footer>
+
+  </body>
+</html>

@@ -1,27 +1,279 @@
-<!doctype html><html lang=en-us><head><meta charset=utf-8><meta http-equiv=x-ua-compatible content="IE=edge,chrome=1"><title>Sohan's Blog</title><meta name=viewport content="width=device-width,minimum-scale=1"><meta name=description content="Sohan's Blog"><meta name=generator content="Hugo 0.108.0"><meta name=robots content="noindex, nofollow"><link rel=stylesheet href=/ananke/css/main.min.css><link href=/posts/index.xml rel=alternate type=application/rss+xml title="Sohan's Blog"><link href=/posts/index.xml rel=feed type=application/rss+xml title="Sohan's Blog"><meta property="og:title" content="Posts"><meta property="og:description" content="Sohan's Blog"><meta property="og:type" content="website"><meta property="og:url" content="http://smsohan.com/posts/"><meta itemprop=name content="Posts"><meta itemprop=description content="Sohan's Blog"><meta name=twitter:card content="summary"><meta name=twitter:title content="Posts"><meta name=twitter:description content="Sohan's Blog"><style>.athelas,.body-text{font-family:helvetica neue,Helvetica,Arial,sans-serif}.body-text div,p,article,section{font-size:1rem;line-height:1.4rem}.athelas.fw1{font-weight:inherit}h1.f1{line-height:4rem}</style></head><body class="ma0 body-text"><header><div class="pb3-m bg-navy"><nav class="pv3 ph3 ph4-ns" role=navigation><div class="flex-l justify-between items-center center"><a href=/ class="f3 fw2 hover-white no-underline white-90 dib">Sohan's Blog</a><div class="flex-l items-center"><ul class="pl0 mr3"><li class="list f5 f4-ns fw4 dib pr3"><a class="hover-white no-underline white-90" href=/home/ title="About page">About</a></li></ul><div class=ananke-socials></div></div></div></nav></div></header><main class=pb7 role=main><article class="pa3 pa4-ns nested-copy-line-height"><section class="cf ph3 ph5-l pv3 pv4-l f4 tc-l center measure-wide lh-copy mid-gray"></section><section class="flex-ns flex-wrap justify-around mt5"><div class="relative w-100 w-30-l mb4 bg-white"><div class="relative w-100 mb4 bg-white nested-copy-line-height"><div class="bg-white mb3 pa4 gray overflow-hidden"><span class="f6 db">Posts</span><h1 class="f3 near-black"><a href=/blog/2008/03/25/my-mcts-certification/ class="link black dim">My MCTS Certification</a></h1><div class="nested-links f5 lh-copy nested-copy-line-height">Today I have appeared at the MCTS Exam # 70-528 (Web Based Client Development) and successfully passed the exam. I also appeared at another exam # 70-536 (Microsoft .Net Framework) and successfully passed in that exam too.
-Although, I haven't got the MCP website access information yet, I can now possibly be called a 'Microsoft Certified Technology Specialist'!</div></div></div></div><div class="relative w-100 w-30-l mb4 bg-white"><div class="relative w-100 mb4 bg-white nested-copy-line-height"><div class="bg-white mb3 pa4 gray overflow-hidden"><span class="f6 db">Posts</span><h1 class="f3 near-black"><a href=/blog/2008/03/20/solution-to-problem-with-creating-mocks/ class="link black dim">A solution to the problem with creating mocks for interfaces with Generic Methods with NMock</a></h1><div class="nested-links f5 lh-copy nested-copy-line-height">I was so happy with NMock to see how it can dynamically generate mocks of interfaces and also gives me a fluent interface to write expectations and everything it does to help me in unit testing!
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <title>Sohan&#39;s Blog</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta name="description" content="Sohan&#39;s Blog">
+    <meta name="generator" content="Hugo 0.121.0">
+    
+    
+    
+    
+      <meta name="robots" content="noindex, nofollow">
+    
+
+    
+<link rel="stylesheet" href="/ananke/css/main.css" >
+
+
+
+    
+    
+    
+      
+
+    
+
+    
+    
+      <link href="/posts/index.xml" rel="alternate" type="application/rss+xml" title="Sohan&#39;s Blog" />
+      <link href="/posts/index.xml" rel="feed" type="application/rss+xml" title="Sohan&#39;s Blog" />
+      
+    
+    
+    <meta property="og:title" content="Posts" />
+<meta property="og:description" content="Sohan&#39;s Blog" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="http://smsohan.com/posts/" />
+
+<meta itemprop="name" content="Posts">
+<meta itemprop="description" content="Sohan&#39;s Blog"><meta name="twitter:card" content="summary"/><meta name="twitter:title" content="Posts"/>
+<meta name="twitter:description" content="Sohan&#39;s Blog"/>
+
+	<style>
+    .athelas, .body-text {
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    }
+
+    .body-text div, p, article, section {
+        font-size: 1rem;
+        line-height: 1.4rem;
+    }
+    .athelas.fw1 {
+        font-weight: inherit;
+    }
+
+    h1.f1 {
+        line-height: 4rem;
+    }
+</style>
+  </head>
+
+  <body class="ma0 body-text">
+
+    <header>
+  <div class="pb3-m bg-navy">
+    <nav class="pv3 ph3 ph4-ns" role="navigation">
+  <div class="flex-l justify-between items-center center">
+    <a href="/" class="f3 fw2 hover-white no-underline white-90 dib">
+      
+        Sohan&#39;s Blog
+      
+    </a>
+    <div class="flex-l items-center">
+      
+
+      
+        <ul class="pl0 mr3">
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white no-underline white-90" href="/home/" title="About page">
+              About
+            </a>
+          </li>
+          
+        </ul>
+      
+      
+<div class="ananke-socials">
+  
+</div>
+
+    </div>
+  </div>
+</nav>
+
+  </div>
+</header>
+    <main class="pb7" role="main">
+      
+  <article class="pa3 pa4-ns nested-copy-line-height">
+    <section class="cf ph3 ph5-l pv3 pv4-l f4 tc-l center measure-wide lh-copy mid-gray"></section>
+    <section class="flex-ns flex-wrap justify-around mt5">
+      
+        <div class="relative w-100 w-30-l mb4 bg-white">
+          <div class="relative w-100 mb4 bg-white nested-copy-line-height">
+  <div class="bg-white mb3 pa4 gray overflow-hidden">
+    <span class="f6 db">Posts</span>
+    <h1 class="f3 near-black">
+      <a href="/blog/2008/03/25/my-mcts-certification/" class="link black dim">
+        My MCTS Certification
+      </a>
+    </h1>
+    <div class="nested-links f5 lh-copy nested-copy-line-height">
+       Today I have appeared at the MCTS Exam # 70-528 (Web Based Client Development) and successfully passed the exam. I also appeared at another exam # 70-536 (Microsoft .Net Framework) and successfully passed in that exam too.
+Although, I haven't got the MCP website access information yet, I can now possibly be called a 'Microsoft Certified Technology Specialist'! 
+    </div>
+  </div>
+</div>
+
+        </div>
+      
+        <div class="relative w-100 w-30-l mb4 bg-white">
+          <div class="relative w-100 mb4 bg-white nested-copy-line-height">
+  <div class="bg-white mb3 pa4 gray overflow-hidden">
+    <span class="f6 db">Posts</span>
+    <h1 class="f3 near-black">
+      <a href="/blog/2008/03/20/solution-to-problem-with-creating-mocks/" class="link black dim">
+        A solution to the problem with creating mocks for interfaces with Generic Methods with NMock
+      </a>
+    </h1>
+    <div class="nested-links f5 lh-copy nested-copy-line-height">
+      I was so happy with NMock to see how it can dynamically generate mocks of interfaces and also gives me a fluent interface to write expectations and everything it does to help me in unit testing!
 However, I could not generate dynamic mocks for interfaces with Generic methods and it kept showing me the 'TypeLoadException' on and on. My interface looks like the following -
 interface IObjectFactory
 {
-T GetObject(string id);</div></div></div></div><div class="relative w-100 w-30-l mb4 bg-white"><div class="relative w-100 mb4 bg-white nested-copy-line-height"><div class="bg-white mb3 pa4 gray overflow-hidden"><span class="f6 db">Posts</span><h1 class="f3 near-black"><a href=/blog/2008/03/18/verify-correct-datetime-data-in-method/ class="link black dim">Verify Correct DateTime data in method call using NMock</a></h1><div class="nested-links f5 lh-copy nested-copy-line-height">Recently I was writing unit test for a method of the following signature
+T GetObject(string id);
+    </div>
+  </div>
+</div>
+
+        </div>
+      
+        <div class="relative w-100 w-30-l mb4 bg-white">
+          <div class="relative w-100 mb4 bg-white nested-copy-line-height">
+  <div class="bg-white mb3 pa4 gray overflow-hidden">
+    <span class="f6 db">Posts</span>
+    <h1 class="f3 near-black">
+      <a href="/blog/2008/03/18/verify-correct-datetime-data-in-method/" class="link black dim">
+        Verify Correct DateTime data in method call using NMock
+      </a>
+    </h1>
+    <div class="nested-links f5 lh-copy nested-copy-line-height">
+      Recently I was writing unit test for a method of the following signature
 interface ICache
 {
 void Insert(string key, object value, DateTime absoluteExpiration, TimeSpan slidingExpiration);
 }
 and I wanted to verify the following call -
 Insert("key", "value", DateTime.Now.AddMinutes(30), TimeSpan.Zero);
-However, you readily see the problem in verifying with the above call for the presence of DateTime.Now.AddMinutes(30) in the argument. So, a test method like the following won't work for obvious reason.</div></div></div></div><div class="relative w-100 w-30-l mb4 bg-white"><div class="relative w-100 mb4 bg-white nested-copy-line-height"><div class="bg-white mb3 pa4 gray overflow-hidden"><span class="f6 db">Posts</span><h1 class="f3 near-black"><a href=/blog/2008/03/16/mock-internal-interface-with-nmock2-use/ class="link black dim">Mock Internal Interface with NMock2 - Use InternalsVisibleToAttribute</a></h1><div class="nested-links f5 lh-copy nested-copy-line-height">Yesterday I badly needed to create mocks for my internal interfaces. I am using NMock2 as a Mocking framework and found it really difficult to produce Mocks for internal interfaces. After some 'google time' and investigation I found that you need the following two lines in your AssemblyInfo.cs to achieve this purpose-
+However, you readily see the problem in verifying with the above call for the presence of DateTime.Now.AddMinutes(30) in the argument. So, a test method like the following won't work for obvious reason.
+    </div>
+  </div>
+</div>
+
+        </div>
+      
+        <div class="relative w-100 w-30-l mb4 bg-white">
+          <div class="relative w-100 mb4 bg-white nested-copy-line-height">
+  <div class="bg-white mb3 pa4 gray overflow-hidden">
+    <span class="f6 db">Posts</span>
+    <h1 class="f3 near-black">
+      <a href="/blog/2008/03/16/mock-internal-interface-with-nmock2-use/" class="link black dim">
+        Mock Internal Interface with NMock2 - Use InternalsVisibleToAttribute
+      </a>
+    </h1>
+    <div class="nested-links f5 lh-copy nested-copy-line-height">
+      Yesterday I badly needed to create mocks for my internal interfaces. I am using NMock2 as a Mocking framework and found it really difficult to produce Mocks for internal interfaces. After some 'google time' and investigation I found that you need the following two lines in your AssemblyInfo.cs to achieve this purpose-
 [assembly: InternalsVisibleTo("Mocks")]
 [assembly: InternalsVisibleTo("MockObjects")]
-Where are the two assemblies? I found that these two assemblies are dynamically created by NMock2 for mocking your interfaces.</div></div></div></div><div class="relative w-100 w-30-l mb4 bg-white"><div class="relative w-100 mb4 bg-white nested-copy-line-height"><div class="bg-white mb3 pa4 gray overflow-hidden"><span class="f6 db">Posts</span><h1 class="f3 near-black"><a href=/blog/2008/03/15/unity-dependency-injection-framework/ class="link black dim">Unity - A Dependency Injection framework from Microsoft Patterns and Practices</a></h1><div class="nested-links f5 lh-copy nested-copy-line-height">I have been using Spring.Net for implementing Dependency Injection in my .Net projects. Spring is already one of the most known providers of DI in the Java world and a port to .Net actually eased the lives of people like me who are willing to develop unit-testable software.
-However, with all the happiness enjoyed through Spring.Net, I guess its time to take a look into Unity. I have only started using this and I found it interesting in the sense that its more of .</div></div></div></div><div class="relative w-100 w-30-l mb4 bg-white"><div class="relative w-100 mb4 bg-white nested-copy-line-height"><div class="bg-white mb3 pa4 gray overflow-hidden"><span class="f6 db">Posts</span><h1 class="f3 near-black"><a href=/blog/2008/03/11/testing-internal-class-in-net-c/ class="link black dim">Testing Internal Class in .Net C#</a></h1><div class="nested-links f5 lh-copy nested-copy-line-height">I have been to a situation where only a small number of classes had been declared as public classes in an assembly. And most of the classes are declared as internal, because I wanted to expose only the public classes to the consumers of my assembly.
-However, doing so creates another challenge in testing the internal classes. As we most commonly want our test codes to reside on a separate assembly so that we can leave that assembly out when we are releasing the end product.</div></div></div></div><div class="relative w-100 w-30-l mb4 bg-white"><div class="relative w-100 mb4 bg-white nested-copy-line-height"><div class="bg-white mb3 pa4 gray overflow-hidden"><span class="f6 db">Posts</span><h1 class="f3 near-black"><a href=/blog/2008/03/08/what-does-scrum-master-do/ class="link black dim">What does a Scrum Master really do?</a></h1><div class="nested-links f5 lh-copy nested-copy-line-height">Hmm! I am now a CSM (Certified Scrum Master) after two days of training with CST Pette Deemer.
+Where are the two assemblies? I found that these two assemblies are dynamically created by NMock2 for mocking your interfaces.
+    </div>
+  </div>
+</div>
+
+        </div>
+      
+        <div class="relative w-100 w-30-l mb4 bg-white">
+          <div class="relative w-100 mb4 bg-white nested-copy-line-height">
+  <div class="bg-white mb3 pa4 gray overflow-hidden">
+    <span class="f6 db">Posts</span>
+    <h1 class="f3 near-black">
+      <a href="/blog/2008/03/15/unity-dependency-injection-framework/" class="link black dim">
+        Unity - A Dependency Injection framework from Microsoft Patterns and Practices
+      </a>
+    </h1>
+    <div class="nested-links f5 lh-copy nested-copy-line-height">
+      I have been using Spring.Net for implementing Dependency Injection in my .Net projects. Spring is already one of the most known providers of DI in the Java world and a port to .Net actually eased the lives of people like me who are willing to develop unit-testable software.
+However, with all the happiness enjoyed through Spring.Net, I guess its time to take a look into Unity. I have only started using this and I found it interesting in the sense that its more of .
+    </div>
+  </div>
+</div>
+
+        </div>
+      
+        <div class="relative w-100 w-30-l mb4 bg-white">
+          <div class="relative w-100 mb4 bg-white nested-copy-line-height">
+  <div class="bg-white mb3 pa4 gray overflow-hidden">
+    <span class="f6 db">Posts</span>
+    <h1 class="f3 near-black">
+      <a href="/blog/2008/03/11/testing-internal-class-in-net-c/" class="link black dim">
+        Testing Internal Class in .Net C#
+      </a>
+    </h1>
+    <div class="nested-links f5 lh-copy nested-copy-line-height">
+      I have been to a situation where only a small number of classes had been declared as public classes in an assembly. And most of the classes are declared as internal, because I wanted to expose only the public classes to the consumers of my assembly.
+However, doing so creates another challenge in testing the internal classes. As we most commonly want our test codes to reside on a separate assembly so that we can leave that assembly out when we are releasing the end product.
+    </div>
+  </div>
+</div>
+
+        </div>
+      
+        <div class="relative w-100 w-30-l mb4 bg-white">
+          <div class="relative w-100 mb4 bg-white nested-copy-line-height">
+  <div class="bg-white mb3 pa4 gray overflow-hidden">
+    <span class="f6 db">Posts</span>
+    <h1 class="f3 near-black">
+      <a href="/blog/2008/03/08/what-does-scrum-master-do/" class="link black dim">
+        What does a Scrum Master really do?
+      </a>
+    </h1>
+    <div class="nested-links f5 lh-copy nested-copy-line-height">
+      Hmm! I am now a CSM (Certified Scrum Master) after two days of training with CST Pette Deemer.
 You want to congratulate me! Lets congratulate me first-
 You: Congratulations! It's really a great news! How does it feel to be a CSM?
 Me: Greaaaaaaaat! You know, its so cool that my profile gets a CSM on it!
-You: Oh Sohan! I am so sure that you will contribute more at the company?</div></div></div></div><div class="relative w-100 w-30-l mb4 bg-white"><div class="relative w-100 mb4 bg-white nested-copy-line-height"><div class="bg-white mb3 pa4 gray overflow-hidden"><span class="f6 db">Posts</span><h1 class="f3 near-black"><a href=/blog/2008/02/13/preserve-ownership-mode-and-other/ class="link black dim">Preserve Ownership, mode and other attributes while copying in Linux</a></h1><div class="nested-links f5 lh-copy nested-copy-line-height">I dare not say, I am savvy at Linux :-)
+You: Oh Sohan! I am so sure that you will contribute more at the company?
+    </div>
+  </div>
+</div>
+
+        </div>
+      
+        <div class="relative w-100 w-30-l mb4 bg-white">
+          <div class="relative w-100 mb4 bg-white nested-copy-line-height">
+  <div class="bg-white mb3 pa4 gray overflow-hidden">
+    <span class="f6 db">Posts</span>
+    <h1 class="f3 near-black">
+      <a href="/blog/2008/02/13/preserve-ownership-mode-and-other/" class="link black dim">
+        Preserve Ownership, mode and other attributes while copying in Linux
+      </a>
+    </h1>
+    <div class="nested-links f5 lh-copy nested-copy-line-height">
+      I dare not say, I am savvy at Linux :-)
 Recently, I ran into a problem where I found that upon executing a copy command, my source and destination files had different permissions and attributes (i-nodes), but I badly needed the permissions to be preserved in the destination files/folders. The following command will preserve the attributes -
-cp -p source destination here, the switch p (-p) does the trick, it preserves the permissions, modes and other attributes to resemble the source.</div></div></div></div><div class="relative w-100 w-30-l mb4 bg-white"><div class="relative w-100 mb4 bg-white nested-copy-line-height"><div class="bg-white mb3 pa4 gray overflow-hidden"><span class="f6 db">Posts</span><h1 class="f3 near-black"><a href=/blog/2008/02/05/c-keyword-yield-return-i-find-it/ class="link black dim">C# keyword 'yield return' - I find it interesting</a></h1><div class="nested-links f5 lh-copy nested-copy-line-height">I have been using yield return in some of my codes and would like to share its interesting aspects. The following code example shows one dummy use of 'yield return'-
+cp -p source destination here, the switch p (-p) does the trick, it preserves the permissions, modes and other attributes to resemble the source.
+    </div>
+  </div>
+</div>
+
+        </div>
+      
+        <div class="relative w-100 w-30-l mb4 bg-white">
+          <div class="relative w-100 mb4 bg-white nested-copy-line-height">
+  <div class="bg-white mb3 pa4 gray overflow-hidden">
+    <span class="f6 db">Posts</span>
+    <h1 class="f3 near-black">
+      <a href="/blog/2008/02/05/c-keyword-yield-return-i-find-it/" class="link black dim">
+        C# keyword &#39;yield return&#39; - I find it interesting
+      </a>
+    </h1>
+    <div class="nested-links f5 lh-copy nested-copy-line-height">
+      I have been using yield return in some of my codes and would like to share its interesting aspects. The following code example shows one dummy use of 'yield return'-
 public class YieldExample
 {
 public void Run()
@@ -34,7 +286,77 @@ while (numbers.MoveNext())
 private IEnumerable getNumbers()
 {
 for (int i = 0; i <>
-Now, a code like new YieldExample().Run() would produce a output similar to this - "</div></div></div></div><div class="relative w-100 w-30-l mb4 bg-white"><div class="relative w-100 mb4 bg-white nested-copy-line-height"><div class="bg-white mb3 pa4 gray overflow-hidden"><span class="f6 db">Posts</span><h1 class="f3 near-black"><a href=/blog/2008/02/04/c-30-anonymous-types-actual-type/ class="link black dim">C# 3.0 Anonymous types - actual type depends on the order of the property assignnments</a></h1><div class="nested-links f5 lh-copy nested-copy-line-height">I learned that the anonymous types in C# 3.0 has got a good feature that, if you have two anonymous declarations with the same signature, then you create only one anonymous type and have two instances of the type.
+Now, a code like new YieldExample().Run() would produce a output similar to this - "
+    </div>
+  </div>
+</div>
+
+        </div>
+      
+        <div class="relative w-100 w-30-l mb4 bg-white">
+          <div class="relative w-100 mb4 bg-white nested-copy-line-height">
+  <div class="bg-white mb3 pa4 gray overflow-hidden">
+    <span class="f6 db">Posts</span>
+    <h1 class="f3 near-black">
+      <a href="/blog/2008/02/04/c-30-anonymous-types-actual-type/" class="link black dim">
+        C# 3.0 Anonymous types - actual type depends on the order of the property assignnments
+      </a>
+    </h1>
+    <div class="nested-links f5 lh-copy nested-copy-line-height">
+      I learned that the anonymous types in C# 3.0 has got a good feature that, if you have two anonymous declarations with the same signature, then you create only one anonymous type and have two instances of the type.
 So, a code fragment like the following is perfectly valid and passes all compiler warnings/errors-
 var anon = new { FirstName = "first", Age = 21 };
-var anon2 = new { FirstName = "</div></div></div></div></section><ul class="pagination pagination-default"><li class=page-item><a href=/posts/ aria-label=First class=page-link role=button><span aria-hidden=true>&#171;&#171;</span></a></li><li class=page-item><a href=/posts/page/23/ aria-label=Previous class=page-link role=button><span aria-hidden=true>&#171;</span></a></li><li class=page-item><a href=/posts/page/21/ aria-label="Page 21" class=page-link role=button>21</a></li><li class=page-item><a href=/posts/page/22/ aria-label="Page 22" class=page-link role=button>22</a></li><li class=page-item><a href=/posts/page/23/ aria-label="Page 23" class=page-link role=button>23</a></li><li class="page-item active"><a aria-current=page aria-label="Page 24" class=page-link role=button>24</a></li><li class=page-item><a href=/posts/page/25/ aria-label="Page 25" class=page-link role=button>25</a></li><li class=page-item><a href=/posts/page/25/ aria-label=Next class=page-link role=button><span aria-hidden=true>&#187;</span></a></li><li class=page-item><a href=/posts/page/25/ aria-label=Last class=page-link role=button><span aria-hidden=true>&#187;&#187;</span></a></li></ul></article></main><footer class="bg-navy bottom-0 w-100 pa3" role=contentinfo><div class="flex justify-between"><a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href=http://smsohan.com/>&copy; Sohan's Blog 2023</a><div><div class=ananke-socials></div></div></div></footer></body></html>
+var anon2 = new { FirstName = "
+    </div>
+  </div>
+</div>
+
+        </div>
+      
+    </section>
+    <ul class="pagination pagination-default">
+      <li class="page-item">
+        <a href="/posts/" aria-label="First" class="page-link" role="button"><span aria-hidden="true">&laquo;&laquo;</span></a>
+      </li>
+      <li class="page-item">
+        <a href="/posts/page/23/" aria-label="Previous" class="page-link" role="button"><span aria-hidden="true">&laquo;</span></a>
+      </li>
+      <li class="page-item">
+        <a href="/posts/page/21/" aria-label="Page 21" class="page-link" role="button">21</a>
+      </li>
+      <li class="page-item">
+        <a href="/posts/page/22/" aria-label="Page 22" class="page-link" role="button">22</a>
+      </li>
+      <li class="page-item">
+        <a href="/posts/page/23/" aria-label="Page 23" class="page-link" role="button">23</a>
+      </li>
+      <li class="page-item active">
+        <a aria-current="page" aria-label="Page 24" class="page-link" role="button">24</a>
+      </li>
+      <li class="page-item">
+        <a href="/posts/page/25/" aria-label="Page 25" class="page-link" role="button">25</a>
+      </li>
+      <li class="page-item">
+        <a href="/posts/page/25/" aria-label="Next" class="page-link" role="button"><span aria-hidden="true">&raquo;</span></a>
+      </li>
+      <li class="page-item">
+        <a href="/posts/page/25/" aria-label="Last" class="page-link" role="button"><span aria-hidden="true">&raquo;&raquo;</span></a>
+      </li>
+    </ul></article>
+
+    </main>
+    <footer class="bg-navy bottom-0 w-100 pa3" role="contentinfo">
+  <div class="flex justify-between">
+  <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="http://smsohan.com/" >
+    &copy;  Sohan's Blog 2024 
+  </a>
+    <div>
+<div class="ananke-socials">
+  
+</div>
+</div>
+  </div>
+</footer>
+
+  </body>
+</html>

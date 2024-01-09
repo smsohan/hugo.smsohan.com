@@ -1,1 +1,26 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Graduate on Sohan's Blog</title><link>http://smsohan.com/categories/graduate/</link><description>Recent content in Graduate on Sohan's Blog</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Tue, 15 Dec 2009 00:00:00 +0000</lastBuildDate><atom:link href="http://smsohan.com/categories/graduate/index.xml" rel="self" type="application/rss+xml"/><item><title>What I learned from my first semester at University of Calgary as a Grad Student?</title><link>http://smsohan.com/blog/2009/12/15/what-i-learned-from-my-first-semester/</link><pubDate>Tue, 15 Dec 2009 00:00:00 +0000</pubDate><guid>http://smsohan.com/blog/2009/12/15/what-i-learned-from-my-first-semester/</guid><description>In a single line, the first semester has been awesome.Some of you already know that I came to Calgary, AB, Canada this fall to start a graduate research focusing agile software development. So, to get started I tried to come up with a research idea by hunting several resources including popular publications, blogs and books. This is not yet over...However, I took a course called Applied Machine Learning and had the opportunity to work on a project that might lead to my MS thesis.</description></item><item><title>A new home at Calgary and starting days</title><link>http://smsohan.com/blog/2009/09/06/new-home-at-calgary-and-starting-days/</link><pubDate>Sun, 06 Sep 2009 00:00:00 +0000</pubDate><guid>http://smsohan.com/blog/2009/09/06/new-home-at-calgary-and-starting-days/</guid><description>We relocated to the northwest section of Calgary, Alberta on the 26th August. I am new to this part of the world and traveling to this opposite time zone (GMT+6 to GMT-6) took around 33 hours. Did you ever take a flight on Qatar? Not? I recommend it. They offer best foods for your south asian delight. My route was Dhaka - Doha - London - Calgary. I enjoyed the trip (don't tell anyone, I was a bit scared when traveling over the Atlantic :-))</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Graduate on Sohan&#39;s Blog</title>
+    <link>http://smsohan.com/categories/graduate/</link>
+    <description>Recent content in Graduate on Sohan&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 15 Dec 2009 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://smsohan.com/categories/graduate/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>What I learned from my first semester at University of Calgary as a Grad Student?</title>
+      <link>http://smsohan.com/blog/2009/12/15/what-i-learned-from-my-first-semester/</link>
+      <pubDate>Tue, 15 Dec 2009 00:00:00 +0000</pubDate>
+      <guid>http://smsohan.com/blog/2009/12/15/what-i-learned-from-my-first-semester/</guid>
+      <description>In a single line, the first semester has been awesome.Some of you already know that I came to Calgary, AB, Canada this fall to start a graduate research focusing agile software development. So, to get started I tried to come up with a research idea by hunting several resources including popular publications, blogs and books. This is not yet over...However, I took a course called Applied Machine Learning and had the opportunity to work on a project that might lead to my MS thesis.</description>
+    </item>
+    <item>
+      <title>A new home at Calgary and starting days</title>
+      <link>http://smsohan.com/blog/2009/09/06/new-home-at-calgary-and-starting-days/</link>
+      <pubDate>Sun, 06 Sep 2009 00:00:00 +0000</pubDate>
+      <guid>http://smsohan.com/blog/2009/09/06/new-home-at-calgary-and-starting-days/</guid>
+      <description>We relocated to the northwest section of Calgary, Alberta on the 26th August. I am new to this part of the world and traveling to this opposite time zone (GMT+6 to GMT-6) took around 33 hours. Did you ever take a flight on Qatar? Not? I recommend it. They offer best foods for your south asian delight. My route was Dhaka - Doha - London - Calgary. I enjoyed the trip (don&#39;t tell anyone, I was a bit scared when traveling over the Atlantic :-))</description>
+    </item>
+  </channel>
+</rss>

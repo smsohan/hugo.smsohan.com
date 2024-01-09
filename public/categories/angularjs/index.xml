@@ -1,5 +1,26 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>AngularJS on Sohan's Blog</title><link>http://smsohan.com/categories/angularjs/</link><description>Recent content in AngularJS on Sohan's Blog</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Thu, 03 Apr 2014 00:00:00 +0000</lastBuildDate><atom:link href="http://smsohan.com/categories/angularjs/index.xml" rel="self" type="application/rss+xml"/><item><title>AngularJS: Refresh or Die</title><link>http://smsohan.com/blog/2014/04/03/angularjs-refresh-or-die/</link><pubDate>Thu, 03 Apr 2014 00:00:00 +0000</pubDate><guid>http://smsohan.com/blog/2014/04/03/angularjs-refresh-or-die/</guid><description>Just worked on my first AngularJS project at http://loveyyc.info (source code) and wanted to share my thoughts about it while the memory is still fresh. My impression in a one-liner:
-AngularJS needs to rename a lot of things and introduce higher level abstraction
-A great technology only becomes so because people feel happy about it. The happiness for people like me comes from the fact that not only I understand the technology well, but also find it to be easy to use.</description></item><item><title>AngularJS is Very Productive, and Cool too!</title><link>http://smsohan.com/blog/2013/06/14/angularjs-is-very-productive-and-cool/</link><pubDate>Fri, 14 Jun 2013 00:00:00 +0000</pubDate><guid>http://smsohan.com/blog/2013/06/14/angularjs-is-very-productive-and-cool/</guid><description>It has a very steep learning curve, but yields a superb productivity boost once you&amp;rsquo;ve learned it. Check out my demo of the wizard that we&amp;rsquo;ll discuss next.
-AngularJS works by extending HTML to produce declarative UI code and eliminating the need for a lot of boilerplate code. For example, the mental model of a wizard can be expressed using the following HTML:
-&amp;lt;wizard title=&amp;#34;Flight Search&amp;#34;&amp;gt; &amp;lt;step title=&amp;#34;Search&amp;#34;&amp;gt; &amp;lt;/step&amp;gt; &amp;lt;step title=&amp;#34;Select a flight&amp;#34;&amp;gt; &amp;lt;/step&amp;gt; &amp;lt;step title=&amp;#34;Select a return flight&amp;#34;&amp;gt; &amp;lt;/step&amp;gt; &amp;lt;step title=&amp;#34;Checkout&amp;#34;&amp;gt; &amp;lt;/step&amp;gt; &amp;lt;step title=&amp;#34;Confirm purchase&amp;#34;&amp;gt; &amp;lt;/step&amp;gt; &amp;lt;step title=&amp;#34;Receipt&amp;#34;&amp;gt; &amp;lt;/step&amp;gt; &amp;lt;/wizard&amp;gt; With AngularJS, one can write exactly this markup with the help of two custom directives, widget and step.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>AngularJS on Sohan&#39;s Blog</title>
+    <link>http://smsohan.com/categories/angularjs/</link>
+    <description>Recent content in AngularJS on Sohan&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 03 Apr 2014 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://smsohan.com/categories/angularjs/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>AngularJS: Refresh or Die</title>
+      <link>http://smsohan.com/blog/2014/04/03/angularjs-refresh-or-die/</link>
+      <pubDate>Thu, 03 Apr 2014 00:00:00 +0000</pubDate>
+      <guid>http://smsohan.com/blog/2014/04/03/angularjs-refresh-or-die/</guid>
+      <description>Just worked on my first AngularJS project at http://loveyyc.info (source code) and wanted to share my thoughts about it while the memory is still fresh. My impression in a one-liner:&#xA;AngularJS needs to rename a lot of things and introduce higher level abstraction&#xA;A great technology only becomes so because people feel happy about it. The happiness for people like me comes from the fact that not only I understand the technology well, but also find it to be easy to use.</description>
+    </item>
+    <item>
+      <title>AngularJS is Very Productive, and Cool too!</title>
+      <link>http://smsohan.com/blog/2013/06/14/angularjs-is-very-productive-and-cool/</link>
+      <pubDate>Fri, 14 Jun 2013 00:00:00 +0000</pubDate>
+      <guid>http://smsohan.com/blog/2013/06/14/angularjs-is-very-productive-and-cool/</guid>
+      <description>It has a very steep learning curve, but yields a superb productivity boost once you&amp;rsquo;ve learned it. Check out my demo of the wizard that we&amp;rsquo;ll discuss next.&#xA;AngularJS works by extending HTML to produce declarative UI code and eliminating the need for a lot of boilerplate code. For example, the mental model of a wizard can be expressed using the following HTML:&#xA;&amp;lt;wizard title=&amp;#34;Flight Search&amp;#34;&amp;gt; &amp;lt;step title=&amp;#34;Search&amp;#34;&amp;gt; &amp;lt;/step&amp;gt; &amp;lt;step title=&amp;#34;Select a flight&amp;#34;&amp;gt; &amp;lt;/step&amp;gt; &amp;lt;step title=&amp;#34;Select a return flight&amp;#34;&amp;gt; &amp;lt;/step&amp;gt; &amp;lt;step title=&amp;#34;Checkout&amp;#34;&amp;gt; &amp;lt;/step&amp;gt; &amp;lt;step title=&amp;#34;Confirm purchase&amp;#34;&amp;gt; &amp;lt;/step&amp;gt; &amp;lt;step title=&amp;#34;Receipt&amp;#34;&amp;gt; &amp;lt;/step&amp;gt; &amp;lt;/wizard&amp;gt; With AngularJS, one can write exactly this markup with the help of two custom directives, widget and step.</description>
+    </item>
+  </channel>
+</rss>

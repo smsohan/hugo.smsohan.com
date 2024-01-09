@@ -1,28 +1,82 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Unit test on Sohan's Blog</title><link>http://smsohan.com/categories/unit-test/</link><description>Recent content in Unit test on Sohan's Blog</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Tue, 09 Aug 2011 00:00:00 +0000</lastBuildDate><atom:link href="http://smsohan.com/categories/unit-test/index.xml" rel="self" type="application/rss+xml"/><item><title>Should you unit test methods with a lot of mocking?</title><link>http://smsohan.com/blog/2011/08/09/should-you-unit-test-methods-with-lot/</link><pubDate>Tue, 09 Aug 2011 00:00:00 +0000</pubDate><guid>http://smsohan.com/blog/2011/08/09/should-you-unit-test-methods-with-lot/</guid><description>Well, anytime you have a lot of mocking, it is probably a smell. Particularly, a first smell is violation of the law of demeter. However, we were having discussion about whether or not we should write unit test for something like the following example:
-As you can see, this method actually does a quite important task. It invokes the search method with specific parameters that will determine your search results.</description></item><item><title>Unit/Functional Test Rails ActionController filters following DRY</title><link>http://smsohan.com/blog/2009/05/13/unit-test-actioncontroller-filters/</link><pubDate>Wed, 13 May 2009 00:00:00 +0000</pubDate><guid>http://smsohan.com/blog/2009/05/13/unit-test-actioncontroller-filters/</guid><description>At ScrumPad most of our controllers are bounded by filters for authentication/authorization. Some filters apply to all actions in a controller while others apply to only a few or leave out only a few. However, since we are following TDD, we need to test the filter is invoked before each of the desired action. This makes the test code MOIST (not DRY)!
-Example of Moist Code:
-The following example only captures two test methods.</description></item><item><title>Unit Test eager loading in Rails ActiveRecord association</title><link>http://smsohan.com/blog/2009/04/21/unit-test-eager-loading-in-rails/</link><pubDate>Tue, 21 Apr 2009 00:00:00 +0000</pubDate><guid>http://smsohan.com/blog/2009/04/21/unit-test-eager-loading-in-rails/</guid><description>To avoid the n+1 problem, you need to use eager loading in ActiveRecord object associations. An easy implementation of eager loading can be done using named scope in the following way.
-class User &amp;lt; ActiveRecord::Base
-has_many :friends
-named_scope :eager_load_friends, :include =&amp;gt; :fiends
-end
-User.find(user_id).eager_load_friendsTo unit test the named scope, you can use this following helper method (keep it in test_helper.rb, if you like) that I wrote for ScrumPad
-def test_eager_loaded(model, association)</description></item><item><title>assert_equal_float : assert_equal between two float objects with precision</title><link>http://smsohan.com/blog/2009/04/07/assertequalfloat-assertequal-between/</link><pubDate>Tue, 07 Apr 2009 00:00:00 +0000</pubDate><guid>http://smsohan.com/blog/2009/04/07/assertequalfloat-assertequal-between/</guid><description>In doing rails unit testing, sometime you need to assert the equality between two float objects in the following fashion
-assert_equal 32.8, object_under_test.method_returning_float
-The internal storage of float objects sometimes will contain 32.8 with additional lower precision decimal points and hence the assert may fail although the significant digits may be same. For example, the value of object_under_test.method_returning_float may be stored as 32.80000001 in memory and the above call may fail.</description></item><item><title>RowTest Extension for NUnit</title><link>http://smsohan.com/blog/2008/11/10/rowtest-extension-for-nunit/</link><pubDate>Mon, 10 Nov 2008 00:00:00 +0000</pubDate><guid>http://smsohan.com/blog/2008/11/10/rowtest-extension-for-nunit/</guid><description>Well, I was just about to implement it myself! However, its good to see that the NUnit addin named RowTest actually allows us to do the data driven unit test through declarative programming and adding parameters to the dumb test methods!
-http://www.andreas-schlapsi.com/projects/rowtest-extension-for-nunit/
-Check out this website for an example and get started with RowTest.</description></item><item><title>Unit Testing using Mocks - FillWithMocks, Fill all or only selected properties with Mocks using only a single method call</title><link>http://smsohan.com/blog/2008/08/13/unit-testing-using-mocks-fillwithmocks/</link><pubDate>Wed, 13 Aug 2008 00:00:00 +0000</pubDate><guid>http://smsohan.com/blog/2008/08/13/unit-testing-using-mocks-fillwithmocks/</guid><description>I have been doing TDD for about two years now and using mock testing for interaction based unit testing in my projects. What I have learned over this time is, a unit testable design leads to introduction of interfaces and dependency injection for testing a code in isolation. And when I want to perform tests on my interactions, I need to create mock objects and inject these mock instances to my object under test.</description></item><item><title>An Article on Unit Testing Events in C# 3.0</title><link>http://smsohan.com/blog/2008/05/04/article-on-unit-testing-events-in-c-30/</link><pubDate>Sun, 04 May 2008 00:00:00 +0000</pubDate><guid>http://smsohan.com/blog/2008/05/04/article-on-unit-testing-events-in-c-30/</guid><description>Please read this article to find out an interesting way to write unit tests on your events.
-http://www.dotnettoad.com/index.php?/archives/12-unit-testing-events.html
-Unit testing has always seemed rather easy and annoying to most of the people who are new to test driven development for the reason because there is not much room for coding other than the Assert methods. Yet, I have found that people actually starts finding it cool once they have written some test codes and stuck at a point where it offers the 'Challenge' to really write a clean and concise test code.</description></item><item><title>Testing Internal Class in .Net C#</title><link>http://smsohan.com/blog/2008/03/11/testing-internal-class-in-net-c/</link><pubDate>Tue, 11 Mar 2008 00:00:00 +0000</pubDate><guid>http://smsohan.com/blog/2008/03/11/testing-internal-class-in-net-c/</guid><description>I have been to a situation where only a small number of classes had been declared as public classes in an assembly. And most of the classes are declared as internal, because I wanted to expose only the public classes to the consumers of my assembly.
-However, doing so creates another challenge in testing the internal classes. As we most commonly want our test codes to reside on a separate assembly so that we can leave that assembly out when we are releasing the end product.</description></item><item><title>The Easiest and the Hardest Methods to write unit test for</title><link>http://smsohan.com/blog/2007/12/02/easiest-and-hardest-methods-to-write/</link><pubDate>Sun, 02 Dec 2007 00:00:00 +0000</pubDate><guid>http://smsohan.com/blog/2007/12/02/easiest-and-hardest-methods-to-write/</guid><description>I was wondering to find out the easiest methods to write unit tests for. I came up with a few results as the following ones...
-a. A method that takes no parameter, perform calculations on only local data and always returns a constant value is the easiest to test. But the question is, is this at all important to have such methods?
-b. A method that takes some parameters, and limits its operations only on the supplied parameters and local variables and returns some value or throws exception is also very easy to write a test for.</description></item><item><title>Unit Testing void Methods - Part 1</title><link>http://smsohan.com/blog/2007/12/02/unit-testing-void-methods-part-1/</link><pubDate>Sun, 02 Dec 2007 00:00:00 +0000</pubDate><guid>http://smsohan.com/blog/2007/12/02/unit-testing-void-methods-part-1/</guid><description>Dissection of void Methods without parameters
-Methods with void return types incur complexities in writing unit tests. So, we need to characterize the void methods to make sure we have guards against the odds for testability.
-A typical void method without any parameter looks like the following
-public void DoSomething()
-{
-//1.modifies some member variables
-this.someMemberVariable = 10;
-//2.Calls methods of the same class or other classes
-someClass.SomeOtherMethod(someArg);
-//3.Sometimes throws exception</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Unit test on Sohan&#39;s Blog</title>
+    <link>http://smsohan.com/categories/unit-test/</link>
+    <description>Recent content in Unit test on Sohan&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 09 Aug 2011 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://smsohan.com/categories/unit-test/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Should you unit test methods with a lot of mocking?</title>
+      <link>http://smsohan.com/blog/2011/08/09/should-you-unit-test-methods-with-lot/</link>
+      <pubDate>Tue, 09 Aug 2011 00:00:00 +0000</pubDate>
+      <guid>http://smsohan.com/blog/2011/08/09/should-you-unit-test-methods-with-lot/</guid>
+      <description>Well, anytime you have a lot of mocking, it is probably a smell. Particularly, a first smell is violation of the law of demeter. However, we were having discussion about whether or not we should write unit test for something like the following example:&#xA;As you can see, this method actually does a quite important task. It invokes the search method with specific parameters that will determine your search results.</description>
+    </item>
+    <item>
+      <title>Unit/Functional Test Rails ActionController filters following DRY</title>
+      <link>http://smsohan.com/blog/2009/05/13/unit-test-actioncontroller-filters/</link>
+      <pubDate>Wed, 13 May 2009 00:00:00 +0000</pubDate>
+      <guid>http://smsohan.com/blog/2009/05/13/unit-test-actioncontroller-filters/</guid>
+      <description>At ScrumPad most of our controllers are bounded by filters for authentication/authorization. Some filters apply to all actions in a controller while others apply to only a few or leave out only a few. However, since we are following TDD, we need to test the filter is invoked before each of the desired action. This makes the test code MOIST (not DRY)!&#xA;Example of Moist Code:&#xA;The following example only captures two test methods.</description>
+    </item>
+    <item>
+      <title>Unit Test eager loading in Rails ActiveRecord association</title>
+      <link>http://smsohan.com/blog/2009/04/21/unit-test-eager-loading-in-rails/</link>
+      <pubDate>Tue, 21 Apr 2009 00:00:00 +0000</pubDate>
+      <guid>http://smsohan.com/blog/2009/04/21/unit-test-eager-loading-in-rails/</guid>
+      <description>To avoid the n+1 problem, you need to use eager loading in ActiveRecord object associations. An easy implementation of eager loading can be done using named scope in the following way.&#xA;class User &amp;lt; ActiveRecord::Base&#xA;has_many :friends&#xA;named_scope :eager_load_friends, :include =&amp;gt; :fiends&#xA;end&#xA;User.find(user_id).eager_load_friendsTo unit test the named scope, you can use this following helper method (keep it in test_helper.rb, if you like) that I wrote for ScrumPad&#xA;def test_eager_loaded(model, association)</description>
+    </item>
+    <item>
+      <title>assert_equal_float : assert_equal between two float objects with precision</title>
+      <link>http://smsohan.com/blog/2009/04/07/assertequalfloat-assertequal-between/</link>
+      <pubDate>Tue, 07 Apr 2009 00:00:00 +0000</pubDate>
+      <guid>http://smsohan.com/blog/2009/04/07/assertequalfloat-assertequal-between/</guid>
+      <description>In doing rails unit testing, sometime you need to assert the equality between two float objects in the following fashion&#xA;assert_equal 32.8, object_under_test.method_returning_float&#xA;The internal storage of float objects sometimes will contain 32.8 with additional lower precision decimal points and hence the assert may fail although the significant digits may be same. For example, the value of object_under_test.method_returning_float may be stored as 32.80000001 in memory and the above call may fail.</description>
+    </item>
+    <item>
+      <title>RowTest Extension for NUnit</title>
+      <link>http://smsohan.com/blog/2008/11/10/rowtest-extension-for-nunit/</link>
+      <pubDate>Mon, 10 Nov 2008 00:00:00 +0000</pubDate>
+      <guid>http://smsohan.com/blog/2008/11/10/rowtest-extension-for-nunit/</guid>
+      <description>Well, I was just about to implement it myself! However, its good to see that the NUnit addin named RowTest actually allows us to do the data driven unit test through declarative programming and adding parameters to the dumb test methods!&#xA;http://www.andreas-schlapsi.com/projects/rowtest-extension-for-nunit/&#xA;Check out this website for an example and get started with RowTest.</description>
+    </item>
+    <item>
+      <title>Unit Testing using Mocks - FillWithMocks, Fill all or only selected properties with Mocks using only a single method call</title>
+      <link>http://smsohan.com/blog/2008/08/13/unit-testing-using-mocks-fillwithmocks/</link>
+      <pubDate>Wed, 13 Aug 2008 00:00:00 +0000</pubDate>
+      <guid>http://smsohan.com/blog/2008/08/13/unit-testing-using-mocks-fillwithmocks/</guid>
+      <description>I have been doing TDD for about two years now and using mock testing for interaction based unit testing in my projects. What I have learned over this time is, a unit testable design leads to introduction of interfaces and dependency injection for testing a code in isolation. And when I want to perform tests on my interactions, I need to create mock objects and inject these mock instances to my object under test.</description>
+    </item>
+    <item>
+      <title>An Article on Unit Testing Events in C# 3.0</title>
+      <link>http://smsohan.com/blog/2008/05/04/article-on-unit-testing-events-in-c-30/</link>
+      <pubDate>Sun, 04 May 2008 00:00:00 +0000</pubDate>
+      <guid>http://smsohan.com/blog/2008/05/04/article-on-unit-testing-events-in-c-30/</guid>
+      <description>Please read this article to find out an interesting way to write unit tests on your events.&#xA;http://www.dotnettoad.com/index.php?/archives/12-unit-testing-events.html&#xA;Unit testing has always seemed rather easy and annoying to most of the people who are new to test driven development for the reason because there is not much room for coding other than the Assert methods. Yet, I have found that people actually starts finding it cool once they have written some test codes and stuck at a point where it offers the &#39;Challenge&#39; to really write a clean and concise test code.</description>
+    </item>
+    <item>
+      <title>Testing Internal Class in .Net C#</title>
+      <link>http://smsohan.com/blog/2008/03/11/testing-internal-class-in-net-c/</link>
+      <pubDate>Tue, 11 Mar 2008 00:00:00 +0000</pubDate>
+      <guid>http://smsohan.com/blog/2008/03/11/testing-internal-class-in-net-c/</guid>
+      <description>I have been to a situation where only a small number of classes had been declared as public classes in an assembly. And most of the classes are declared as internal, because I wanted to expose only the public classes to the consumers of my assembly.&#xA;However, doing so creates another challenge in testing the internal classes. As we most commonly want our test codes to reside on a separate assembly so that we can leave that assembly out when we are releasing the end product.</description>
+    </item>
+    <item>
+      <title>The Easiest and the Hardest Methods to write unit test for</title>
+      <link>http://smsohan.com/blog/2007/12/02/easiest-and-hardest-methods-to-write/</link>
+      <pubDate>Sun, 02 Dec 2007 00:00:00 +0000</pubDate>
+      <guid>http://smsohan.com/blog/2007/12/02/easiest-and-hardest-methods-to-write/</guid>
+      <description>I was wondering to find out the easiest methods to write unit tests for. I came up with a few results as the following ones...&#xA;a. A method that takes no parameter, perform calculations on only local data and always returns a constant value is the easiest to test. But the question is, is this at all important to have such methods?&#xA;b. A method that takes some parameters, and limits its operations only on the supplied parameters and local variables and returns some value or throws exception is also very easy to write a test for.</description>
+    </item>
+    <item>
+      <title>Unit Testing void Methods - Part 1</title>
+      <link>http://smsohan.com/blog/2007/12/02/unit-testing-void-methods-part-1/</link>
+      <pubDate>Sun, 02 Dec 2007 00:00:00 +0000</pubDate>
+      <guid>http://smsohan.com/blog/2007/12/02/unit-testing-void-methods-part-1/</guid>
+      <description>Dissection of void Methods without parameters&#xA;Methods with void return types incur complexities in writing unit tests. So, we need to characterize the void methods to make sure we have guards against the odds for testability.&#xA;A typical void method without any parameter looks like the following&#xA;public void DoSomething()&#xA;{&#xA;//1.modifies some member variables&#xA;this.someMemberVariable = 10;&#xA;//2.Calls methods of the same class or other classes&#xA;someClass.SomeOtherMethod(someArg);&#xA;//3.Sometimes throws exception</description>
+    </item>
+  </channel>
+</rss>

@@ -1,3 +1,19 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Feedback on Sohan's Blog</title><link>http://smsohan.com/categories/feedback/</link><description>Recent content in Feedback on Sohan's Blog</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Sun, 11 Oct 2020 00:00:00 +0000</lastBuildDate><atom:link href="http://smsohan.com/categories/feedback/index.xml" rel="self" type="application/rss+xml"/><item><title>Communication Hacks I Learned From Job Interview Feedback</title><link>http://smsohan.com/blog/2020/10/11/communication-hacks-from-interview-feedback/</link><pubDate>Sun, 11 Oct 2020 00:00:00 +0000</pubDate><guid>http://smsohan.com/blog/2020/10/11/communication-hacks-from-interview-feedback/</guid><description>Photo credits to UnknownNet Photography
-I’ve been in search of a new job for the past few months. Thanks to my recruiters and interviewers, I’ve received some useful feedback. Many thanks to them for this gift.
-``Needs more energy&amp;rsquo;&amp;rsquo; - This was the most memorable feedback I got. It was from the VP of a company. My interview with him was the last of the five on the same day.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Feedback on Sohan&#39;s Blog</title>
+    <link>http://smsohan.com/categories/feedback/</link>
+    <description>Recent content in Feedback on Sohan&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 11 Oct 2020 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://smsohan.com/categories/feedback/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Communication Hacks I Learned From Job Interview Feedback</title>
+      <link>http://smsohan.com/blog/2020/10/11/communication-hacks-from-interview-feedback/</link>
+      <pubDate>Sun, 11 Oct 2020 00:00:00 +0000</pubDate>
+      <guid>http://smsohan.com/blog/2020/10/11/communication-hacks-from-interview-feedback/</guid>
+      <description>Photo credits to UnknownNet Photography&#xA;I’ve been in search of a new job for the past few months. Thanks to my recruiters and interviewers, I’ve received some useful feedback. Many thanks to them for this gift.&#xA;``Needs more energy&amp;rsquo;&amp;rsquo; - This was the most memorable feedback I got. It was from the VP of a company. My interview with him was the last of the five on the same day.</description>
+    </item>
+  </channel>
+</rss>

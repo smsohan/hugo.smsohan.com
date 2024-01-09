@@ -1,1 +1,19 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Frontend on Sohan's Blog</title><link>http://smsohan.com/categories/frontend/</link><description>Recent content in Frontend on Sohan's Blog</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Tue, 12 Oct 2021 00:00:00 +0000</lastBuildDate><atom:link href="http://smsohan.com/categories/frontend/index.xml" rel="self" type="application/rss+xml"/><item><title>UI SDK Design Principles</title><link>http://smsohan.com/blog/2021/10/12/ui-sdk-design-principles/</link><pubDate>Tue, 12 Oct 2021 00:00:00 +0000</pubDate><guid>http://smsohan.com/blog/2021/10/12/ui-sdk-design-principles/</guid><description>At Microsoft, I’ve been working with my team on a multi-platform UI SDK for Azure Communication Services. We empower developers to build visually delightful communication experiences (chat, audio-video calling, etc.) for everyone. I’ve participated in numerous design discussions on this UI SDK and I realized many of the things I learned here apply to the domain of UI SDKs beyond just the one we are creating. So, this blog post is an attempt to make a list of design principles that developers of UI SDKs can follow to create a bigger impact out of their work.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Frontend on Sohan&#39;s Blog</title>
+    <link>http://smsohan.com/categories/frontend/</link>
+    <description>Recent content in Frontend on Sohan&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 12 Oct 2021 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://smsohan.com/categories/frontend/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>UI SDK Design Principles</title>
+      <link>http://smsohan.com/blog/2021/10/12/ui-sdk-design-principles/</link>
+      <pubDate>Tue, 12 Oct 2021 00:00:00 +0000</pubDate>
+      <guid>http://smsohan.com/blog/2021/10/12/ui-sdk-design-principles/</guid>
+      <description>At Microsoft, I’ve been working with my team on a multi-platform UI SDK for Azure Communication Services. We empower developers to build visually delightful communication experiences (chat, audio-video calling, etc.) for everyone. I’ve participated in numerous design discussions on this UI SDK and I realized many of the things I learned here apply to the domain of UI SDKs beyond just the one we are creating. So, this blog post is an attempt to make a list of design principles that developers of UI SDKs can follow to create a bigger impact out of their work.</description>
+    </item>
+  </channel>
+</rss>

@@ -1,22 +1,295 @@
-<!doctype html><html lang=en-us><head><meta charset=utf-8><meta http-equiv=x-ua-compatible content="IE=edge,chrome=1"><title>Unit test | Sohan's Blog</title><meta name=viewport content="width=device-width,minimum-scale=1"><meta name=description content="Sohan's Blog"><meta name=generator content="Hugo 0.108.0"><meta name=robots content="noindex, nofollow"><link rel=stylesheet href=/ananke/css/main.min.css><link href=/categories/unit-test/index.xml rel=alternate type=application/rss+xml title="Sohan's Blog"><link href=/categories/unit-test/index.xml rel=feed type=application/rss+xml title="Sohan's Blog"><meta property="og:title" content="Unit test"><meta property="og:description" content="Sohan's Blog"><meta property="og:type" content="website"><meta property="og:url" content="http://smsohan.com/categories/unit-test/"><meta itemprop=name content="Unit test"><meta itemprop=description content="Sohan's Blog"><meta name=twitter:card content="summary"><meta name=twitter:title content="Unit test"><meta name=twitter:description content="Sohan's Blog"><style>.athelas,.body-text{font-family:helvetica neue,Helvetica,Arial,sans-serif}.body-text div,p,article,section{font-size:1rem;line-height:1.4rem}.athelas.fw1{font-weight:inherit}h1.f1{line-height:4rem}</style></head><body class="ma0 body-text"><header><div class="pb3-m bg-navy"><nav class="pv3 ph3 ph4-ns" role=navigation><div class="flex-l justify-between items-center center"><a href=/ class="f3 fw2 hover-white no-underline white-90 dib">Sohan's Blog</a><div class="flex-l items-center"><ul class="pl0 mr3"><li class="list f5 f4-ns fw4 dib pr3"><a class="hover-white no-underline white-90" href=/home/ title="About page">About</a></li></ul><div class=ananke-socials></div></div></div></nav></div></header><main class=pb7 role=main><article class="cf pa3 pa4-m pa4-l"><div class="measure-wide-l center f4 lh-copy nested-copy-line-height nested-links mid-gray"><p>Below you will find pages that utilize the taxonomy term “Unit test”</p></div></article><div class="mw8 center"><section class="flex-ns flex-wrap justify-around mt5"><div class="relative w-100 mb4 bg-white"><div class="relative w-100 mb4 bg-white nested-copy-line-height"><div class="bg-white mb3 pa4 gray overflow-hidden"><span class="f6 db">Posts</span><h1 class="f3 near-black"><a href=/blog/2011/08/09/should-you-unit-test-methods-with-lot/ class="link black dim">Should you unit test methods with a lot of mocking?</a></h1><div class="nested-links f5 lh-copy nested-copy-line-height">Well, anytime you have a lot of mocking, it is probably a smell. Particularly, a first smell is violation of the law of demeter. However, we were having discussion about whether or not we should write unit test for something like the following example:
-As you can see, this method actually does a quite important task. It invokes the search method with specific parameters that will determine your search results.</div></div></div></div><div class="relative w-100 mb4 bg-white"><div class="relative w-100 mb4 bg-white nested-copy-line-height"><div class="bg-white mb3 pa4 gray overflow-hidden"><span class="f6 db">Posts</span><h1 class="f3 near-black"><a href=/blog/2009/05/13/unit-test-actioncontroller-filters/ class="link black dim">Unit/Functional Test Rails ActionController filters following DRY</a></h1><div class="nested-links f5 lh-copy nested-copy-line-height">At ScrumPad most of our controllers are bounded by filters for authentication/authorization. Some filters apply to all actions in a controller while others apply to only a few or leave out only a few. However, since we are following TDD, we need to test the filter is invoked before each of the desired action. This makes the test code MOIST (not DRY)!
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <title>Unit test | Sohan&#39;s Blog</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta name="description" content="Sohan&#39;s Blog">
+    <meta name="generator" content="Hugo 0.121.0">
+    
+    
+    
+    
+      <meta name="robots" content="noindex, nofollow">
+    
+
+    
+<link rel="stylesheet" href="/ananke/css/main.css" >
+
+
+
+    
+    
+    
+      
+
+    
+
+    
+    
+      <link href="/categories/unit-test/index.xml" rel="alternate" type="application/rss+xml" title="Sohan&#39;s Blog" />
+      <link href="/categories/unit-test/index.xml" rel="feed" type="application/rss+xml" title="Sohan&#39;s Blog" />
+      
+    
+    
+    <meta property="og:title" content="Unit test" />
+<meta property="og:description" content="Sohan&#39;s Blog" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="http://smsohan.com/categories/unit-test/" />
+
+<meta itemprop="name" content="Unit test">
+<meta itemprop="description" content="Sohan&#39;s Blog"><meta name="twitter:card" content="summary"/><meta name="twitter:title" content="Unit test"/>
+<meta name="twitter:description" content="Sohan&#39;s Blog"/>
+
+	<style>
+    .athelas, .body-text {
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    }
+
+    .body-text div, p, article, section {
+        font-size: 1rem;
+        line-height: 1.4rem;
+    }
+    .athelas.fw1 {
+        font-weight: inherit;
+    }
+
+    h1.f1 {
+        line-height: 4rem;
+    }
+</style>
+  </head>
+
+  <body class="ma0 body-text">
+
+    <header>
+  <div class="pb3-m bg-navy">
+    <nav class="pv3 ph3 ph4-ns" role="navigation">
+  <div class="flex-l justify-between items-center center">
+    <a href="/" class="f3 fw2 hover-white no-underline white-90 dib">
+      
+        Sohan&#39;s Blog
+      
+    </a>
+    <div class="flex-l items-center">
+      
+
+      
+        <ul class="pl0 mr3">
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white no-underline white-90" href="/home/" title="About page">
+              About
+            </a>
+          </li>
+          
+        </ul>
+      
+      
+<div class="ananke-socials">
+  
+</div>
+
+    </div>
+  </div>
+</nav>
+
+  </div>
+</header>
+    <main class="pb7" role="main">
+      
+  <article class="cf pa3 pa4-m pa4-l">
+    <div class="measure-wide-l center f4 lh-copy nested-copy-line-height nested-links mid-gray">
+      <p>Below you will find pages that utilize the taxonomy term “Unit test”</p>
+    </div>
+  </article>
+  <div class="mw8 center">
+    <section class="flex-ns flex-wrap justify-around mt5">
+      
+        <div class="relative w-100  mb4 bg-white">
+          <div class="relative w-100 mb4 bg-white nested-copy-line-height">
+  <div class="bg-white mb3 pa4 gray overflow-hidden">
+    <span class="f6 db">Posts</span>
+    <h1 class="f3 near-black">
+      <a href="/blog/2011/08/09/should-you-unit-test-methods-with-lot/" class="link black dim">
+        Should you unit test methods with a lot of mocking?
+      </a>
+    </h1>
+    <div class="nested-links f5 lh-copy nested-copy-line-height">
+      Well, anytime you have a lot of mocking, it is probably a smell. Particularly, a first smell is violation of the law of demeter. However, we were having discussion about whether or not we should write unit test for something like the following example:
+As you can see, this method actually does a quite important task. It invokes the search method with specific parameters that will determine your search results.
+    </div>
+  </div>
+</div>
+
+        </div>
+      
+        <div class="relative w-100  mb4 bg-white">
+          <div class="relative w-100 mb4 bg-white nested-copy-line-height">
+  <div class="bg-white mb3 pa4 gray overflow-hidden">
+    <span class="f6 db">Posts</span>
+    <h1 class="f3 near-black">
+      <a href="/blog/2009/05/13/unit-test-actioncontroller-filters/" class="link black dim">
+        Unit/Functional Test Rails ActionController filters following DRY
+      </a>
+    </h1>
+    <div class="nested-links f5 lh-copy nested-copy-line-height">
+      At ScrumPad most of our controllers are bounded by filters for authentication/authorization. Some filters apply to all actions in a controller while others apply to only a few or leave out only a few. However, since we are following TDD, we need to test the filter is invoked before each of the desired action. This makes the test code MOIST (not DRY)!
 Example of Moist Code:
-The following example only captures two test methods.</div></div></div></div><div class="relative w-100 mb4 bg-white"><div class="relative w-100 mb4 bg-white nested-copy-line-height"><div class="bg-white mb3 pa4 gray overflow-hidden"><span class="f6 db">Posts</span><h1 class="f3 near-black"><a href=/blog/2009/04/21/unit-test-eager-loading-in-rails/ class="link black dim">Unit Test eager loading in Rails ActiveRecord association</a></h1><div class="nested-links f5 lh-copy nested-copy-line-height">To avoid the n+1 problem, you need to use eager loading in ActiveRecord object associations. An easy implementation of eager loading can be done using named scope in the following way.
+The following example only captures two test methods.
+    </div>
+  </div>
+</div>
+
+        </div>
+      
+        <div class="relative w-100  mb4 bg-white">
+          <div class="relative w-100 mb4 bg-white nested-copy-line-height">
+  <div class="bg-white mb3 pa4 gray overflow-hidden">
+    <span class="f6 db">Posts</span>
+    <h1 class="f3 near-black">
+      <a href="/blog/2009/04/21/unit-test-eager-loading-in-rails/" class="link black dim">
+        Unit Test eager loading in Rails ActiveRecord association
+      </a>
+    </h1>
+    <div class="nested-links f5 lh-copy nested-copy-line-height">
+      To avoid the n+1 problem, you need to use eager loading in ActiveRecord object associations. An easy implementation of eager loading can be done using named scope in the following way.
 class User &lt; ActiveRecord::Base
 has_many :friends
-named_scope :eager_load_friends, :include => :fiends
+named_scope :eager_load_friends, :include =&gt; :fiends
 end
 User.find(user_id).eager_load_friendsTo unit test the named scope, you can use this following helper method (keep it in test_helper.rb, if you like) that I wrote for ScrumPad
-def test_eager_loaded(model, association)</div></div></div></div><div class="relative w-100 mb4 bg-white"><div class="relative w-100 mb4 bg-white nested-copy-line-height"><div class="bg-white mb3 pa4 gray overflow-hidden"><span class="f6 db">Posts</span><h1 class="f3 near-black"><a href=/blog/2009/04/07/assertequalfloat-assertequal-between/ class="link black dim">assert_equal_float : assert_equal between two float objects with precision</a></h1><div class="nested-links f5 lh-copy nested-copy-line-height">In doing rails unit testing, sometime you need to assert the equality between two float objects in the following fashion
+def test_eager_loaded(model, association)
+    </div>
+  </div>
+</div>
+
+        </div>
+      
+        <div class="relative w-100  mb4 bg-white">
+          <div class="relative w-100 mb4 bg-white nested-copy-line-height">
+  <div class="bg-white mb3 pa4 gray overflow-hidden">
+    <span class="f6 db">Posts</span>
+    <h1 class="f3 near-black">
+      <a href="/blog/2009/04/07/assertequalfloat-assertequal-between/" class="link black dim">
+        assert_equal_float : assert_equal between two float objects with precision
+      </a>
+    </h1>
+    <div class="nested-links f5 lh-copy nested-copy-line-height">
+      In doing rails unit testing, sometime you need to assert the equality between two float objects in the following fashion
 assert_equal 32.8, object_under_test.method_returning_float
-The internal storage of float objects sometimes will contain 32.8 with additional lower precision decimal points and hence the assert may fail although the significant digits may be same. For example, the value of object_under_test.method_returning_float may be stored as 32.80000001 in memory and the above call may fail.</div></div></div></div><div class="relative w-100 mb4 bg-white"><div class="relative w-100 mb4 bg-white nested-copy-line-height"><div class="bg-white mb3 pa4 gray overflow-hidden"><span class="f6 db">Posts</span><h1 class="f3 near-black"><a href=/blog/2008/11/10/rowtest-extension-for-nunit/ class="link black dim">RowTest Extension for NUnit</a></h1><div class="nested-links f5 lh-copy nested-copy-line-height">Well, I was just about to implement it myself! However, its good to see that the NUnit addin named RowTest actually allows us to do the data driven unit test through declarative programming and adding parameters to the dumb test methods!
+The internal storage of float objects sometimes will contain 32.8 with additional lower precision decimal points and hence the assert may fail although the significant digits may be same. For example, the value of object_under_test.method_returning_float may be stored as 32.80000001 in memory and the above call may fail.
+    </div>
+  </div>
+</div>
+
+        </div>
+      
+        <div class="relative w-100  mb4 bg-white">
+          <div class="relative w-100 mb4 bg-white nested-copy-line-height">
+  <div class="bg-white mb3 pa4 gray overflow-hidden">
+    <span class="f6 db">Posts</span>
+    <h1 class="f3 near-black">
+      <a href="/blog/2008/11/10/rowtest-extension-for-nunit/" class="link black dim">
+        RowTest Extension for NUnit
+      </a>
+    </h1>
+    <div class="nested-links f5 lh-copy nested-copy-line-height">
+      Well, I was just about to implement it myself! However, its good to see that the NUnit addin named RowTest actually allows us to do the data driven unit test through declarative programming and adding parameters to the dumb test methods!
 http://www.andreas-schlapsi.com/projects/rowtest-extension-for-nunit/
-Check out this website for an example and get started with RowTest.</div></div></div></div><div class="relative w-100 mb4 bg-white"><div class="relative w-100 mb4 bg-white nested-copy-line-height"><div class="bg-white mb3 pa4 gray overflow-hidden"><span class="f6 db">Posts</span><h1 class="f3 near-black"><a href=/blog/2008/08/13/unit-testing-using-mocks-fillwithmocks/ class="link black dim">Unit Testing using Mocks - FillWithMocks, Fill all or only selected properties with Mocks using only a single method call</a></h1><div class="nested-links f5 lh-copy nested-copy-line-height">I have been doing TDD for about two years now and using mock testing for interaction based unit testing in my projects. What I have learned over this time is, a unit testable design leads to introduction of interfaces and dependency injection for testing a code in isolation. And when I want to perform tests on my interactions, I need to create mock objects and inject these mock instances to my object under test.</div></div></div></div><div class="relative w-100 mb4 bg-white"><div class="relative w-100 mb4 bg-white nested-copy-line-height"><div class="bg-white mb3 pa4 gray overflow-hidden"><span class="f6 db">Posts</span><h1 class="f3 near-black"><a href=/blog/2008/05/04/article-on-unit-testing-events-in-c-30/ class="link black dim">An Article on Unit Testing Events in C# 3.0</a></h1><div class="nested-links f5 lh-copy nested-copy-line-height">Please read this article to find out an interesting way to write unit tests on your events.
+Check out this website for an example and get started with RowTest.
+    </div>
+  </div>
+</div>
+
+        </div>
+      
+        <div class="relative w-100  mb4 bg-white">
+          <div class="relative w-100 mb4 bg-white nested-copy-line-height">
+  <div class="bg-white mb3 pa4 gray overflow-hidden">
+    <span class="f6 db">Posts</span>
+    <h1 class="f3 near-black">
+      <a href="/blog/2008/08/13/unit-testing-using-mocks-fillwithmocks/" class="link black dim">
+        Unit Testing using Mocks - FillWithMocks, Fill all or only selected properties with Mocks using only a single method call
+      </a>
+    </h1>
+    <div class="nested-links f5 lh-copy nested-copy-line-height">
+      I have been doing TDD for about two years now and using mock testing for interaction based unit testing in my projects. What I have learned over this time is, a unit testable design leads to introduction of interfaces and dependency injection for testing a code in isolation. And when I want to perform tests on my interactions, I need to create mock objects and inject these mock instances to my object under test.
+    </div>
+  </div>
+</div>
+
+        </div>
+      
+        <div class="relative w-100  mb4 bg-white">
+          <div class="relative w-100 mb4 bg-white nested-copy-line-height">
+  <div class="bg-white mb3 pa4 gray overflow-hidden">
+    <span class="f6 db">Posts</span>
+    <h1 class="f3 near-black">
+      <a href="/blog/2008/05/04/article-on-unit-testing-events-in-c-30/" class="link black dim">
+        An Article on Unit Testing Events in C# 3.0
+      </a>
+    </h1>
+    <div class="nested-links f5 lh-copy nested-copy-line-height">
+      Please read this article to find out an interesting way to write unit tests on your events.
 http://www.dotnettoad.com/index.php?/archives/12-unit-testing-events.html
-Unit testing has always seemed rather easy and annoying to most of the people who are new to test driven development for the reason because there is not much room for coding other than the Assert methods. Yet, I have found that people actually starts finding it cool once they have written some test codes and stuck at a point where it offers the 'Challenge' to really write a clean and concise test code.</div></div></div></div><div class="relative w-100 mb4 bg-white"><div class="relative w-100 mb4 bg-white nested-copy-line-height"><div class="bg-white mb3 pa4 gray overflow-hidden"><span class="f6 db">Posts</span><h1 class="f3 near-black"><a href=/blog/2008/03/11/testing-internal-class-in-net-c/ class="link black dim">Testing Internal Class in .Net C#</a></h1><div class="nested-links f5 lh-copy nested-copy-line-height">I have been to a situation where only a small number of classes had been declared as public classes in an assembly. And most of the classes are declared as internal, because I wanted to expose only the public classes to the consumers of my assembly.
-However, doing so creates another challenge in testing the internal classes. As we most commonly want our test codes to reside on a separate assembly so that we can leave that assembly out when we are releasing the end product.</div></div></div></div><div class="relative w-100 mb4 bg-white"><div class="relative w-100 mb4 bg-white nested-copy-line-height"><div class="bg-white mb3 pa4 gray overflow-hidden"><span class="f6 db">Posts</span><h1 class="f3 near-black"><a href=/blog/2007/12/02/easiest-and-hardest-methods-to-write/ class="link black dim">The Easiest and the Hardest Methods to write unit test for</a></h1><div class="nested-links f5 lh-copy nested-copy-line-height">I was wondering to find out the easiest methods to write unit tests for. I came up with a few results as the following ones...
+Unit testing has always seemed rather easy and annoying to most of the people who are new to test driven development for the reason because there is not much room for coding other than the Assert methods. Yet, I have found that people actually starts finding it cool once they have written some test codes and stuck at a point where it offers the 'Challenge' to really write a clean and concise test code.
+    </div>
+  </div>
+</div>
+
+        </div>
+      
+        <div class="relative w-100  mb4 bg-white">
+          <div class="relative w-100 mb4 bg-white nested-copy-line-height">
+  <div class="bg-white mb3 pa4 gray overflow-hidden">
+    <span class="f6 db">Posts</span>
+    <h1 class="f3 near-black">
+      <a href="/blog/2008/03/11/testing-internal-class-in-net-c/" class="link black dim">
+        Testing Internal Class in .Net C#
+      </a>
+    </h1>
+    <div class="nested-links f5 lh-copy nested-copy-line-height">
+      I have been to a situation where only a small number of classes had been declared as public classes in an assembly. And most of the classes are declared as internal, because I wanted to expose only the public classes to the consumers of my assembly.
+However, doing so creates another challenge in testing the internal classes. As we most commonly want our test codes to reside on a separate assembly so that we can leave that assembly out when we are releasing the end product.
+    </div>
+  </div>
+</div>
+
+        </div>
+      
+        <div class="relative w-100  mb4 bg-white">
+          <div class="relative w-100 mb4 bg-white nested-copy-line-height">
+  <div class="bg-white mb3 pa4 gray overflow-hidden">
+    <span class="f6 db">Posts</span>
+    <h1 class="f3 near-black">
+      <a href="/blog/2007/12/02/easiest-and-hardest-methods-to-write/" class="link black dim">
+        The Easiest and the Hardest Methods to write unit test for
+      </a>
+    </h1>
+    <div class="nested-links f5 lh-copy nested-copy-line-height">
+      I was wondering to find out the easiest methods to write unit tests for. I came up with a few results as the following ones...
 a. A method that takes no parameter, perform calculations on only local data and always returns a constant value is the easiest to test. But the question is, is this at all important to have such methods?
-b. A method that takes some parameters, and limits its operations only on the supplied parameters and local variables and returns some value or throws exception is also very easy to write a test for.</div></div></div></div><div class="relative w-100 mb4 bg-white"><div class="relative w-100 mb4 bg-white nested-copy-line-height"><div class="bg-white mb3 pa4 gray overflow-hidden"><span class="f6 db">Posts</span><h1 class="f3 near-black"><a href=/blog/2007/12/02/unit-testing-void-methods-part-1/ class="link black dim">Unit Testing void Methods - Part 1</a></h1><div class="nested-links f5 lh-copy nested-copy-line-height">Dissection of void Methods without parameters
+b. A method that takes some parameters, and limits its operations only on the supplied parameters and local variables and returns some value or throws exception is also very easy to write a test for.
+    </div>
+  </div>
+</div>
+
+        </div>
+      
+        <div class="relative w-100  mb4 bg-white">
+          <div class="relative w-100 mb4 bg-white nested-copy-line-height">
+  <div class="bg-white mb3 pa4 gray overflow-hidden">
+    <span class="f6 db">Posts</span>
+    <h1 class="f3 near-black">
+      <a href="/blog/2007/12/02/unit-testing-void-methods-part-1/" class="link black dim">
+        Unit Testing void Methods - Part 1
+      </a>
+    </h1>
+    <div class="nested-links f5 lh-copy nested-copy-line-height">
+      Dissection of void Methods without parameters
 Methods with void return types incur complexities in writing unit tests. So, we need to characterize the void methods to make sure we have guards against the odds for testability.
 A typical void method without any parameter looks like the following
 public void DoSomething()
@@ -25,4 +298,29 @@ public void DoSomething()
 this.someMemberVariable = 10;
 //2.Calls methods of the same class or other classes
 someClass.SomeOtherMethod(someArg);
-//3.Sometimes throws exception</div></div></div></div></section></div></main><footer class="bg-navy bottom-0 w-100 pa3" role=contentinfo><div class="flex justify-between"><a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href=http://smsohan.com/>&copy; Sohan's Blog 2023</a><div><div class=ananke-socials></div></div></div></footer></body></html>
+//3.Sometimes throws exception
+    </div>
+  </div>
+</div>
+
+        </div>
+      
+    </section>
+  </div>
+
+    </main>
+    <footer class="bg-navy bottom-0 w-100 pa3" role="contentinfo">
+  <div class="flex justify-between">
+  <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="http://smsohan.com/" >
+    &copy;  Sohan's Blog 2024 
+  </a>
+    <div>
+<div class="ananke-socials">
+  
+</div>
+</div>
+  </div>
+</footer>
+
+  </body>
+</html>

@@ -1,10 +1,199 @@
-<!doctype html><html lang=en-us><head><meta charset=utf-8><meta http-equiv=x-ua-compatible content="IE=edge,chrome=1"><title>What's wrong with the default alert rendered by the browser? | Sohan's Blog</title><meta name=viewport content="width=device-width,minimum-scale=1"><meta name=description content="Browsers have carefully crafted the alert and confirm dialogs for everyone under really simple APIs as follows:
-alert('Failed to send the email. Check your network connection.'); confirm('Are you sure you want to delete this email?'); While writing cross-browser JavaScript is not as painful today, custom implementation of these natively supported dialogs seem to be a complete waste of money and time to me. With all the different browsers that we have to support today, including the mobile browsers, it seems a lot of wasted effort in trying to render a custom alert and confirm dialog under any circumstance."><meta name=generator content="Hugo 0.108.0"><meta name=robots content="noindex, nofollow"><link rel=stylesheet href=/ananke/css/main.min.css><meta property="og:title" content="What's wrong with the default alert rendered by the browser?"><meta property="og:description" content="Browsers have carefully crafted the alert and confirm dialogs for everyone under really simple APIs as follows:
-alert('Failed to send the email. Check your network connection.'); confirm('Are you sure you want to delete this email?'); While writing cross-browser JavaScript is not as painful today, custom implementation of these natively supported dialogs seem to be a complete waste of money and time to me. With all the different browsers that we have to support today, including the mobile browsers, it seems a lot of wasted effort in trying to render a custom alert and confirm dialog under any circumstance."><meta property="og:type" content="article"><meta property="og:url" content="http://smsohan.com/blog/2014/11/20/whats-wrong-with-the-default-alert-rendered-by-the-browser/"><meta property="article:section" content="posts"><meta property="article:published_time" content="2014-11-20T00:00:00+00:00"><meta property="article:modified_time" content="2014-11-20T00:00:00+00:00"><meta itemprop=name content="What's wrong with the default alert rendered by the browser?"><meta itemprop=description content="Browsers have carefully crafted the alert and confirm dialogs for everyone under really simple APIs as follows:
-alert('Failed to send the email. Check your network connection.'); confirm('Are you sure you want to delete this email?'); While writing cross-browser JavaScript is not as painful today, custom implementation of these natively supported dialogs seem to be a complete waste of money and time to me. With all the different browsers that we have to support today, including the mobile browsers, it seems a lot of wasted effort in trying to render a custom alert and confirm dialog under any circumstance."><meta itemprop=datePublished content="2014-11-20T00:00:00+00:00"><meta itemprop=dateModified content="2014-11-20T00:00:00+00:00"><meta itemprop=wordCount content="462"><meta itemprop=keywords content><meta name=twitter:card content="summary"><meta name=twitter:title content="What's wrong with the default alert rendered by the browser?"><meta name=twitter:description content="Browsers have carefully crafted the alert and confirm dialogs for everyone under really simple APIs as follows:
-alert('Failed to send the email. Check your network connection.'); confirm('Are you sure you want to delete this email?'); While writing cross-browser JavaScript is not as painful today, custom implementation of these natively supported dialogs seem to be a complete waste of money and time to me. With all the different browsers that we have to support today, including the mobile browsers, it seems a lot of wasted effort in trying to render a custom alert and confirm dialog under any circumstance."><style>.athelas,.body-text{font-family:helvetica neue,Helvetica,Arial,sans-serif}.body-text div,p,article,section{font-size:1rem;line-height:1.4rem}.athelas.fw1{font-weight:inherit}h1.f1{line-height:4rem}</style></head><body class="ma0 body-text"><header><div class=bg-navy><nav class="pv3 ph3 ph4-ns" role=navigation><div class="flex-l justify-between items-center center"><a href=/ class="f3 fw2 hover-white no-underline white-90 dib">Sohan's Blog</a><div class="flex-l items-center"><ul class="pl0 mr3"><li class="list f5 f4-ns fw4 dib pr3"><a class="hover-white no-underline white-90" href=/home/ title="About page">About</a></li></ul><div class=ananke-socials></div></div></div></nav></div></header><main class=pb7 role=main><article class="flex-l flex-wrap justify-between mw8 center ph3"><header class="mt4 w-100"><aside class="instapaper_ignoref b helvetica tracked">POSTS</aside><div id=sharing class="mt3 ananke-socials"></div><h1 class="f1 athelas mt3 mb1">What's wrong with the default alert rendered by the browser?</h1><time class="f6 mv4 dib tracked" datetime=2014-11-20T00:00:00Z>November 20, 2014</time></header><div class="nested-copy-line-height lh-copy body-text f4 nested-links mid-gray pr4-l w-two-thirds-l"><p>Browsers have carefully crafted the alert and confirm dialogs for everyone under really simple APIs as follows:</p><pre tabindex=0><code>alert(&#39;Failed to send the email. Check your network connection.&#39;);
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <title>What&#39;s wrong with the default alert rendered by the browser? | Sohan&#39;s Blog</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta name="description" content="Browsers have carefully crafted the alert and confirm dialogs for everyone under really simple APIs as follows:
+alert(&#39;Failed to send the email. Check your network connection.&#39;); confirm(&#39;Are you sure you want to delete this email?&#39;); While writing cross-browser JavaScript is not as painful today, custom implementation of these natively supported dialogs seem to be a complete waste of money and time to me. With all the different browsers that we have to support today, including the mobile browsers, it seems a lot of wasted effort in trying to render a custom alert and confirm dialog under any circumstance.">
+    <meta name="generator" content="Hugo 0.121.0">
+    
+    
+    
+    
+      <meta name="robots" content="noindex, nofollow">
+    
+
+    
+<link rel="stylesheet" href="/ananke/css/main.css" >
+
+
+
+    
+    
+    
+      
+
+    
+
+    
+    
+    <meta property="og:title" content="What&#39;s wrong with the default alert rendered by the browser?" />
+<meta property="og:description" content="Browsers have carefully crafted the alert and confirm dialogs for everyone under really simple APIs as follows:
+alert(&#39;Failed to send the email. Check your network connection.&#39;); confirm(&#39;Are you sure you want to delete this email?&#39;); While writing cross-browser JavaScript is not as painful today, custom implementation of these natively supported dialogs seem to be a complete waste of money and time to me. With all the different browsers that we have to support today, including the mobile browsers, it seems a lot of wasted effort in trying to render a custom alert and confirm dialog under any circumstance." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://smsohan.com/blog/2014/11/20/whats-wrong-with-the-default-alert-rendered-by-the-browser/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2014-11-20T00:00:00+00:00" />
+<meta property="article:modified_time" content="2014-11-20T00:00:00+00:00" />
+
+<meta itemprop="name" content="What&#39;s wrong with the default alert rendered by the browser?">
+<meta itemprop="description" content="Browsers have carefully crafted the alert and confirm dialogs for everyone under really simple APIs as follows:
+alert(&#39;Failed to send the email. Check your network connection.&#39;); confirm(&#39;Are you sure you want to delete this email?&#39;); While writing cross-browser JavaScript is not as painful today, custom implementation of these natively supported dialogs seem to be a complete waste of money and time to me. With all the different browsers that we have to support today, including the mobile browsers, it seems a lot of wasted effort in trying to render a custom alert and confirm dialog under any circumstance."><meta itemprop="datePublished" content="2014-11-20T00:00:00+00:00" />
+<meta itemprop="dateModified" content="2014-11-20T00:00:00+00:00" />
+<meta itemprop="wordCount" content="462">
+<meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/><meta name="twitter:title" content="What&#39;s wrong with the default alert rendered by the browser?"/>
+<meta name="twitter:description" content="Browsers have carefully crafted the alert and confirm dialogs for everyone under really simple APIs as follows:
+alert(&#39;Failed to send the email. Check your network connection.&#39;); confirm(&#39;Are you sure you want to delete this email?&#39;); While writing cross-browser JavaScript is not as painful today, custom implementation of these natively supported dialogs seem to be a complete waste of money and time to me. With all the different browsers that we have to support today, including the mobile browsers, it seems a lot of wasted effort in trying to render a custom alert and confirm dialog under any circumstance."/>
+
+	<style>
+    .athelas, .body-text {
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    }
+
+    .body-text div, p, article, section {
+        font-size: 1rem;
+        line-height: 1.4rem;
+    }
+    .athelas.fw1 {
+        font-weight: inherit;
+    }
+
+    h1.f1 {
+        line-height: 4rem;
+    }
+</style>
+  </head>
+
+  <body class="ma0 body-text">
+
+    
+   
+  
+
+  <header>
+    <div class="bg-navy">
+      <nav class="pv3 ph3 ph4-ns" role="navigation">
+  <div class="flex-l justify-between items-center center">
+    <a href="/" class="f3 fw2 hover-white no-underline white-90 dib">
+      
+        Sohan&#39;s Blog
+      
+    </a>
+    <div class="flex-l items-center">
+      
+
+      
+        <ul class="pl0 mr3">
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white no-underline white-90" href="/home/" title="About page">
+              About
+            </a>
+          </li>
+          
+        </ul>
+      
+      
+<div class="ananke-socials">
+  
+</div>
+
+    </div>
+  </div>
+</nav>
+
+    </div>
+  </header>
+
+
+
+    <main class="pb7" role="main">
+      
+  
+  <article class="flex-l flex-wrap justify-between mw8 center ph3">
+    <header class="mt4 w-100">
+      <aside class="instapaper_ignoref b helvetica tracked">
+          
+        POSTS
+      </aside>
+      
+
+
+
+
+
+
+
+
+
+
+  <div id="sharing" class="mt3 ananke-socials">
+    
+  </div>
+
+
+      <h1 class="f1 athelas mt3 mb1">What&#39;s wrong with the default alert rendered by the browser?</h1>
+      
+      
+      
+      <time class="f6 mv4 dib tracked" datetime="2014-11-20T00:00:00Z">November 20, 2014</time>
+      
+
+      
+      
+    </header>
+    <div class="nested-copy-line-height lh-copy body-text f4 nested-links mid-gray pr4-l w-two-thirds-l"><p>Browsers have carefully crafted the alert and confirm dialogs for everyone under really simple APIs as follows:</p>
+<pre tabindex="0"><code>alert(&#39;Failed to send the email. Check your network connection.&#39;);
 confirm(&#39;Are you sure you want to delete this email?&#39;);
-</code></pre><p>While writing cross-browser JavaScript is not as painful today, custom implementation of these natively supported dialogs seem to be a <strong>complete waste</strong> of money and time to me. With all the different browsers that we have to support today, including the mobile browsers, it seems a lot of wasted effort in trying to render a custom alert and confirm dialog under any circumstance. I&rsquo;ve never implemented one, but if you ever attempted, you probably know how much work it is to get it right and consistent. Here&rsquo;s a short list of requirements if you want to build one:</p><ol><li>Should work on all browsers.</li><li>Needs to disable all other controls on the website.</li><li>Needs to be on the view port so the user can take an action immediately.</li><li>Should not leak any memory if used repeatedly on a single screen.</li><li>Should be fast.</li></ol><p>While I&rsquo;ve seen some magicians to make these requirements look silly and do a decent job of implementing a custom version of the alert and confirm dialogs, I&rsquo;m yet to see one that satisfies all the above essential requirements, and does a better job than the browser&rsquo;s native implementations. If you haven&rsquo;t looked recently, see the current rendering of the confirm dialogs across different browsers:</p><p><img src=/images/safari_confirm.png alt=Safari>
-<img src=/images/chrome_confirm.png alt=Chrome>
-<img src=/images/firefox_confirm.png alt=FireFox>
-<img src=/images/iphone_confirm.png alt=iPhone></p><p>If you look carefully, you&rsquo;ll see subtle things. For example, did you notice the <strong>nice shadows</strong> around the confirm dialogs rendered on Chrome and Safari? There are live effects on the cancel and ok buttons as well, where you&rsquo;ll see a little <strong>shining effect</strong> on the ok button. These are carefully crafted buttons. The Cancel and OK button are perfectly sized for <strong>fat fingers</strong> on the iOS safari. Also, these are <strong>familiar</strong> to the users, so they immediately know what they are clicking on. <strong>Keyboard navigation</strong> works as expected. And lastly. the buttons will change labels based on your <strong>preferred language</strong> settings. All for <strong>free</strong>. Now, try to replicate that on your custom control, across all these browsers and show me how it does any better.</p><p>If your sole business is indeed building these custom dialogs, you can probably invest the time and money here. But as far as I&rsquo;m concerned, I&rsquo;d not put a single $ from my pocket if I was funding a project to either build such custom implementations or using your custom implementation. I&rsquo;m aware of the fact that, even if it&rsquo;s free and open source, it still requires additional maintenance dollars.</p><p>As a user of web, I&rsquo;ve never been bothered by the websites that show me these familiar browser rendered alerts and confirms. Were you?</p><ul class=pa0></ul><div class="mt6 instapaper_ignoref"></div></div><aside class="w-30-l mt6-l"></aside></article></main><footer class="bg-navy bottom-0 w-100 pa3" role=contentinfo><div class="flex justify-between"><a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href=http://smsohan.com/>&copy; Sohan's Blog 2023</a><div><div class=ananke-socials></div></div></div></footer></body></html>
+</code></pre><p>While writing cross-browser JavaScript is not as painful today, custom implementation of these natively supported dialogs seem to be a <strong>complete waste</strong> of money and time to me. With all the different browsers that we have to support today, including the mobile browsers, it seems a lot of wasted effort in trying to render a custom alert and confirm dialog under any circumstance. I&rsquo;ve never implemented one, but if you ever attempted, you probably know how much work it is to get it right and consistent. Here&rsquo;s a short list of requirements if you want to build one:</p>
+<ol>
+<li>Should work on all browsers.</li>
+<li>Needs to disable all other controls on the website.</li>
+<li>Needs to be on the view port so the user can take an action immediately.</li>
+<li>Should not leak any memory if used repeatedly on a single screen.</li>
+<li>Should be fast.</li>
+</ol>
+<p>While I&rsquo;ve seen some magicians to make these requirements look silly and do a decent job of implementing a custom version of the alert and confirm dialogs, I&rsquo;m yet to see one that satisfies all the above essential requirements, and does a better job than the browser&rsquo;s native implementations. If you haven&rsquo;t looked recently, see the current rendering of the confirm dialogs across different browsers:</p>
+<p><img src="/images/safari_confirm.png" alt="Safari">
+<img src="/images/chrome_confirm.png" alt="Chrome">
+<img src="/images/firefox_confirm.png" alt="FireFox">
+<img src="/images/iphone_confirm.png" alt="iPhone"></p>
+<p>If you look carefully, you&rsquo;ll see subtle things. For example, did you notice the <strong>nice shadows</strong> around the confirm dialogs rendered on Chrome and Safari? There are live effects on the cancel and ok buttons as well, where you&rsquo;ll see a little <strong>shining effect</strong> on the ok button. These are carefully crafted buttons. The Cancel and OK button are perfectly sized for <strong>fat fingers</strong> on the iOS safari. Also, these are <strong>familiar</strong> to the users, so they immediately know what they are clicking on. <strong>Keyboard navigation</strong> works as expected. And lastly. the buttons will change labels based on your <strong>preferred language</strong> settings. All for <strong>free</strong>. Now, try to replicate that on your custom control, across all these browsers and show me how it does any better.</p>
+<p>If your sole business is indeed building these custom dialogs, you can probably invest the time and money here. But as far as I&rsquo;m concerned, I&rsquo;d not put a single $ from my pocket if I was funding a project to either build such custom implementations or using your custom implementation. I&rsquo;m aware of the fact that, even if it&rsquo;s free and open source, it still requires additional maintenance dollars.</p>
+<p>As a user of web, I&rsquo;ve never been bothered by the websites that show me these familiar browser rendered alerts and confirms. Were you?</p>
+<ul class="pa0">
+  
+</ul>
+<div class="mt6 instapaper_ignoref">
+      
+      
+      </div>
+    </div>
+
+    <aside class="w-30-l mt6-l">
+
+
+
+
+</aside>
+
+  </article>
+
+    </main>
+    <footer class="bg-navy bottom-0 w-100 pa3" role="contentinfo">
+  <div class="flex justify-between">
+  <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="http://smsohan.com/" >
+    &copy;  Sohan's Blog 2024 
+  </a>
+    <div>
+<div class="ananke-socials">
+  
+</div>
+</div>
+  </div>
+</footer>
+
+  </body>
+</html>

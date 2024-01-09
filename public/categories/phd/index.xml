@@ -1,3 +1,19 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>PhD on Sohan's Blog</title><link>http://smsohan.com/categories/phd/</link><description>Recent content in PhD on Sohan's Blog</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Tue, 31 Oct 2017 00:00:00 +0000</lastBuildDate><atom:link href="http://smsohan.com/categories/phd/index.xml" rel="self" type="application/rss+xml"/><item><title>The PhD Project</title><link>http://smsohan.com/blog/2017/10/31/the-phd-project/</link><pubDate>Tue, 31 Oct 2017 00:00:00 +0000</pubDate><guid>http://smsohan.com/blog/2017/10/31/the-phd-project/</guid><description>Finally, I defended my PhD thesis yesterday. Family, friends, and colleagues are all sending their wishes, and it feels great to have crossed this milestone.
-To be honest, deep inside, I carry a sad and guilty feeling, which at times overshadows the feeling of acomplishment. This phenomenon is hard to write about, but I wanted to give it a try anyway.
-So, it was 2012. Life was good. I got promoted to Senior Consultant at ThoughtWorks and Shahana got a job almost immediately following the completion of her grad school.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>PhD on Sohan&#39;s Blog</title>
+    <link>http://smsohan.com/categories/phd/</link>
+    <description>Recent content in PhD on Sohan&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 31 Oct 2017 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://smsohan.com/categories/phd/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>The PhD Project</title>
+      <link>http://smsohan.com/blog/2017/10/31/the-phd-project/</link>
+      <pubDate>Tue, 31 Oct 2017 00:00:00 +0000</pubDate>
+      <guid>http://smsohan.com/blog/2017/10/31/the-phd-project/</guid>
+      <description>Finally, I defended my PhD thesis yesterday. Family, friends, and colleagues are all sending their wishes, and it feels great to have crossed this milestone.&#xA;To be honest, deep inside, I carry a sad and guilty feeling, which at times overshadows the feeling of acomplishment. This phenomenon is hard to write about, but I wanted to give it a try anyway.&#xA;So, it was 2012. Life was good. I got promoted to Senior Consultant at ThoughtWorks and Shahana got a job almost immediately following the completion of her grad school.</description>
+    </item>
+  </channel>
+</rss>

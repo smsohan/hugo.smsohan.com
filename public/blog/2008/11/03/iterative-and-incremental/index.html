@@ -1,1 +1,187 @@
-<!doctype html><html lang=en-us><head><meta charset=utf-8><meta http-equiv=x-ua-compatible content="IE=edge,chrome=1"><title>Iterative and Incremental implementation of Code Reviews | Sohan's Blog</title><meta name=viewport content="width=device-width,minimum-scale=1"><meta name=description content="Extreme Programming (XP) advocates for a pair-programming, taking the code review to its extreme. I have also found that pair programming generates a lot of speed and also helps producing better quality product in the first time. But, at the same time it's difficult to impress the management or prove return on investment associated with pair programming to the business people. So, what is the best possible solution? I believe, we can implement frequent peer code reviews to mimic the pair programming to some extent and get the benefit out of it."><meta name=generator content="Hugo 0.108.0"><meta name=robots content="noindex, nofollow"><link rel=stylesheet href=/ananke/css/main.min.css><meta property="og:title" content="Iterative and Incremental implementation of Code Reviews"><meta property="og:description" content="Extreme Programming (XP) advocates for a pair-programming, taking the code review to its extreme. I have also found that pair programming generates a lot of speed and also helps producing better quality product in the first time. But, at the same time it's difficult to impress the management or prove return on investment associated with pair programming to the business people. So, what is the best possible solution? I believe, we can implement frequent peer code reviews to mimic the pair programming to some extent and get the benefit out of it."><meta property="og:type" content="article"><meta property="og:url" content="http://smsohan.com/blog/2008/11/03/iterative-and-incremental/"><meta property="article:section" content="posts"><meta property="article:published_time" content="2008-11-03T00:00:00+00:00"><meta property="article:modified_time" content="2008-11-03T00:00:00+00:00"><meta itemprop=name content="Iterative and Incremental implementation of Code Reviews"><meta itemprop=description content="Extreme Programming (XP) advocates for a pair-programming, taking the code review to its extreme. I have also found that pair programming generates a lot of speed and also helps producing better quality product in the first time. But, at the same time it's difficult to impress the management or prove return on investment associated with pair programming to the business people. So, what is the best possible solution? I believe, we can implement frequent peer code reviews to mimic the pair programming to some extent and get the benefit out of it."><meta itemprop=datePublished content="2008-11-03T00:00:00+00:00"><meta itemprop=dateModified content="2008-11-03T00:00:00+00:00"><meta itemprop=wordCount content="526"><meta itemprop=keywords content><meta name=twitter:card content="summary"><meta name=twitter:title content="Iterative and Incremental implementation of Code Reviews"><meta name=twitter:description content="Extreme Programming (XP) advocates for a pair-programming, taking the code review to its extreme. I have also found that pair programming generates a lot of speed and also helps producing better quality product in the first time. But, at the same time it's difficult to impress the management or prove return on investment associated with pair programming to the business people. So, what is the best possible solution? I believe, we can implement frequent peer code reviews to mimic the pair programming to some extent and get the benefit out of it."><style>.athelas,.body-text{font-family:helvetica neue,Helvetica,Arial,sans-serif}.body-text div,p,article,section{font-size:1rem;line-height:1.4rem}.athelas.fw1{font-weight:inherit}h1.f1{line-height:4rem}</style></head><body class="ma0 body-text"><header><div class=bg-navy><nav class="pv3 ph3 ph4-ns" role=navigation><div class="flex-l justify-between items-center center"><a href=/ class="f3 fw2 hover-white no-underline white-90 dib">Sohan's Blog</a><div class="flex-l items-center"><ul class="pl0 mr3"><li class="list f5 f4-ns fw4 dib pr3"><a class="hover-white no-underline white-90" href=/home/ title="About page">About</a></li></ul><div class=ananke-socials></div></div></div></nav></div></header><main class=pb7 role=main><article class="flex-l flex-wrap justify-between mw8 center ph3"><header class="mt4 w-100"><aside class="instapaper_ignoref b helvetica tracked">POSTS</aside><div id=sharing class="mt3 ananke-socials"></div><h1 class="f1 athelas mt3 mb1">Iterative and Incremental implementation of Code Reviews</h1><time class="f6 mv4 dib tracked" datetime=2008-11-03T00:00:00Z>November 3, 2008</time></header><div class="nested-copy-line-height lh-copy body-text f4 nested-links mid-gray pr4-l w-two-thirds-l"><div class=post><p>Extreme Programming (XP) advocates for a pair-programming, taking the code review to its extreme. I have also found that pair programming generates a lot of speed and also helps producing better quality product in the first time. But, at the same time it's difficult to impress the management or prove return on investment associated with pair programming to the business people. So, what is the best possible solution? I believe, we can implement frequent peer code reviews to mimic the pair programming to some extent and get the benefit out of it.</p><p>In our team, we started implementing code reviews as we now recognize that there is no way to live without it. As usual, our approach is an iterative and incremental approach. So, we are taking small steps and eventually embracing the best practices in the team. I would like to share our plan here in this blog. The review process goes on the following work flow-</p><p><em><span style=color:#8080ff>"When I am done with my work on task, I commit the code with the reviewer's name on the svn comment. CCNet automatically builds and sends a mail to the reviewer. The reviewer gets the review email through a filter and reviews the code and sends his feedback to me via IM/email."</span></em></p><p><span style=color:#00f><strong>Sprint #1:</strong></span> Review all the names or classes, files, methods, variables and so on. So, the reviewer emphasizes on the names and provides feedback on the following things-</p><blockquote><p>1. Is the naming standard correctly followed?</p><p>2. Is this a meaningful identifier?</p><p>3. Does the name conform to the conventions used elsewhere in the code?</p></blockquote><p><span style=color:#00f><strong>Sprint#2:</strong></span> Review the use of private methods and code structure. The to-do list is -</p><blockquote><p>1. Would it make more sense to put some code into the private method for readability and/or reusability?</p><p>2. Is there any hard-coded constant directly used without referring to a const/readonly data type?</p><p>3. For all the methods, is it possible to reduce the dependency by using a simple parameter instead of a whole object?</p><p>4. Learn from sprint#1 and use the common learning.</p></blockquote><p><span style=color:#00f><strong>Sprint#3:</strong></span> Review the use of loops, if-else blocks. At this iteration, the to-do is-</p><blockquote><p>1. Is it possible to eliminate a loop?</p><p>2. Is it possible to avoid the nested loops?</p><p>3. Is there a large if-else-if-else block? Why is it required? Is this large conditional block a possible candidate for future change?</p><p>4. Learn from sprint#2 and use the common learning.</p></blockquote><p>Well, this is pretty much it. The idea is, we feel its not practical to go with an overnight policy for implementing peer code reviews. But, its very much possible that we do it in small increments and at each sprint's retrospective we bring this point. So, we are all informed that we need to do reviews, which, eventually should sustain as a best practice!</p><p>If you think you have some ideas regarding this, please share it with me/my readers.</p></div><h2>Comments</h2><div class=comments><div class=comment><div class=author>Gregg Sporar</div><div class=content>Agreed, an incremental approach can work well.<br><br>FYI, we're offering a special for one week only on our lightweight code review tool: Code Reviewer. $5 for 5 licenses - 5 days only (July 13-17). Full details here: http://smartbear.com/code-review-5-for-5.php</div></div></div><ul class=pa0></ul><div class="mt6 instapaper_ignoref"></div></div><aside class="w-30-l mt6-l"></aside></article></main><footer class="bg-navy bottom-0 w-100 pa3" role=contentinfo><div class="flex justify-between"><a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href=http://smsohan.com/>&copy; Sohan's Blog 2023</a><div><div class=ananke-socials></div></div></div></footer></body></html>
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <title>Iterative and Incremental implementation of Code Reviews | Sohan&#39;s Blog</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta name="description" content="Extreme Programming (XP) advocates for a pair-programming, taking the code review to its extreme. I have also found that pair programming generates a lot of speed and also helps producing better quality product in the first time. But, at the same time it&#39;s difficult to impress the management or prove return on investment associated with pair programming to the business people. So, what is the best possible solution? I believe, we can implement frequent peer code reviews to mimic the pair programming to some extent and get the benefit out of it.">
+    <meta name="generator" content="Hugo 0.121.0">
+    
+    
+    
+    
+      <meta name="robots" content="noindex, nofollow">
+    
+
+    
+<link rel="stylesheet" href="/ananke/css/main.css" >
+
+
+
+    
+    
+    
+      
+
+    
+
+    
+    
+    <meta property="og:title" content="Iterative and Incremental implementation of Code Reviews" />
+<meta property="og:description" content="Extreme Programming (XP) advocates for a pair-programming, taking the code review to its extreme. I have also found that pair programming generates a lot of speed and also helps producing better quality product in the first time. But, at the same time it&#39;s difficult to impress the management or prove return on investment associated with pair programming to the business people. So, what is the best possible solution? I believe, we can implement frequent peer code reviews to mimic the pair programming to some extent and get the benefit out of it." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://smsohan.com/blog/2008/11/03/iterative-and-incremental/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2008-11-03T00:00:00+00:00" />
+<meta property="article:modified_time" content="2008-11-03T00:00:00+00:00" />
+
+<meta itemprop="name" content="Iterative and Incremental implementation of Code Reviews">
+<meta itemprop="description" content="Extreme Programming (XP) advocates for a pair-programming, taking the code review to its extreme. I have also found that pair programming generates a lot of speed and also helps producing better quality product in the first time. But, at the same time it&#39;s difficult to impress the management or prove return on investment associated with pair programming to the business people. So, what is the best possible solution? I believe, we can implement frequent peer code reviews to mimic the pair programming to some extent and get the benefit out of it."><meta itemprop="datePublished" content="2008-11-03T00:00:00+00:00" />
+<meta itemprop="dateModified" content="2008-11-03T00:00:00+00:00" />
+<meta itemprop="wordCount" content="526">
+<meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/><meta name="twitter:title" content="Iterative and Incremental implementation of Code Reviews"/>
+<meta name="twitter:description" content="Extreme Programming (XP) advocates for a pair-programming, taking the code review to its extreme. I have also found that pair programming generates a lot of speed and also helps producing better quality product in the first time. But, at the same time it&#39;s difficult to impress the management or prove return on investment associated with pair programming to the business people. So, what is the best possible solution? I believe, we can implement frequent peer code reviews to mimic the pair programming to some extent and get the benefit out of it."/>
+
+	<style>
+    .athelas, .body-text {
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    }
+
+    .body-text div, p, article, section {
+        font-size: 1rem;
+        line-height: 1.4rem;
+    }
+    .athelas.fw1 {
+        font-weight: inherit;
+    }
+
+    h1.f1 {
+        line-height: 4rem;
+    }
+</style>
+  </head>
+
+  <body class="ma0 body-text">
+
+    
+   
+  
+
+  <header>
+    <div class="bg-navy">
+      <nav class="pv3 ph3 ph4-ns" role="navigation">
+  <div class="flex-l justify-between items-center center">
+    <a href="/" class="f3 fw2 hover-white no-underline white-90 dib">
+      
+        Sohan&#39;s Blog
+      
+    </a>
+    <div class="flex-l items-center">
+      
+
+      
+        <ul class="pl0 mr3">
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white no-underline white-90" href="/home/" title="About page">
+              About
+            </a>
+          </li>
+          
+        </ul>
+      
+      
+<div class="ananke-socials">
+  
+</div>
+
+    </div>
+  </div>
+</nav>
+
+    </div>
+  </header>
+
+
+
+    <main class="pb7" role="main">
+      
+  
+  <article class="flex-l flex-wrap justify-between mw8 center ph3">
+    <header class="mt4 w-100">
+      <aside class="instapaper_ignoref b helvetica tracked">
+          
+        POSTS
+      </aside>
+      
+
+
+
+
+
+
+
+
+
+
+  <div id="sharing" class="mt3 ananke-socials">
+    
+  </div>
+
+
+      <h1 class="f1 athelas mt3 mb1">Iterative and Incremental implementation of Code Reviews</h1>
+      
+      
+      
+      <time class="f6 mv4 dib tracked" datetime="2008-11-03T00:00:00Z">November 3, 2008</time>
+      
+
+      
+      
+    </header>
+    <div class="nested-copy-line-height lh-copy body-text f4 nested-links mid-gray pr4-l w-two-thirds-l">
+<div class='post'>
+<p>Extreme Programming (XP) advocates for a pair-programming, taking the code review to its extreme. I have also found that pair programming generates a lot of speed and also helps producing better quality product in the first time. But, at the same time it's difficult to impress the management or prove return on investment  associated with pair programming to the business people. So, what is the best possible solution? I believe, we can implement frequent peer code reviews to mimic the pair programming to some extent and get the benefit out of it.</p>  <p>In our team, we started implementing code reviews as we now recognize that there is no way to live without it. As usual, our approach is an iterative and incremental approach. So, we are taking small steps and eventually embracing the best practices in the team. I would like to share our plan here in this blog. The review process goes on the following work flow-</p>  <p><em><span style="color:#8080ff;">"When I am done with my work on task, I commit the code with the reviewer's name on the svn comment. CCNet automatically builds and sends a mail to the reviewer. The reviewer gets the review email through a filter and reviews the code and sends his feedback to me via IM/email."</span></em></p>  <p><span style="color:#0000ff;"><strong>Sprint #1:</strong></span> Review all the names or classes, files, methods, variables and so on. So, the reviewer emphasizes on the names and provides feedback on the following things-</p>  <blockquote>   <p>1. Is the naming standard correctly followed?</p>    <p>2. Is this a meaningful identifier?</p>    <p>3. Does the name conform to the conventions used elsewhere in the code?</p> </blockquote>  <p><span style="color:#0000ff;"><strong>Sprint#2:</strong></span> Review the use of private methods and code structure. The to-do list is -</p>  <blockquote>   <p>1. Would it make more sense to put some code into the private method for readability and/or reusability?</p>    <p>2. Is there any hard-coded constant directly used without referring to a const/readonly data type?</p>    <p>3. For all the methods, is it possible to reduce the dependency by using a simple parameter instead of a whole object?</p>    <p>4. Learn from sprint#1 and use the common learning.</p> </blockquote>  <p><span style="color:#0000ff;"><strong>Sprint#3:</strong></span> Review the use of loops, if-else blocks. At this iteration, the to-do is-</p>  <blockquote>   <p>1. Is it possible to eliminate a loop?</p>    <p>2. Is it possible to avoid the nested loops?</p>    <p>3. Is there a large if-else-if-else block? Why is it required? Is this large conditional block a possible candidate for future change?</p>    <p>4. Learn from sprint#2 and use the common learning.</p> </blockquote>  <p>Well, this is pretty much it. The idea is, we feel its not practical to go with an overnight policy for implementing peer code reviews. But, its very much possible that we do it in small increments and at each sprint's retrospective we bring this point. So, we are all informed that we need to do reviews, which, eventually should sustain as a best practice!</p>  <p>If you think you have some ideas regarding this, please share it with me/my readers.</p></div>
+<h2>Comments</h2>
+<div class='comments'>
+<div class='comment'>
+<div class='author'>Gregg Sporar</div>
+<div class='content'>
+Agreed, an incremental approach can work well.<br /><br />FYI, we&#39;re offering a special for one week only on our lightweight code review tool: Code Reviewer. $5 for 5 licenses - 5 days only (July 13-17).  Full details here: http://smartbear.com/code-review-5-for-5.php</div>
+</div>
+</div>
+<ul class="pa0">
+  
+</ul>
+<div class="mt6 instapaper_ignoref">
+      
+      
+      </div>
+    </div>
+
+    <aside class="w-30-l mt6-l">
+
+
+
+
+</aside>
+
+  </article>
+
+    </main>
+    <footer class="bg-navy bottom-0 w-100 pa3" role="contentinfo">
+  <div class="flex justify-between">
+  <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="http://smsohan.com/" >
+    &copy;  Sohan's Blog 2024 
+  </a>
+    <div>
+<div class="ananke-socials">
+  
+</div>
+</div>
+  </div>
+</footer>
+
+  </body>
+</html>

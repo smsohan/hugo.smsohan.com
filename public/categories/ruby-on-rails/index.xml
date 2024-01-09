@@ -1,4 +1,33 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Ruby on Rails on Sohan's Blog</title><link>http://smsohan.com/categories/ruby-on-rails/</link><description>Recent content in Ruby on Rails on Sohan's Blog</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Mon, 18 Mar 2019 00:00:00 +0000</lastBuildDate><atom:link href="http://smsohan.com/categories/ruby-on-rails/index.xml" rel="self" type="application/rss+xml"/><item><title>Ruby on Rails: Database Migration and Downtime</title><link>http://smsohan.com/blog/2019/03/18/ruby-on-rails-database-migration-and-downtime/</link><pubDate>Mon, 18 Mar 2019 00:00:00 +0000</pubDate><guid>http://smsohan.com/blog/2019/03/18/ruby-on-rails-database-migration-and-downtime/</guid><description>Recently, we had a production outage for a few minutes due a database migration on one of our Ruby on Rails apps. The deployment went fine through a few stages, but the problem only showed up at the last and the largest stage. This is exactly what happened during the deploy process.
-New code was deployed. Restart was pending, so the server was still running old code. Migrations ran. One migration removed a column that was used in the old code, but no longer used in the new code.</description></item><item><title>Are ActiveRecord Callbacks Any Good?</title><link>http://smsohan.com/blog/2013/02/07/activerecord-callbacks/</link><pubDate>Thu, 07 Feb 2013 00:00:00 +0000</pubDate><guid>http://smsohan.com/blog/2013/02/07/activerecord-callbacks/</guid><description>Wanted to share my thoughts on ActiveRecord Callbacks. I&amp;rsquo;d like to know your thoughts if you disagree. Please use the comments.
-Only use them when the behavior is must have under all situations, including your tests. For example, we know email addresses are case-insensitive. So no matter what, we may always want to store a lower cased version in the db. #Good class User &amp;lt; ActiveRecord::Base before_save :downcase_email def downcase_email email.</description></item><item><title>Seed Data in a Rails Project</title><link>http://smsohan.com/blog/2012/11/23/seed-data-in-a-rails-project/</link><pubDate>Fri, 23 Nov 2012 00:00:00 +0000</pubDate><guid>http://smsohan.com/blog/2012/11/23/seed-data-in-a-rails-project/</guid><description>Most applications I&amp;rsquo;ve worked on required some kind of seed data. For example, I&amp;rsquo;ve used seed data to create a super admin user so the site can actually be used upon a fresh install. Some other common cases include things like, list of credit card types, names of countries/states etc. This post is about some ideas to manage thsese seed data in a Ruby on Rails project.
-Where to put the seed data?</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Ruby on Rails on Sohan&#39;s Blog</title>
+    <link>http://smsohan.com/categories/ruby-on-rails/</link>
+    <description>Recent content in Ruby on Rails on Sohan&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 18 Mar 2019 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://smsohan.com/categories/ruby-on-rails/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Ruby on Rails: Database Migration and Downtime</title>
+      <link>http://smsohan.com/blog/2019/03/18/ruby-on-rails-database-migration-and-downtime/</link>
+      <pubDate>Mon, 18 Mar 2019 00:00:00 +0000</pubDate>
+      <guid>http://smsohan.com/blog/2019/03/18/ruby-on-rails-database-migration-and-downtime/</guid>
+      <description>Recently, we had a production outage for a few minutes due a database migration on one of our Ruby on Rails apps. The deployment went fine through a few stages, but the problem only showed up at the last and the largest stage. This is exactly what happened during the deploy process.&#xA;New code was deployed. Restart was pending, so the server was still running old code. Migrations ran. One migration removed a column that was used in the old code, but no longer used in the new code.</description>
+    </item>
+    <item>
+      <title>Are ActiveRecord Callbacks Any Good?</title>
+      <link>http://smsohan.com/blog/2013/02/07/activerecord-callbacks/</link>
+      <pubDate>Thu, 07 Feb 2013 00:00:00 +0000</pubDate>
+      <guid>http://smsohan.com/blog/2013/02/07/activerecord-callbacks/</guid>
+      <description>Wanted to share my thoughts on ActiveRecord Callbacks. I&amp;rsquo;d like to know your thoughts if you disagree. Please use the comments.&#xA;Only use them when the behavior is must have under all situations, including your tests. For example, we know email addresses are case-insensitive. So no matter what, we may always want to store a lower cased version in the db. #Good class User &amp;lt; ActiveRecord::Base before_save :downcase_email def downcase_email email.</description>
+    </item>
+    <item>
+      <title>Seed Data in a Rails Project</title>
+      <link>http://smsohan.com/blog/2012/11/23/seed-data-in-a-rails-project/</link>
+      <pubDate>Fri, 23 Nov 2012 00:00:00 +0000</pubDate>
+      <guid>http://smsohan.com/blog/2012/11/23/seed-data-in-a-rails-project/</guid>
+      <description>Most applications I&amp;rsquo;ve worked on required some kind of seed data. For example, I&amp;rsquo;ve used seed data to create a super admin user so the site can actually be used upon a fresh install. Some other common cases include things like, list of credit card types, names of countries/states etc. This post is about some ideas to manage thsese seed data in a Ruby on Rails project.&#xA;Where to put the seed data?</description>
+    </item>
+  </channel>
+</rss>

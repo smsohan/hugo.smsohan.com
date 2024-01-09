@@ -1,3 +1,26 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Conference on Sohan's Blog</title><link>http://smsohan.com/categories/conference/</link><description>Recent content in Conference on Sohan's Blog</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Mon, 23 Sep 2019 00:00:00 +0000</lastBuildDate><atom:link href="http://smsohan.com/categories/conference/index.xml" rel="self" type="application/rss+xml"/><item><title>Notes from The VoxxedDays Banff, 2019</title><link>http://smsohan.com/blog/2019/09/23/notes-from-the-voxxeddays-banff/</link><pubDate>Mon, 23 Sep 2019 00:00:00 +0000</pubDate><guid>http://smsohan.com/blog/2019/09/23/notes-from-the-voxxeddays-banff/</guid><description>Gone are the days when I used to go to a ton of local developer meetups. After Polyglot YYC, this was the second conference I joined this year. This was a 50/50 event for me in terms of like vs. dislike. Here goes my notes:
-Ix-Chel Ruiz presented the keynote to start the day. Her storytelling style reminded me of WWII movies, where a lot of cloudy and gloomy scene keep getting darker and darker, ending with a deep sense of sadness.</description></item><item><title>Polyglot YYC 2019: My First Unconference</title><link>http://smsohan.com/blog/2019/06/05/polyglot-yyc-2019-my-first-unconference/</link><pubDate>Wed, 05 Jun 2019 00:00:00 +0000</pubDate><guid>http://smsohan.com/blog/2019/06/05/polyglot-yyc-2019-my-first-unconference/</guid><description>Source: Polyglot YYC This weekend I went to Polyglot YYC 2019. It&amp;rsquo;s a gathering of tech people from around Calgary. The event was open to all possible topics, hence the name Polyglot. It was the first unconference style meetup I went to and this post is a summary of my day.
-About the attendees, I don&amp;rsquo;t have the official count, but I imagine there were close to a hundred people.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Conference on Sohan&#39;s Blog</title>
+    <link>http://smsohan.com/categories/conference/</link>
+    <description>Recent content in Conference on Sohan&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 23 Sep 2019 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://smsohan.com/categories/conference/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Notes from The VoxxedDays Banff, 2019</title>
+      <link>http://smsohan.com/blog/2019/09/23/notes-from-the-voxxeddays-banff/</link>
+      <pubDate>Mon, 23 Sep 2019 00:00:00 +0000</pubDate>
+      <guid>http://smsohan.com/blog/2019/09/23/notes-from-the-voxxeddays-banff/</guid>
+      <description>Gone are the days when I used to go to a ton of local developer meetups. After Polyglot YYC, this was the second conference I joined this year. This was a 50/50 event for me in terms of like vs. dislike. Here goes my notes:&#xA;Ix-Chel Ruiz presented the keynote to start the day. Her storytelling style reminded me of WWII movies, where a lot of cloudy and gloomy scene keep getting darker and darker, ending with a deep sense of sadness.</description>
+    </item>
+    <item>
+      <title>Polyglot YYC 2019: My First Unconference</title>
+      <link>http://smsohan.com/blog/2019/06/05/polyglot-yyc-2019-my-first-unconference/</link>
+      <pubDate>Wed, 05 Jun 2019 00:00:00 +0000</pubDate>
+      <guid>http://smsohan.com/blog/2019/06/05/polyglot-yyc-2019-my-first-unconference/</guid>
+      <description>Source: Polyglot YYC This weekend I went to Polyglot YYC 2019. It&amp;rsquo;s a gathering of tech people from around Calgary. The event was open to all possible topics, hence the name Polyglot. It was the first unconference style meetup I went to and this post is a summary of my day.&#xA;About the attendees, I don&amp;rsquo;t have the official count, but I imagine there were close to a hundred people.</description>
+    </item>
+  </channel>
+</rss>

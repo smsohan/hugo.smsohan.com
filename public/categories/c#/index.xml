@@ -1,70 +1,208 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>C# on Sohan's Blog</title><link>http://smsohan.com/categories/c#/</link><description>Recent content in C# on Sohan's Blog</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Tue, 02 Oct 2012 00:00:00 +0000</lastBuildDate><atom:link href="http://smsohan.com/categories/c#/index.xml" rel="self" type="application/rss+xml"/><item><title>MvcMailer new API</title><link>http://smsohan.com/blog/2012/10/02/mvcmailer-new-api/</link><pubDate>Tue, 02 Oct 2012 00:00:00 +0000</pubDate><guid>http://smsohan.com/blog/2012/10/02/mvcmailer-new-api/</guid><description>With the help of @TylerMercier, and many active users of MvcMailer, we have just released the new API for MvcMailer. This is a summary post capturing the work and lessons learned in the process.
-The bulk of the work has been done on removing hard dependencies on dll files for 3rd party libraries in favor of NuGet packages. For example, we used NUnit, for running our tests. Instead of referencing the dlls directly, we are now using the NuGet package.</description></item><item><title>Quiz: C# Async and Await. What is the Output of this Code?</title><link>http://smsohan.com/blog/2011/09/16/quiz-c-async-and-await-what-is-output/</link><pubDate>Fri, 16 Sep 2011 00:00:00 +0000</pubDate><guid>http://smsohan.com/blog/2011/09/16/quiz-c-async-and-await-what-is-output/</guid><description>C# 5.0 (CTP version at this point) has support for async and await to allow clean implementation of non-blocking IO using a task-continuation model. I was just playing with it and here's the sample code to tease your brain. Tell me what is the output of this program?</description></item><item><title>NuGet - Why Should You Care?</title><link>http://smsohan.com/blog/2011/03/17/nuget-why-should-you-care/</link><pubDate>Thu, 17 Mar 2011 00:00:00 +0000</pubDate><guid>http://smsohan.com/blog/2011/03/17/nuget-why-should-you-care/</guid><description>Traditionally the .NET community, or more appropriately the users of .NET framework relied on products from Microsoft - so, in a product stack you are likely to see almost everything coming from Microsoft. However, some community contribution made its way into the main stream - for example, NUnit or Log4Net. But you can literally count the number of such main stream non-Microsoft products in your development stacks with your fingers (sparing a few)!</description></item><item><title>Social Helpers in ASP.Net MVC3 (Facebook, Twitter, Gravatar etc.)</title><link>http://smsohan.com/blog/2011/01/14/social-helpers-in-aspnet-mvc3-facebook/</link><pubDate>Fri, 14 Jan 2011 00:00:00 +0000</pubDate><guid>http://smsohan.com/blog/2011/01/14/social-helpers-in-aspnet-mvc3-facebook/</guid><description> This site shows the examples!
-http://www.asp.net/webmatrix/tutorials/13-adding-social-networking-to-your-web-site
-Now, the social links and buttons are no longer from a third-party source, its straight from Microsoft. I don't know if this is first-party or second-party :p</description></item><item><title>My Article at CodeProject: MvcMailer</title><link>http://smsohan.com/blog/2011/01/13/my-article-at-codeproject-mvcmailer/</link><pubDate>Thu, 13 Jan 2011 00:00:00 +0000</pubDate><guid>http://smsohan.com/blog/2011/01/13/my-article-at-codeproject-mvcmailer/</guid><description>I just released a .Net NuGet package called MvcMailer and to get people super easily started, put an article at CodeProject.com. You are most welcome to the article at&amp;nbsp;http://www.codeproject.com/KB/aspnet/MvcMailerNuGet.aspx
-I welcome your comments and suggestions! Comments Sohan Just released 0.8 and it should work. But please let me know if it doesn&amp;#39;t.
-I also added multi-part emails in version 0.8. You may check that out as well.
-One important change:</description></item><item><title>C# Named Parameters Can be Very Useful</title><link>http://smsohan.com/blog/2011/01/07/c-named-parameters-can-be-very-useful/</link><pubDate>Fri, 07 Jan 2011 00:00:00 +0000</pubDate><guid>http://smsohan.com/blog/2011/01/07/c-named-parameters-can-be-very-useful/</guid><description>Think about the following code example:
-htmlHelper.InputHelper(InputType.CheckBox, name, "true", true /* useViewData */, false /* isChecked */, true /* setId */, false /* isExplicitValue */, htmlAttributes);
-This line is taken from the source code of ASP.NET MVC, or to be more specific its a line from the InputExtension class. I think the intent of the original developer is clear:
-Add comment next to arguments so that one can easily read the method call without getting lost in a who's who since there are quite some arguments to pass.</description></item><item><title>DRY - Total 161 Duplicate ArgumentNullException calls in ASP.Net MVC Source Code</title><link>http://smsohan.com/blog/2010/12/13/dry-total-161-duplicate/</link><pubDate>Mon, 13 Dec 2010 00:00:00 +0000</pubDate><guid>http://smsohan.com/blog/2010/12/13/dry-total-161-duplicate/</guid><description>There are 161 occurrences of the following code pattern inside the ASP.Net MVC source code: See details of which class and which line at&amp;nbsp;https://gist.github.com/739523
-method(type argument)
-{
-&amp;nbsp;&amp;nbsp;if(argument == null){
-&amp;nbsp;&amp;nbsp; &amp;nbsp;throw new ArgumentNullException("argument")
-&amp;nbsp;&amp;nbsp;}
-...
-}
-So, in total this pattern introduces 312 lines of duplicate code without whitespaces and 644 lines of duplicate code including whitespaces. And the pattern is simple, just check a condition and throw exception if its true.</description></item><item><title>A good example of C# Regular Expression: Implementing InitCap or Titleize/TitleCase using C# and Regular Expression</title><link>http://smsohan.com/blog/2009/01/21/good-example-of-c-regular-expression/</link><pubDate>Wed, 21 Jan 2009 00:00:00 +0000</pubDate><guid>http://smsohan.com/blog/2009/01/21/good-example-of-c-regular-expression/</guid><description>Ever since I first learned about the regular expressions, I have always been fascinated by its magical capability. When I first learned about DFA/NFA, I figured out how it is possible to evaluate a regular expression and eventually, during my Undergrad at BUET, I implemented a regular expression evaluator for the Compiler Lab.
-Now, given this history, here is a simple code that I wrote today. Let me know if you liked it-</description></item><item><title>RowTest Extension for NUnit</title><link>http://smsohan.com/blog/2008/11/10/rowtest-extension-for-nunit/</link><pubDate>Mon, 10 Nov 2008 00:00:00 +0000</pubDate><guid>http://smsohan.com/blog/2008/11/10/rowtest-extension-for-nunit/</guid><description>Well, I was just about to implement it myself! However, its good to see that the NUnit addin named RowTest actually allows us to do the data driven unit test through declarative programming and adding parameters to the dumb test methods!
-http://www.andreas-schlapsi.com/projects/rowtest-extension-for-nunit/
-Check out this website for an example and get started with RowTest.</description></item><item><title>Set and Compile using C# Language Version 2.0 in Visual Studio 2008</title><link>http://smsohan.com/blog/2008/09/01/set-and-compile-using-c-language/</link><pubDate>Mon, 01 Sep 2008 00:00:00 +0000</pubDate><guid>http://smsohan.com/blog/2008/09/01/set-and-compile-using-c-language/</guid><description>I know, while most of you are very happy with the new features in Visual Studio 2008, its sad that not all your deployment environments are upgraded to .Net framework 3.5. I had a similar situation as well on one of my projects.
-Its great that you can just navigate to a VS 2008 project file properties and from the Application Tab select the Target .Net Framework version to use one of .</description></item><item><title>Unit Testing using Mocks - FillWithMocks, Fill all or only selected properties with Mocks using only a single method call</title><link>http://smsohan.com/blog/2008/08/13/unit-testing-using-mocks-fillwithmocks/</link><pubDate>Wed, 13 Aug 2008 00:00:00 +0000</pubDate><guid>http://smsohan.com/blog/2008/08/13/unit-testing-using-mocks-fillwithmocks/</guid><description>I have been doing TDD for about two years now and using mock testing for interaction based unit testing in my projects. What I have learned over this time is, a unit testable design leads to introduction of interfaces and dependency injection for testing a code in isolation. And when I want to perform tests on my interactions, I need to create mock objects and inject these mock instances to my object under test.</description></item><item><title>XDocument.ToStringWithXmlDeclaration() - Get the string representation of XDcoument with its Xml Declaration</title><link>http://smsohan.com/blog/2008/08/12/xdocumenttostringwithxmldeclaration-get/</link><pubDate>Tue, 12 Aug 2008 00:00:00 +0000</pubDate><guid>http://smsohan.com/blog/2008/08/12/xdocumenttostringwithxmldeclaration-get/</guid><description>The System.Xml.Linq.XDocument.ToString() produces a serialized string version of the XDocument object. But unfortunately, while doing so, it leaves the xml declaration in the serialized version which may be required in your application.
-Again, there is another method called Save that produces the serialized version including xml declaration. So, I think we can write a simple extension method for producing the xml declaration as shown in the following -
-14 class Program</description></item><item><title>Simple Wildcard replacement on the Rendered Html of Asp.Net Page</title><link>http://smsohan.com/blog/2008/08/11/simple-wildcard-replacement-on-rendered/</link><pubDate>Mon, 11 Aug 2008 00:00:00 +0000</pubDate><guid>http://smsohan.com/blog/2008/08/11/simple-wildcard-replacement-on-rendered/</guid><description>This is a simple solution for implementing wildcard replacements in your asp.net pages. You may use this, if you want to replace some tokens / merge codes in the asp.net generated html by your personalized values. System.Web.UI.Control has a virtual method called 'Render' of the following signature - protected internal virtual void Render( HtmlTextWriter writer )
-Since, all your ASP.Net pages and server controls are subclasses of this Control class, you can override this method and manipulate the html that's rendered from this control.</description></item><item><title>Comparing with NULL in where clause using Linq to SQL</title><link>http://smsohan.com/blog/2008/08/05/comparing-with-null-in-where-clause-in/</link><pubDate>Tue, 05 Aug 2008 00:00:00 +0000</pubDate><guid>http://smsohan.com/blog/2008/08/05/comparing-with-null-in-where-clause-in/</guid><description>In SQL Server, a SQL statement like 'NULL=NULL' evaluates to false. however 'NULL IS NULL' evaluates to true. So, for NULL values in your database columns, you need to use the 'IS' operator instead of the regular '=' operator.
-The problem is, in Linq to SQL, there is no such 'IS' operator since 'IS' is already used as a C# language keyword. So, when you are invoking an equality check in your Linq to SQL where clause to a nullable column you need to be alert on this behavior.</description></item><item><title>Ninject - Dependency Injection Framework for .Net Objects</title><link>http://smsohan.com/blog/2008/08/03/ninject-dependency-injection-framework/</link><pubDate>Sun, 03 Aug 2008 00:00:00 +0000</pubDate><guid>http://smsohan.com/blog/2008/08/03/ninject-dependency-injection-framework/</guid><description>I loved Ninject because
-- I don't love to write/edit XML documents myself.
-- I think Ninject can save a lot of coding and debugging time.
-- This is a cool framework :-) with a fun-to-read documentation.
-- It uses simple conventions and Attributes for resolving most dependencies behind the scene.
-- You can take full advantage to lambda expressions for writing compact codes.
-Today, I took a look into this Ninject framework.</description></item><item><title>[ThreadStatic] - A cool Attribute to Thread Safe static members</title><link>http://smsohan.com/blog/2008/06/10/threadstatic-cool-attribute-to-thread/</link><pubDate>Tue, 10 Jun 2008 00:00:00 +0000</pubDate><guid>http://smsohan.com/blog/2008/06/10/threadstatic-cool-attribute-to-thread/</guid><description>Usually static variables holds the same value for all the threads running at the same AppDommain. However, in a multithreaded scenario, you may need to add thread safe behavior to your static members so that the value of a static member is same inside only a single thread and across multiple threads the value can be different. In this way you may attain a thread specific or thread scoped storage to use in your application.</description></item><item><title>How To Set Default Application Wide CommandTimeout in LINQ to SQL DataContext Subclasses</title><link>http://smsohan.com/blog/2008/04/29/how-to-set-default-application-wide/</link><pubDate>Tue, 29 Apr 2008 00:00:00 +0000</pubDate><guid>http://smsohan.com/blog/2008/04/29/how-to-set-default-application-wide/</guid><description>Sometimes you have written long running stored procedures and you need to invoke the stored procedures through your LINQ to SQL class. By default the SqlCommand has a timeout value of 30 seconds and in some instances you may need a longer value to complete your long running database operations. In a situation like this, if you are using the default time out value, you may encounter the following exception scenario,</description></item><item><title>string.GetValueOrDefault() - A Simple Extension Method</title><link>http://smsohan.com/blog/2008/04/16/stringgetvalueordefault-simple/</link><pubDate>Wed, 16 Apr 2008 00:00:00 +0000</pubDate><guid>http://smsohan.com/blog/2008/04/16/stringgetvalueordefault-simple/</guid><description>I have found that, I have written codes like the following one in my projects before now at some places.
-string myString = someString == null ? string.Empty : someString;
-However, with the advent of extension methods in C# 3.0 (.Net 3.5), I have a better way of achieving this goal in my projects. So, I just wrote an extension method as the following one-
-public static class StringExtensions { public static string GetValueOrDefault(this string instance) { return instance == null ?</description></item><item><title>IsNullOrEmpty() - A Handy Extension Method for IEnumerable&lt;T></title><link>http://smsohan.com/blog/2008/04/12/isnullorempty-handy-extension-method/</link><pubDate>Sat, 12 Apr 2008 00:00:00 +0000</pubDate><guid>http://smsohan.com/blog/2008/04/12/isnullorempty-handy-extension-method/</guid><description>Many a time when you are just about to write a foreach loop on your IEnumerable&amp;lt;T&amp;gt; object you need to check whether the object is null or empty in the following manner
-if(myEnumerable != null || myEnumerable.Count() &amp;gt; 0) { foreach(&amp;lt;type&amp;gt; item in myEnumerable) { ... } } However, with the advent of Extension methods, you can write one custom extension method like the following -
-public static class IEnumerableExtensions { public static bool IsNullOrEmpty&amp;lt;T&amp;gt;(this IEnumerable&amp;lt;T&amp;gt; instance) where T : class { return instance == null || instance.</description></item><item><title>My Today's best RSS feeds</title><link>http://smsohan.com/blog/2008/04/12/my-today-best-rss-feeds/</link><pubDate>Sat, 12 Apr 2008 00:00:00 +0000</pubDate><guid>http://smsohan.com/blog/2008/04/12/my-today-best-rss-feeds/</guid><description>1. Well, we have a CI in place and we are also very excited to see a new notification message coming to our email inbox on a commit from our team members. CruiseControl.Net really made is fun and so easy to be really continuously integrating our projects.
-However, I didn't know of this cool feature until I read this article. I suggest you all CruiseControl.Net cruisers to take a look -</description></item><item><title>Creating Instances of internal classes using Spring.Net</title><link>http://smsohan.com/blog/2008/04/07/creating-instances-of-internal-classes/</link><pubDate>Mon, 07 Apr 2008 00:00:00 +0000</pubDate><guid>http://smsohan.com/blog/2008/04/07/creating-instances-of-internal-classes/</guid><description>Creating an instance of an internal class using Spring.Net is a little tricky. I know that, you can achieve this by adding an InternalsVisibleTo attribute to your assembly. However, the following solution also works as desired.
-Say, you have an namespace named SampleClasses that contains the a public interface named 'IPublicInterface' and also an internal class named 'InternalClass' that implements the IPublicInterface interface and looks like the following - 1: namespace SampleClasses</description></item><item><title>Logging the LINQ to SQL Generated SQL Queries/Commands</title><link>http://smsohan.com/blog/2008/04/07/logging-linq-to-sql-generated-sql/</link><pubDate>Mon, 07 Apr 2008 00:00:00 +0000</pubDate><guid>http://smsohan.com/blog/2008/04/07/logging-linq-to-sql-generated-sql/</guid><description>I was looking for logging solutions for the generated SQL in one of my projects where I am using LINQ to SQL. I found that sometimes the the Exceptions and StackTrace information does not say much about what's really causing the problem with LINQ to SQL queries/commands.
-To see the actual SQL that's generated from LINQ you may write a code like the following-
-SampleDataContext context = new SampleDataContext(); //You may wish to use any subclass of System.</description></item><item><title>A solution to the problem with creating mocks for interfaces with Generic Methods with NMock</title><link>http://smsohan.com/blog/2008/03/20/solution-to-problem-with-creating-mocks/</link><pubDate>Thu, 20 Mar 2008 00:00:00 +0000</pubDate><guid>http://smsohan.com/blog/2008/03/20/solution-to-problem-with-creating-mocks/</guid><description>I was so happy with NMock to see how it can dynamically generate mocks of interfaces and also gives me a fluent interface to write expectations and everything it does to help me in unit testing!
-However, I could not generate dynamic mocks for interfaces with Generic methods and it kept showing me the 'TypeLoadException' on and on. My interface looks like the following -
-interface IObjectFactory
-{
-T GetObject(string id);</description></item><item><title>Verify Correct DateTime data in method call using NMock</title><link>http://smsohan.com/blog/2008/03/18/verify-correct-datetime-data-in-method/</link><pubDate>Tue, 18 Mar 2008 00:00:00 +0000</pubDate><guid>http://smsohan.com/blog/2008/03/18/verify-correct-datetime-data-in-method/</guid><description>Recently I was writing unit test for a method of the following signature
-interface ICache
-{
-void Insert(string key, object value, DateTime absoluteExpiration, TimeSpan slidingExpiration);
-}
-and I wanted to verify the following call -
-Insert("key", "value", DateTime.Now.AddMinutes(30), TimeSpan.Zero);
-However, you readily see the problem in verifying with the above call for the presence of DateTime.Now.AddMinutes(30) in the argument. So, a test method like the following won't work for obvious reason.</description></item><item><title>Mock Internal Interface with NMock2 - Use InternalsVisibleToAttribute</title><link>http://smsohan.com/blog/2008/03/16/mock-internal-interface-with-nmock2-use/</link><pubDate>Sun, 16 Mar 2008 00:00:00 +0000</pubDate><guid>http://smsohan.com/blog/2008/03/16/mock-internal-interface-with-nmock2-use/</guid><description>Yesterday I badly needed to create mocks for my internal interfaces. I am using NMock2 as a Mocking framework and found it really difficult to produce Mocks for internal interfaces. After some 'google time' and investigation I found that you need the following two lines in your AssemblyInfo.cs to achieve this purpose-
-[assembly: InternalsVisibleTo("Mocks")]
-[assembly: InternalsVisibleTo("MockObjects")]
-Where are the two assemblies? I found that these two assemblies are dynamically created by NMock2 for mocking your interfaces.</description></item><item><title>Unity - A Dependency Injection framework from Microsoft Patterns and Practices</title><link>http://smsohan.com/blog/2008/03/15/unity-dependency-injection-framework/</link><pubDate>Sat, 15 Mar 2008 00:00:00 +0000</pubDate><guid>http://smsohan.com/blog/2008/03/15/unity-dependency-injection-framework/</guid><description>I have been using Spring.Net for implementing Dependency Injection in my .Net projects. Spring is already one of the most known providers of DI in the Java world and a port to .Net actually eased the lives of people like me who are willing to develop unit-testable software.
-However, with all the happiness enjoyed through Spring.Net, I guess its time to take a look into Unity. I have only started using this and I found it interesting in the sense that its more of .</description></item><item><title>Testing Internal Class in .Net C#</title><link>http://smsohan.com/blog/2008/03/11/testing-internal-class-in-net-c/</link><pubDate>Tue, 11 Mar 2008 00:00:00 +0000</pubDate><guid>http://smsohan.com/blog/2008/03/11/testing-internal-class-in-net-c/</guid><description>I have been to a situation where only a small number of classes had been declared as public classes in an assembly. And most of the classes are declared as internal, because I wanted to expose only the public classes to the consumers of my assembly.
-However, doing so creates another challenge in testing the internal classes. As we most commonly want our test codes to reside on a separate assembly so that we can leave that assembly out when we are releasing the end product.</description></item><item><title>C# keyword 'yield return' - I find it interesting</title><link>http://smsohan.com/blog/2008/02/05/c-keyword-yield-return-i-find-it/</link><pubDate>Tue, 05 Feb 2008 00:00:00 +0000</pubDate><guid>http://smsohan.com/blog/2008/02/05/c-keyword-yield-return-i-find-it/</guid><description>I have been using yield return in some of my codes and would like to share its interesting aspects. The following code example shows one dummy use of 'yield return'-
-public class YieldExample
-{
-public void Run()
-{
-IEnumerator numbers = getNumbers().GetEnumerator();
-while (numbers.MoveNext())
-{ Console.Write("x{0} ", numbers.Current);
-}
-}
-private IEnumerable getNumbers()
-{
-for (int i = 0; i &lt;>
-Now, a code like new YieldExample().Run() would produce a output similar to this - "</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>C# on Sohan&#39;s Blog</title>
+    <link>http://smsohan.com/categories/c#/</link>
+    <description>Recent content in C# on Sohan&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 02 Oct 2012 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://smsohan.com/categories/c#/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>MvcMailer new API</title>
+      <link>http://smsohan.com/blog/2012/10/02/mvcmailer-new-api/</link>
+      <pubDate>Tue, 02 Oct 2012 00:00:00 +0000</pubDate>
+      <guid>http://smsohan.com/blog/2012/10/02/mvcmailer-new-api/</guid>
+      <description>With the help of @TylerMercier, and many active users of MvcMailer, we have just released the new API for MvcMailer. This is a summary post capturing the work and lessons learned in the process.&#xA;The bulk of the work has been done on removing hard dependencies on dll files for 3rd party libraries in favor of NuGet packages. For example, we used NUnit, for running our tests. Instead of referencing the dlls directly, we are now using the NuGet package.</description>
+    </item>
+    <item>
+      <title>Quiz: C# Async and Await. What is the Output of this Code?</title>
+      <link>http://smsohan.com/blog/2011/09/16/quiz-c-async-and-await-what-is-output/</link>
+      <pubDate>Fri, 16 Sep 2011 00:00:00 +0000</pubDate>
+      <guid>http://smsohan.com/blog/2011/09/16/quiz-c-async-and-await-what-is-output/</guid>
+      <description>C# 5.0 (CTP version at this point) has support for async and await to allow clean implementation of non-blocking IO using a task-continuation model. I was just playing with it and here&#39;s the sample code to tease your brain. Tell me what is the output of this program?</description>
+    </item>
+    <item>
+      <title>NuGet - Why Should You Care?</title>
+      <link>http://smsohan.com/blog/2011/03/17/nuget-why-should-you-care/</link>
+      <pubDate>Thu, 17 Mar 2011 00:00:00 +0000</pubDate>
+      <guid>http://smsohan.com/blog/2011/03/17/nuget-why-should-you-care/</guid>
+      <description>Traditionally the .NET community, or more appropriately the users of .NET framework relied on products from Microsoft - so, in a product stack you are likely to see almost everything coming from Microsoft. However, some community contribution made its way into the main stream - for example, NUnit or Log4Net. But you can literally count the number of such main stream non-Microsoft products in your development stacks with your fingers (sparing a few)!</description>
+    </item>
+    <item>
+      <title>Social Helpers in ASP.Net MVC3 (Facebook, Twitter, Gravatar etc.)</title>
+      <link>http://smsohan.com/blog/2011/01/14/social-helpers-in-aspnet-mvc3-facebook/</link>
+      <pubDate>Fri, 14 Jan 2011 00:00:00 +0000</pubDate>
+      <guid>http://smsohan.com/blog/2011/01/14/social-helpers-in-aspnet-mvc3-facebook/</guid>
+      <description> This site shows the examples!&#xA;http://www.asp.net/webmatrix/tutorials/13-adding-social-networking-to-your-web-site&#xA;Now, the social links and buttons are no longer from a third-party source, its straight from Microsoft. I don&#39;t know if this is first-party or second-party :p </description>
+    </item>
+    <item>
+      <title>My Article at CodeProject: MvcMailer</title>
+      <link>http://smsohan.com/blog/2011/01/13/my-article-at-codeproject-mvcmailer/</link>
+      <pubDate>Thu, 13 Jan 2011 00:00:00 +0000</pubDate>
+      <guid>http://smsohan.com/blog/2011/01/13/my-article-at-codeproject-mvcmailer/</guid>
+      <description>I just released a .Net NuGet package called MvcMailer and to get people super easily started, put an article at CodeProject.com. You are most welcome to the article at&amp;nbsp;http://www.codeproject.com/KB/aspnet/MvcMailerNuGet.aspx&#xA;I welcome your comments and suggestions! Comments Sohan Just released 0.8 and it should work. But please let me know if it doesn&amp;#39;t.&#xA;I also added multi-part emails in version 0.8. You may check that out as well.&#xA;One important change:</description>
+    </item>
+    <item>
+      <title>C# Named Parameters Can be Very Useful</title>
+      <link>http://smsohan.com/blog/2011/01/07/c-named-parameters-can-be-very-useful/</link>
+      <pubDate>Fri, 07 Jan 2011 00:00:00 +0000</pubDate>
+      <guid>http://smsohan.com/blog/2011/01/07/c-named-parameters-can-be-very-useful/</guid>
+      <description>Think about the following code example:&#xA;htmlHelper.InputHelper(InputType.CheckBox, name, &#34;true&#34;, true /* useViewData */, false /* isChecked */, true /* setId */, false /* isExplicitValue */, htmlAttributes);&#xA;This line is taken from the source code of ASP.NET MVC, or to be more specific its a line from the InputExtension class. I think the intent of the original developer is clear:&#xA;Add comment next to arguments so that one can easily read the method call without getting lost in a who&#39;s who since there are quite some arguments to pass.</description>
+    </item>
+    <item>
+      <title>DRY - Total 161 Duplicate ArgumentNullException calls in ASP.Net MVC Source Code</title>
+      <link>http://smsohan.com/blog/2010/12/13/dry-total-161-duplicate/</link>
+      <pubDate>Mon, 13 Dec 2010 00:00:00 +0000</pubDate>
+      <guid>http://smsohan.com/blog/2010/12/13/dry-total-161-duplicate/</guid>
+      <description>There are 161 occurrences of the following code pattern inside the ASP.Net MVC source code: See details of which class and which line at&amp;nbsp;https://gist.github.com/739523&#xA;method(type argument)&#xA;{&#xA;&amp;nbsp;&amp;nbsp;if(argument == null){&#xA;&amp;nbsp;&amp;nbsp; &amp;nbsp;throw new ArgumentNullException(&#34;argument&#34;)&#xA;&amp;nbsp;&amp;nbsp;}&#xA;...&#xA;}&#xA;So, in total this pattern introduces 312 lines of duplicate code without whitespaces and 644 lines of duplicate code including whitespaces. And the pattern is simple, just check a condition and throw exception if its true.</description>
+    </item>
+    <item>
+      <title>A good example of C# Regular Expression: Implementing InitCap or Titleize/TitleCase using C# and Regular Expression</title>
+      <link>http://smsohan.com/blog/2009/01/21/good-example-of-c-regular-expression/</link>
+      <pubDate>Wed, 21 Jan 2009 00:00:00 +0000</pubDate>
+      <guid>http://smsohan.com/blog/2009/01/21/good-example-of-c-regular-expression/</guid>
+      <description>Ever since I first learned about the regular expressions, I have always been fascinated by its magical capability. When I first learned about DFA/NFA, I figured out how it is possible to evaluate a regular expression and eventually, during my Undergrad at BUET, I implemented a regular expression evaluator for the Compiler Lab.&#xA;Now, given this history, here is a simple code that I wrote today. Let me know if you liked it-</description>
+    </item>
+    <item>
+      <title>RowTest Extension for NUnit</title>
+      <link>http://smsohan.com/blog/2008/11/10/rowtest-extension-for-nunit/</link>
+      <pubDate>Mon, 10 Nov 2008 00:00:00 +0000</pubDate>
+      <guid>http://smsohan.com/blog/2008/11/10/rowtest-extension-for-nunit/</guid>
+      <description>Well, I was just about to implement it myself! However, its good to see that the NUnit addin named RowTest actually allows us to do the data driven unit test through declarative programming and adding parameters to the dumb test methods!&#xA;http://www.andreas-schlapsi.com/projects/rowtest-extension-for-nunit/&#xA;Check out this website for an example and get started with RowTest.</description>
+    </item>
+    <item>
+      <title>Set and Compile using C# Language Version 2.0 in Visual Studio 2008</title>
+      <link>http://smsohan.com/blog/2008/09/01/set-and-compile-using-c-language/</link>
+      <pubDate>Mon, 01 Sep 2008 00:00:00 +0000</pubDate>
+      <guid>http://smsohan.com/blog/2008/09/01/set-and-compile-using-c-language/</guid>
+      <description>I know, while most of you are very happy with the new features in Visual Studio 2008, its sad that not all your deployment environments are upgraded to .Net framework 3.5. I had a similar situation as well on one of my projects.&#xA;Its great that you can just navigate to a VS 2008 project file properties and from the Application Tab select the Target .Net Framework version to use one of .</description>
+    </item>
+    <item>
+      <title>Unit Testing using Mocks - FillWithMocks, Fill all or only selected properties with Mocks using only a single method call</title>
+      <link>http://smsohan.com/blog/2008/08/13/unit-testing-using-mocks-fillwithmocks/</link>
+      <pubDate>Wed, 13 Aug 2008 00:00:00 +0000</pubDate>
+      <guid>http://smsohan.com/blog/2008/08/13/unit-testing-using-mocks-fillwithmocks/</guid>
+      <description>I have been doing TDD for about two years now and using mock testing for interaction based unit testing in my projects. What I have learned over this time is, a unit testable design leads to introduction of interfaces and dependency injection for testing a code in isolation. And when I want to perform tests on my interactions, I need to create mock objects and inject these mock instances to my object under test.</description>
+    </item>
+    <item>
+      <title>XDocument.ToStringWithXmlDeclaration() - Get the string representation of XDcoument with its Xml Declaration</title>
+      <link>http://smsohan.com/blog/2008/08/12/xdocumenttostringwithxmldeclaration-get/</link>
+      <pubDate>Tue, 12 Aug 2008 00:00:00 +0000</pubDate>
+      <guid>http://smsohan.com/blog/2008/08/12/xdocumenttostringwithxmldeclaration-get/</guid>
+      <description>The System.Xml.Linq.XDocument.ToString() produces a serialized string version of the XDocument object. But unfortunately, while doing so, it leaves the xml declaration in the serialized version which may be required in your application.&#xA;Again, there is another method called Save that produces the serialized version including xml declaration. So, I think we can write a simple extension method for producing the xml declaration as shown in the following -&#xA;14 class Program</description>
+    </item>
+    <item>
+      <title>Simple Wildcard replacement on the Rendered Html of Asp.Net Page</title>
+      <link>http://smsohan.com/blog/2008/08/11/simple-wildcard-replacement-on-rendered/</link>
+      <pubDate>Mon, 11 Aug 2008 00:00:00 +0000</pubDate>
+      <guid>http://smsohan.com/blog/2008/08/11/simple-wildcard-replacement-on-rendered/</guid>
+      <description>This is a simple solution for implementing wildcard replacements in your asp.net pages. You may use this, if you want to replace some tokens / merge codes in the asp.net generated html by your personalized values. System.Web.UI.Control has a virtual method called &#39;Render&#39; of the following signature - protected internal virtual void Render( HtmlTextWriter writer )&#xA;Since, all your ASP.Net pages and server controls are subclasses of this Control class, you can override this method and manipulate the html that&#39;s rendered from this control.</description>
+    </item>
+    <item>
+      <title>Comparing with NULL in where clause using Linq to SQL</title>
+      <link>http://smsohan.com/blog/2008/08/05/comparing-with-null-in-where-clause-in/</link>
+      <pubDate>Tue, 05 Aug 2008 00:00:00 +0000</pubDate>
+      <guid>http://smsohan.com/blog/2008/08/05/comparing-with-null-in-where-clause-in/</guid>
+      <description>In SQL Server, a SQL statement like &#39;NULL=NULL&#39; evaluates to false. however &#39;NULL IS NULL&#39; evaluates to true. So, for NULL values in your database columns, you need to use the &#39;IS&#39; operator instead of the regular &#39;=&#39; operator.&#xA;The problem is, in Linq to SQL, there is no such &#39;IS&#39; operator since &#39;IS&#39; is already used as a C# language keyword. So, when you are invoking an equality check in your Linq to SQL where clause to a nullable column you need to be alert on this behavior.</description>
+    </item>
+    <item>
+      <title>Ninject - Dependency Injection Framework for .Net Objects</title>
+      <link>http://smsohan.com/blog/2008/08/03/ninject-dependency-injection-framework/</link>
+      <pubDate>Sun, 03 Aug 2008 00:00:00 +0000</pubDate>
+      <guid>http://smsohan.com/blog/2008/08/03/ninject-dependency-injection-framework/</guid>
+      <description>I loved Ninject because&#xA;- I don&#39;t love to write/edit XML documents myself.&#xA;- I think Ninject can save a lot of coding and debugging time.&#xA;- This is a cool framework :-) with a fun-to-read documentation.&#xA;- It uses simple conventions and Attributes for resolving most dependencies behind the scene.&#xA;- You can take full advantage to lambda expressions for writing compact codes.&#xA;Today, I took a look into this Ninject framework.</description>
+    </item>
+    <item>
+      <title>[ThreadStatic] - A cool Attribute to Thread Safe static members</title>
+      <link>http://smsohan.com/blog/2008/06/10/threadstatic-cool-attribute-to-thread/</link>
+      <pubDate>Tue, 10 Jun 2008 00:00:00 +0000</pubDate>
+      <guid>http://smsohan.com/blog/2008/06/10/threadstatic-cool-attribute-to-thread/</guid>
+      <description>Usually static variables holds the same value for all the threads running at the same AppDommain. However, in a multithreaded scenario, you may need to add thread safe behavior to your static members so that the value of a static member is same inside only a single thread and across multiple threads the value can be different. In this way you may attain a thread specific or thread scoped storage to use in your application.</description>
+    </item>
+    <item>
+      <title>How To Set Default Application Wide CommandTimeout in LINQ to SQL DataContext Subclasses</title>
+      <link>http://smsohan.com/blog/2008/04/29/how-to-set-default-application-wide/</link>
+      <pubDate>Tue, 29 Apr 2008 00:00:00 +0000</pubDate>
+      <guid>http://smsohan.com/blog/2008/04/29/how-to-set-default-application-wide/</guid>
+      <description>Sometimes you have written long running stored procedures and you need to invoke the stored procedures through your LINQ to SQL class. By default the SqlCommand has a timeout value of 30 seconds and in some instances you may need a longer value to complete your long running database operations. In a situation like this, if you are using the default time out value, you may encounter the following exception scenario,</description>
+    </item>
+    <item>
+      <title>string.GetValueOrDefault() - A Simple Extension Method</title>
+      <link>http://smsohan.com/blog/2008/04/16/stringgetvalueordefault-simple/</link>
+      <pubDate>Wed, 16 Apr 2008 00:00:00 +0000</pubDate>
+      <guid>http://smsohan.com/blog/2008/04/16/stringgetvalueordefault-simple/</guid>
+      <description>I have found that, I have written codes like the following one in my projects before now at some places.&#xA;string myString = someString == null ? string.Empty : someString;&#xA;However, with the advent of extension methods in C# 3.0 (.Net 3.5), I have a better way of achieving this goal in my projects. So, I just wrote an extension method as the following one-&#xA;public static class StringExtensions { public static string GetValueOrDefault(this string instance) { return instance == null ?</description>
+    </item>
+    <item>
+      <title>IsNullOrEmpty() - A Handy Extension Method for IEnumerable&lt;T&gt;</title>
+      <link>http://smsohan.com/blog/2008/04/12/isnullorempty-handy-extension-method/</link>
+      <pubDate>Sat, 12 Apr 2008 00:00:00 +0000</pubDate>
+      <guid>http://smsohan.com/blog/2008/04/12/isnullorempty-handy-extension-method/</guid>
+      <description>Many a time when you are just about to write a foreach loop on your IEnumerable&amp;lt;T&amp;gt; object you need to check whether the object is null or empty in the following manner&#xA;if(myEnumerable != null || myEnumerable.Count() &amp;gt; 0) { foreach(&amp;lt;type&amp;gt; item in myEnumerable) { ... } } However, with the advent of Extension methods, you can write one custom extension method like the following -&#xA;public static class IEnumerableExtensions { public static bool IsNullOrEmpty&amp;lt;T&amp;gt;(this IEnumerable&amp;lt;T&amp;gt; instance) where T : class { return instance == null || instance.</description>
+    </item>
+    <item>
+      <title>My Today&#39;s best RSS feeds</title>
+      <link>http://smsohan.com/blog/2008/04/12/my-today-best-rss-feeds/</link>
+      <pubDate>Sat, 12 Apr 2008 00:00:00 +0000</pubDate>
+      <guid>http://smsohan.com/blog/2008/04/12/my-today-best-rss-feeds/</guid>
+      <description>1. Well, we have a CI in place and we are also very excited to see a new notification message coming to our email inbox on a commit from our team members. CruiseControl.Net really made is fun and so easy to be really continuously integrating our projects.&#xA;However, I didn&#39;t know of this cool feature until I read this article. I suggest you all CruiseControl.Net cruisers to take a look -</description>
+    </item>
+    <item>
+      <title>Creating Instances of internal classes using Spring.Net</title>
+      <link>http://smsohan.com/blog/2008/04/07/creating-instances-of-internal-classes/</link>
+      <pubDate>Mon, 07 Apr 2008 00:00:00 +0000</pubDate>
+      <guid>http://smsohan.com/blog/2008/04/07/creating-instances-of-internal-classes/</guid>
+      <description>Creating an instance of an internal class using Spring.Net is a little tricky. I know that, you can achieve this by adding an InternalsVisibleTo attribute to your assembly. However, the following solution also works as desired.&#xA;Say, you have an namespace named SampleClasses that contains the a public interface named &#39;IPublicInterface&#39; and also an internal class named &#39;InternalClass&#39; that implements the IPublicInterface interface and looks like the following - 1: namespace SampleClasses</description>
+    </item>
+    <item>
+      <title>Logging the LINQ to SQL Generated SQL Queries/Commands</title>
+      <link>http://smsohan.com/blog/2008/04/07/logging-linq-to-sql-generated-sql/</link>
+      <pubDate>Mon, 07 Apr 2008 00:00:00 +0000</pubDate>
+      <guid>http://smsohan.com/blog/2008/04/07/logging-linq-to-sql-generated-sql/</guid>
+      <description>I was looking for logging solutions for the generated SQL in one of my projects where I am using LINQ to SQL. I found that sometimes the the Exceptions and StackTrace information does not say much about what&#39;s really causing the problem with LINQ to SQL queries/commands.&#xA;To see the actual SQL that&#39;s generated from LINQ you may write a code like the following-&#xA;SampleDataContext context = new SampleDataContext(); //You may wish to use any subclass of System.</description>
+    </item>
+    <item>
+      <title>A solution to the problem with creating mocks for interfaces with Generic Methods with NMock</title>
+      <link>http://smsohan.com/blog/2008/03/20/solution-to-problem-with-creating-mocks/</link>
+      <pubDate>Thu, 20 Mar 2008 00:00:00 +0000</pubDate>
+      <guid>http://smsohan.com/blog/2008/03/20/solution-to-problem-with-creating-mocks/</guid>
+      <description>I was so happy with NMock to see how it can dynamically generate mocks of interfaces and also gives me a fluent interface to write expectations and everything it does to help me in unit testing!&#xA;However, I could not generate dynamic mocks for interfaces with Generic methods and it kept showing me the &#39;TypeLoadException&#39; on and on. My interface looks like the following -&#xA;interface IObjectFactory&#xA;{&#xA;T GetObject(string id);</description>
+    </item>
+    <item>
+      <title>Verify Correct DateTime data in method call using NMock</title>
+      <link>http://smsohan.com/blog/2008/03/18/verify-correct-datetime-data-in-method/</link>
+      <pubDate>Tue, 18 Mar 2008 00:00:00 +0000</pubDate>
+      <guid>http://smsohan.com/blog/2008/03/18/verify-correct-datetime-data-in-method/</guid>
+      <description>Recently I was writing unit test for a method of the following signature&#xA;interface ICache&#xA;{&#xA;void Insert(string key, object value, DateTime absoluteExpiration, TimeSpan slidingExpiration);&#xA;}&#xA;and I wanted to verify the following call -&#xA;Insert(&#34;key&#34;, &#34;value&#34;, DateTime.Now.AddMinutes(30), TimeSpan.Zero);&#xA;However, you readily see the problem in verifying with the above call for the presence of DateTime.Now.AddMinutes(30) in the argument. So, a test method like the following won&#39;t work for obvious reason.</description>
+    </item>
+    <item>
+      <title>Mock Internal Interface with NMock2 - Use InternalsVisibleToAttribute</title>
+      <link>http://smsohan.com/blog/2008/03/16/mock-internal-interface-with-nmock2-use/</link>
+      <pubDate>Sun, 16 Mar 2008 00:00:00 +0000</pubDate>
+      <guid>http://smsohan.com/blog/2008/03/16/mock-internal-interface-with-nmock2-use/</guid>
+      <description>Yesterday I badly needed to create mocks for my internal interfaces. I am using NMock2 as a Mocking framework and found it really difficult to produce Mocks for internal interfaces. After some &#39;google time&#39; and investigation I found that you need the following two lines in your AssemblyInfo.cs to achieve this purpose-&#xA;[assembly: InternalsVisibleTo(&#34;Mocks&#34;)]&#xA;[assembly: InternalsVisibleTo(&#34;MockObjects&#34;)]&#xA;Where are the two assemblies? I found that these two assemblies are dynamically created by NMock2 for mocking your interfaces.</description>
+    </item>
+    <item>
+      <title>Unity - A Dependency Injection framework from Microsoft Patterns and Practices</title>
+      <link>http://smsohan.com/blog/2008/03/15/unity-dependency-injection-framework/</link>
+      <pubDate>Sat, 15 Mar 2008 00:00:00 +0000</pubDate>
+      <guid>http://smsohan.com/blog/2008/03/15/unity-dependency-injection-framework/</guid>
+      <description>I have been using Spring.Net for implementing Dependency Injection in my .Net projects. Spring is already one of the most known providers of DI in the Java world and a port to .Net actually eased the lives of people like me who are willing to develop unit-testable software.&#xA;However, with all the happiness enjoyed through Spring.Net, I guess its time to take a look into Unity. I have only started using this and I found it interesting in the sense that its more of .</description>
+    </item>
+    <item>
+      <title>Testing Internal Class in .Net C#</title>
+      <link>http://smsohan.com/blog/2008/03/11/testing-internal-class-in-net-c/</link>
+      <pubDate>Tue, 11 Mar 2008 00:00:00 +0000</pubDate>
+      <guid>http://smsohan.com/blog/2008/03/11/testing-internal-class-in-net-c/</guid>
+      <description>I have been to a situation where only a small number of classes had been declared as public classes in an assembly. And most of the classes are declared as internal, because I wanted to expose only the public classes to the consumers of my assembly.&#xA;However, doing so creates another challenge in testing the internal classes. As we most commonly want our test codes to reside on a separate assembly so that we can leave that assembly out when we are releasing the end product.</description>
+    </item>
+    <item>
+      <title>C# keyword &#39;yield return&#39; - I find it interesting</title>
+      <link>http://smsohan.com/blog/2008/02/05/c-keyword-yield-return-i-find-it/</link>
+      <pubDate>Tue, 05 Feb 2008 00:00:00 +0000</pubDate>
+      <guid>http://smsohan.com/blog/2008/02/05/c-keyword-yield-return-i-find-it/</guid>
+      <description>I have been using yield return in some of my codes and would like to share its interesting aspects. The following code example shows one dummy use of &#39;yield return&#39;-&#xA;public class YieldExample&#xA;{&#xA;public void Run()&#xA;{&#xA;IEnumerator numbers = getNumbers().GetEnumerator();&#xA;while (numbers.MoveNext())&#xA;{ Console.Write(&#34;x{0} &#34;, numbers.Current);&#xA;}&#xA;}&#xA;private IEnumerable getNumbers()&#xA;{&#xA;for (int i = 0; i &lt;&gt;&#xA;Now, a code like new YieldExample().Run() would produce a output similar to this - &#34;</description>
+    </item>
+  </channel>
+</rss>

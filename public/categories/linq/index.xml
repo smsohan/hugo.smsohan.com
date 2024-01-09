@@ -1,8 +1,54 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>LINQ on Sohan's Blog</title><link>http://smsohan.com/categories/linq/</link><description>Recent content in LINQ on Sohan's Blog</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Tue, 12 Aug 2008 00:00:00 +0000</lastBuildDate><atom:link href="http://smsohan.com/categories/linq/index.xml" rel="self" type="application/rss+xml"/><item><title>XDocument.ToStringWithXmlDeclaration() - Get the string representation of XDcoument with its Xml Declaration</title><link>http://smsohan.com/blog/2008/08/12/xdocumenttostringwithxmldeclaration-get/</link><pubDate>Tue, 12 Aug 2008 00:00:00 +0000</pubDate><guid>http://smsohan.com/blog/2008/08/12/xdocumenttostringwithxmldeclaration-get/</guid><description>The System.Xml.Linq.XDocument.ToString() produces a serialized string version of the XDocument object. But unfortunately, while doing so, it leaves the xml declaration in the serialized version which may be required in your application.
-Again, there is another method called Save that produces the serialized version including xml declaration. So, I think we can write a simple extension method for producing the xml declaration as shown in the following -
-14 class Program</description></item><item><title>Comparing with NULL in where clause using Linq to SQL</title><link>http://smsohan.com/blog/2008/08/05/comparing-with-null-in-where-clause-in/</link><pubDate>Tue, 05 Aug 2008 00:00:00 +0000</pubDate><guid>http://smsohan.com/blog/2008/08/05/comparing-with-null-in-where-clause-in/</guid><description>In SQL Server, a SQL statement like 'NULL=NULL' evaluates to false. however 'NULL IS NULL' evaluates to true. So, for NULL values in your database columns, you need to use the 'IS' operator instead of the regular '=' operator.
-The problem is, in Linq to SQL, there is no such 'IS' operator since 'IS' is already used as a C# language keyword. So, when you are invoking an equality check in your Linq to SQL where clause to a nullable column you need to be alert on this behavior.</description></item><item><title>Read My Article at CodeProject on LINQ to Log4Net Logging</title><link>http://smsohan.com/blog/2008/05/14/read-my-article-at-codeproject-on-linq/</link><pubDate>Wed, 14 May 2008 00:00:00 +0000</pubDate><guid>http://smsohan.com/blog/2008/05/14/read-my-article-at-codeproject-on-linq/</guid><description>Today CodeProject has published an article of mine where I have shown a way to use Log4Net logging to capture your LINQ to SQL class generated log messages. I suggest you all to take a look and comment at http://www.codeproject.com/KB/linq/LINQ2Log4Net.aspx.</description></item><item><title>How To Set Default Application Wide CommandTimeout in LINQ to SQL DataContext Subclasses</title><link>http://smsohan.com/blog/2008/04/29/how-to-set-default-application-wide/</link><pubDate>Tue, 29 Apr 2008 00:00:00 +0000</pubDate><guid>http://smsohan.com/blog/2008/04/29/how-to-set-default-application-wide/</guid><description>Sometimes you have written long running stored procedures and you need to invoke the stored procedures through your LINQ to SQL class. By default the SqlCommand has a timeout value of 30 seconds and in some instances you may need a longer value to complete your long running database operations. In a situation like this, if you are using the default time out value, you may encounter the following exception scenario,</description></item><item><title>Posts of the day that I liked most</title><link>http://smsohan.com/blog/2008/04/08/posts-of-day-that-i-liked-most/</link><pubDate>Tue, 08 Apr 2008 00:00:00 +0000</pubDate><guid>http://smsohan.com/blog/2008/04/08/posts-of-day-that-i-liked-most/</guid><description>1. The Monostate Pattern - Another way to look into Singleton and some improvement over singleton issues.
-Read it Here
-2. Another good article on LINQ regarding the grouping queries. Read it Here</description></item><item><title>Logging the LINQ to SQL Generated SQL Queries/Commands</title><link>http://smsohan.com/blog/2008/04/07/logging-linq-to-sql-generated-sql/</link><pubDate>Mon, 07 Apr 2008 00:00:00 +0000</pubDate><guid>http://smsohan.com/blog/2008/04/07/logging-linq-to-sql-generated-sql/</guid><description>I was looking for logging solutions for the generated SQL in one of my projects where I am using LINQ to SQL. I found that sometimes the the Exceptions and StackTrace information does not say much about what's really causing the problem with LINQ to SQL queries/commands.
-To see the actual SQL that's generated from LINQ you may write a code like the following-
-SampleDataContext context = new SampleDataContext(); //You may wish to use any subclass of System.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>LINQ on Sohan&#39;s Blog</title>
+    <link>http://smsohan.com/categories/linq/</link>
+    <description>Recent content in LINQ on Sohan&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 12 Aug 2008 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://smsohan.com/categories/linq/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>XDocument.ToStringWithXmlDeclaration() - Get the string representation of XDcoument with its Xml Declaration</title>
+      <link>http://smsohan.com/blog/2008/08/12/xdocumenttostringwithxmldeclaration-get/</link>
+      <pubDate>Tue, 12 Aug 2008 00:00:00 +0000</pubDate>
+      <guid>http://smsohan.com/blog/2008/08/12/xdocumenttostringwithxmldeclaration-get/</guid>
+      <description>The System.Xml.Linq.XDocument.ToString() produces a serialized string version of the XDocument object. But unfortunately, while doing so, it leaves the xml declaration in the serialized version which may be required in your application.&#xA;Again, there is another method called Save that produces the serialized version including xml declaration. So, I think we can write a simple extension method for producing the xml declaration as shown in the following -&#xA;14 class Program</description>
+    </item>
+    <item>
+      <title>Comparing with NULL in where clause using Linq to SQL</title>
+      <link>http://smsohan.com/blog/2008/08/05/comparing-with-null-in-where-clause-in/</link>
+      <pubDate>Tue, 05 Aug 2008 00:00:00 +0000</pubDate>
+      <guid>http://smsohan.com/blog/2008/08/05/comparing-with-null-in-where-clause-in/</guid>
+      <description>In SQL Server, a SQL statement like &#39;NULL=NULL&#39; evaluates to false. however &#39;NULL IS NULL&#39; evaluates to true. So, for NULL values in your database columns, you need to use the &#39;IS&#39; operator instead of the regular &#39;=&#39; operator.&#xA;The problem is, in Linq to SQL, there is no such &#39;IS&#39; operator since &#39;IS&#39; is already used as a C# language keyword. So, when you are invoking an equality check in your Linq to SQL where clause to a nullable column you need to be alert on this behavior.</description>
+    </item>
+    <item>
+      <title>Read My Article at CodeProject on LINQ to Log4Net Logging</title>
+      <link>http://smsohan.com/blog/2008/05/14/read-my-article-at-codeproject-on-linq/</link>
+      <pubDate>Wed, 14 May 2008 00:00:00 +0000</pubDate>
+      <guid>http://smsohan.com/blog/2008/05/14/read-my-article-at-codeproject-on-linq/</guid>
+      <description>Today CodeProject has published an article of mine where I have shown a way to use Log4Net logging to capture your LINQ to SQL class generated log messages. I suggest you all to take a look and comment at http://www.codeproject.com/KB/linq/LINQ2Log4Net.aspx.</description>
+    </item>
+    <item>
+      <title>How To Set Default Application Wide CommandTimeout in LINQ to SQL DataContext Subclasses</title>
+      <link>http://smsohan.com/blog/2008/04/29/how-to-set-default-application-wide/</link>
+      <pubDate>Tue, 29 Apr 2008 00:00:00 +0000</pubDate>
+      <guid>http://smsohan.com/blog/2008/04/29/how-to-set-default-application-wide/</guid>
+      <description>Sometimes you have written long running stored procedures and you need to invoke the stored procedures through your LINQ to SQL class. By default the SqlCommand has a timeout value of 30 seconds and in some instances you may need a longer value to complete your long running database operations. In a situation like this, if you are using the default time out value, you may encounter the following exception scenario,</description>
+    </item>
+    <item>
+      <title>Posts of the day that I liked most</title>
+      <link>http://smsohan.com/blog/2008/04/08/posts-of-day-that-i-liked-most/</link>
+      <pubDate>Tue, 08 Apr 2008 00:00:00 +0000</pubDate>
+      <guid>http://smsohan.com/blog/2008/04/08/posts-of-day-that-i-liked-most/</guid>
+      <description>1. The Monostate Pattern - Another way to look into Singleton and some improvement over singleton issues.&#xA;Read it Here&#xA;2. Another good article on LINQ regarding the grouping queries. Read it Here</description>
+    </item>
+    <item>
+      <title>Logging the LINQ to SQL Generated SQL Queries/Commands</title>
+      <link>http://smsohan.com/blog/2008/04/07/logging-linq-to-sql-generated-sql/</link>
+      <pubDate>Mon, 07 Apr 2008 00:00:00 +0000</pubDate>
+      <guid>http://smsohan.com/blog/2008/04/07/logging-linq-to-sql-generated-sql/</guid>
+      <description>I was looking for logging solutions for the generated SQL in one of my projects where I am using LINQ to SQL. I found that sometimes the the Exceptions and StackTrace information does not say much about what&#39;s really causing the problem with LINQ to SQL queries/commands.&#xA;To see the actual SQL that&#39;s generated from LINQ you may write a code like the following-&#xA;SampleDataContext context = new SampleDataContext(); //You may wish to use any subclass of System.</description>
+    </item>
+  </channel>
+</rss>

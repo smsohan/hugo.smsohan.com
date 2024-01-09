@@ -1,3 +1,19 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>XP on Sohan's Blog</title><link>http://smsohan.com/categories/xp/</link><description>Recent content in XP on Sohan's Blog</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Mon, 22 Oct 2012 00:00:00 +0000</lastBuildDate><atom:link href="http://smsohan.com/categories/xp/index.xml" rel="self" type="application/rss+xml"/><item><title>Pair Programming vs. Code Reviews</title><link>http://smsohan.com/blog/2012/10/22/pairing-vs-code-reviews/</link><pubDate>Mon, 22 Oct 2012 00:00:00 +0000</pubDate><guid>http://smsohan.com/blog/2012/10/22/pairing-vs-code-reviews/</guid><description>Photo credits to http://womendiving.blogspot.ca/2012/08/2012-olympic-games-10m-synchronized.html
-Pair programming is like synchronized swimming. You do it together, you win it together. You try to improve your chances by helping your partner, and vice verca. Even if you lose, its highly likely you&amp;rsquo;ve improved simply by being together sharing a united goal.
-Code review can be fun and really useful too. But deep deep care needs to be taken to ensure it remains same in spirit, that is, the unified shared goal.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>XP on Sohan&#39;s Blog</title>
+    <link>http://smsohan.com/categories/xp/</link>
+    <description>Recent content in XP on Sohan&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 22 Oct 2012 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://smsohan.com/categories/xp/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Pair Programming vs. Code Reviews</title>
+      <link>http://smsohan.com/blog/2012/10/22/pairing-vs-code-reviews/</link>
+      <pubDate>Mon, 22 Oct 2012 00:00:00 +0000</pubDate>
+      <guid>http://smsohan.com/blog/2012/10/22/pairing-vs-code-reviews/</guid>
+      <description>Photo credits to http://womendiving.blogspot.ca/2012/08/2012-olympic-games-10m-synchronized.html&#xA;Pair programming is like synchronized swimming. You do it together, you win it together. You try to improve your chances by helping your partner, and vice verca. Even if you lose, its highly likely you&amp;rsquo;ve improved simply by being together sharing a united goal.&#xA;Code review can be fun and really useful too. But deep deep care needs to be taken to ensure it remains same in spirit, that is, the unified shared goal.</description>
+    </item>
+  </channel>
+</rss>

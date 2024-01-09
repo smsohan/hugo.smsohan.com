@@ -1,2 +1,26 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Calgary on Sohan's Blog</title><link>http://smsohan.com/categories/calgary/</link><description>Recent content in Calgary on Sohan's Blog</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Mon, 03 May 2010 00:00:00 +0000</lastBuildDate><atom:link href="http://smsohan.com/categories/calgary/index.xml" rel="self" type="application/rss+xml"/><item><title>Summer of 2010! Europe, here we come!</title><link>http://smsohan.com/blog/2010/05/03/summer-of-2010-europe-here-we-come/</link><pubDate>Mon, 03 May 2010 00:00:00 +0000</pubDate><guid>http://smsohan.com/blog/2010/05/03/summer-of-2010-europe-here-we-come/</guid><description>I just completed my Winter 2010 semester at school. It was so far a good one. I pushed my papers and presentations on the courses of this semester at http://smsohan.com/#courses&amp;nbsp;If you are interested to read my paper about Tabletop Application Testing or Communication Challenges with Distributed Agile Teams, you are most welcome at my site.
-However, its time to look ahead to the summer. And I hope this will be a good one!</description></item><item><title>A new home at Calgary and starting days</title><link>http://smsohan.com/blog/2009/09/06/new-home-at-calgary-and-starting-days/</link><pubDate>Sun, 06 Sep 2009 00:00:00 +0000</pubDate><guid>http://smsohan.com/blog/2009/09/06/new-home-at-calgary-and-starting-days/</guid><description>We relocated to the northwest section of Calgary, Alberta on the 26th August. I am new to this part of the world and traveling to this opposite time zone (GMT+6 to GMT-6) took around 33 hours. Did you ever take a flight on Qatar? Not? I recommend it. They offer best foods for your south asian delight. My route was Dhaka - Doha - London - Calgary. I enjoyed the trip (don't tell anyone, I was a bit scared when traveling over the Atlantic :-))</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Calgary on Sohan&#39;s Blog</title>
+    <link>http://smsohan.com/categories/calgary/</link>
+    <description>Recent content in Calgary on Sohan&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 03 May 2010 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://smsohan.com/categories/calgary/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Summer of 2010! Europe, here we come!</title>
+      <link>http://smsohan.com/blog/2010/05/03/summer-of-2010-europe-here-we-come/</link>
+      <pubDate>Mon, 03 May 2010 00:00:00 +0000</pubDate>
+      <guid>http://smsohan.com/blog/2010/05/03/summer-of-2010-europe-here-we-come/</guid>
+      <description>I just completed my Winter 2010 semester at school. It was so far a good one. I pushed my papers and presentations on the courses of this semester at http://smsohan.com/#courses&amp;nbsp;If you are interested to read my paper about Tabletop Application Testing or Communication Challenges with Distributed Agile Teams, you are most welcome at my site.&#xA;However, its time to look ahead to the summer. And I hope this will be a good one!</description>
+    </item>
+    <item>
+      <title>A new home at Calgary and starting days</title>
+      <link>http://smsohan.com/blog/2009/09/06/new-home-at-calgary-and-starting-days/</link>
+      <pubDate>Sun, 06 Sep 2009 00:00:00 +0000</pubDate>
+      <guid>http://smsohan.com/blog/2009/09/06/new-home-at-calgary-and-starting-days/</guid>
+      <description>We relocated to the northwest section of Calgary, Alberta on the 26th August. I am new to this part of the world and traveling to this opposite time zone (GMT+6 to GMT-6) took around 33 hours. Did you ever take a flight on Qatar? Not? I recommend it. They offer best foods for your south asian delight. My route was Dhaka - Doha - London - Calgary. I enjoyed the trip (don&#39;t tell anyone, I was a bit scared when traveling over the Atlantic :-))</description>
+    </item>
+  </channel>
+</rss>

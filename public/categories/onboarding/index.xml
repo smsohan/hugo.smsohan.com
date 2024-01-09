@@ -1,1 +1,19 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Onboarding on Sohan's Blog</title><link>http://smsohan.com/categories/onboarding/</link><description>Recent content in Onboarding on Sohan's Blog</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Mon, 09 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="http://smsohan.com/categories/onboarding/index.xml" rel="self" type="application/rss+xml"/><item><title>Onboarding as a New Engineering Manager</title><link>http://smsohan.com/blog/2021/08/09/onboarding-as-a-new-engineering-manager/</link><pubDate>Mon, 09 Aug 2021 00:00:00 +0000</pubDate><guid>http://smsohan.com/blog/2021/08/09/onboarding-as-a-new-engineering-manager/</guid><description>&amp;ldquo;I promise to take care of you&amp;rdquo; - believe it or not, I spent hours to come up with this message to make a first impression as a newly hired manager at Microsoft. Everyone in my team had more context than me. I was a complete newbie, yet their manager. While I had been a manager for several years, I had never started a new job as a manager. I felt super vulnerable.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Onboarding on Sohan&#39;s Blog</title>
+    <link>http://smsohan.com/categories/onboarding/</link>
+    <description>Recent content in Onboarding on Sohan&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 09 Aug 2021 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://smsohan.com/categories/onboarding/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Onboarding as a New Engineering Manager</title>
+      <link>http://smsohan.com/blog/2021/08/09/onboarding-as-a-new-engineering-manager/</link>
+      <pubDate>Mon, 09 Aug 2021 00:00:00 +0000</pubDate>
+      <guid>http://smsohan.com/blog/2021/08/09/onboarding-as-a-new-engineering-manager/</guid>
+      <description>&amp;ldquo;I promise to take care of you&amp;rdquo; - believe it or not, I spent hours to come up with this message to make a first impression as a newly hired manager at Microsoft. Everyone in my team had more context than me. I was a complete newbie, yet their manager. While I had been a manager for several years, I had never started a new job as a manager. I felt super vulnerable.</description>
+    </item>
+  </channel>
+</rss>

@@ -1,3 +1,33 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>.Net 3.5 on Sohan's Blog</title><link>http://smsohan.com/categories/.net-3.5/</link><description>Recent content in .Net 3.5 on Sohan's Blog</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Tue, 05 Aug 2008 00:00:00 +0000</lastBuildDate><atom:link href="http://smsohan.com/categories/.net-3.5/index.xml" rel="self" type="application/rss+xml"/><item><title>Comparing with NULL in where clause using Linq to SQL</title><link>http://smsohan.com/blog/2008/08/05/comparing-with-null-in-where-clause-in/</link><pubDate>Tue, 05 Aug 2008 00:00:00 +0000</pubDate><guid>http://smsohan.com/blog/2008/08/05/comparing-with-null-in-where-clause-in/</guid><description>In SQL Server, a SQL statement like 'NULL=NULL' evaluates to false. however 'NULL IS NULL' evaluates to true. So, for NULL values in your database columns, you need to use the 'IS' operator instead of the regular '=' operator.
-The problem is, in Linq to SQL, there is no such 'IS' operator since 'IS' is already used as a C# language keyword. So, when you are invoking an equality check in your Linq to SQL where clause to a nullable column you need to be alert on this behavior.</description></item><item><title>How To Set Default Application Wide CommandTimeout in LINQ to SQL DataContext Subclasses</title><link>http://smsohan.com/blog/2008/04/29/how-to-set-default-application-wide/</link><pubDate>Tue, 29 Apr 2008 00:00:00 +0000</pubDate><guid>http://smsohan.com/blog/2008/04/29/how-to-set-default-application-wide/</guid><description>Sometimes you have written long running stored procedures and you need to invoke the stored procedures through your LINQ to SQL class. By default the SqlCommand has a timeout value of 30 seconds and in some instances you may need a longer value to complete your long running database operations. In a situation like this, if you are using the default time out value, you may encounter the following exception scenario,</description></item><item><title>My Today's best RSS feeds</title><link>http://smsohan.com/blog/2008/04/12/my-today-best-rss-feeds/</link><pubDate>Sat, 12 Apr 2008 00:00:00 +0000</pubDate><guid>http://smsohan.com/blog/2008/04/12/my-today-best-rss-feeds/</guid><description>1. Well, we have a CI in place and we are also very excited to see a new notification message coming to our email inbox on a commit from our team members. CruiseControl.Net really made is fun and so easy to be really continuously integrating our projects.
-However, I didn't know of this cool feature until I read this article. I suggest you all CruiseControl.Net cruisers to take a look -</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>.Net 3.5 on Sohan&#39;s Blog</title>
+    <link>http://smsohan.com/categories/.net-3.5/</link>
+    <description>Recent content in .Net 3.5 on Sohan&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 05 Aug 2008 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://smsohan.com/categories/.net-3.5/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Comparing with NULL in where clause using Linq to SQL</title>
+      <link>http://smsohan.com/blog/2008/08/05/comparing-with-null-in-where-clause-in/</link>
+      <pubDate>Tue, 05 Aug 2008 00:00:00 +0000</pubDate>
+      <guid>http://smsohan.com/blog/2008/08/05/comparing-with-null-in-where-clause-in/</guid>
+      <description>In SQL Server, a SQL statement like &#39;NULL=NULL&#39; evaluates to false. however &#39;NULL IS NULL&#39; evaluates to true. So, for NULL values in your database columns, you need to use the &#39;IS&#39; operator instead of the regular &#39;=&#39; operator.&#xA;The problem is, in Linq to SQL, there is no such &#39;IS&#39; operator since &#39;IS&#39; is already used as a C# language keyword. So, when you are invoking an equality check in your Linq to SQL where clause to a nullable column you need to be alert on this behavior.</description>
+    </item>
+    <item>
+      <title>How To Set Default Application Wide CommandTimeout in LINQ to SQL DataContext Subclasses</title>
+      <link>http://smsohan.com/blog/2008/04/29/how-to-set-default-application-wide/</link>
+      <pubDate>Tue, 29 Apr 2008 00:00:00 +0000</pubDate>
+      <guid>http://smsohan.com/blog/2008/04/29/how-to-set-default-application-wide/</guid>
+      <description>Sometimes you have written long running stored procedures and you need to invoke the stored procedures through your LINQ to SQL class. By default the SqlCommand has a timeout value of 30 seconds and in some instances you may need a longer value to complete your long running database operations. In a situation like this, if you are using the default time out value, you may encounter the following exception scenario,</description>
+    </item>
+    <item>
+      <title>My Today&#39;s best RSS feeds</title>
+      <link>http://smsohan.com/blog/2008/04/12/my-today-best-rss-feeds/</link>
+      <pubDate>Sat, 12 Apr 2008 00:00:00 +0000</pubDate>
+      <guid>http://smsohan.com/blog/2008/04/12/my-today-best-rss-feeds/</guid>
+      <description>1. Well, we have a CI in place and we are also very excited to see a new notification message coming to our email inbox on a commit from our team members. CruiseControl.Net really made is fun and so easy to be really continuously integrating our projects.&#xA;However, I didn&#39;t know of this cool feature until I read this article. I suggest you all CruiseControl.Net cruisers to take a look -</description>
+    </item>
+  </channel>
+</rss>

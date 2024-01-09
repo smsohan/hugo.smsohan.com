@@ -1,45 +1,138 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>agile on Sohan's Blog</title><link>http://smsohan.com/categories/agile/</link><description>Recent content in agile on Sohan's Blog</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Mon, 22 Oct 2012 00:00:00 +0000</lastBuildDate><atom:link href="http://smsohan.com/categories/agile/index.xml" rel="self" type="application/rss+xml"/><item><title>Pair Programming vs. Code Reviews</title><link>http://smsohan.com/blog/2012/10/22/pairing-vs-code-reviews/</link><pubDate>Mon, 22 Oct 2012 00:00:00 +0000</pubDate><guid>http://smsohan.com/blog/2012/10/22/pairing-vs-code-reviews/</guid><description>Photo credits to http://womendiving.blogspot.ca/2012/08/2012-olympic-games-10m-synchronized.html
-Pair programming is like synchronized swimming. You do it together, you win it together. You try to improve your chances by helping your partner, and vice verca. Even if you lose, its highly likely you&amp;rsquo;ve improved simply by being together sharing a united goal.
-Code review can be fun and really useful too. But deep deep care needs to be taken to ensure it remains same in spirit, that is, the unified shared goal.</description></item><item><title>What's up next?</title><link>http://smsohan.com/blog/2010/03/23/whats-up-next/</link><pubDate>Tue, 23 Mar 2010 00:00:00 +0000</pubDate><guid>http://smsohan.com/blog/2010/03/23/whats-up-next/</guid><description>Hello Readers:
-Wish you all are doing great as the Spring already started :-)
-Recently my grad courses are keeping me busy with assignments and projects as the term comes close to an end. So, I haven't had much time to spend on blogging other than posting the Ruby on Rails link blog called www.DrinkRails.com. However, for my readers, I thought I would post the recent presentation that I put for the Agile course here:</description></item><item><title>Lean Thinking: You will probably like to learn the essence of agile</title><link>http://smsohan.com/blog/2009/11/06/lean-thinking-you-will-probably-like-to/</link><pubDate>Fri, 06 Nov 2009 00:00:00 +0000</pubDate><guid>http://smsohan.com/blog/2009/11/06/lean-thinking-you-will-probably-like-to/</guid><description>Image taken from: http://www.leansoftwareinstitute.com/images/img_bigpicture.jpg
-If you read the Poppendieck's book called, "Lean Software Development : An Agile Toolkit", you probably liked it because it managed to get the essence out of agile practices. So, what are these core principles? Well, most of you already know the phrase, "Inspect and Adapt". Now, you also know a bunch of specifications that facilitate this, for an instance, Scrum, XP etc.
-Reading the book, I had a realization that, its good to talk using concrete facts as much as possible.</description></item><item><title>Communicating tools for working on remote projects</title><link>http://smsohan.com/blog/2009/10/17/communicating-tools-for-working-on/</link><pubDate>Sat, 17 Oct 2009 00:00:00 +0000</pubDate><guid>http://smsohan.com/blog/2009/10/17/communicating-tools-for-working-on/</guid><description>Ever since I started working in the software industry, as a freelancer or representing a company, I found the most challenging part of a remote software development project is "Communication". In agile setup, collaboration plays a leading role to be effective and efficient.
-By communication, I mean the following:-Getting the spec as intended by the client.Asking specific questions on time.Status update about progress, blocks and forthcoming events.Getting feedback as intended by the client.</description></item><item><title>The CGI story on agile scaling success on a large project</title><link>http://smsohan.com/blog/2009/09/09/cgi-story-on-agile-scaling-success-on/</link><pubDate>Wed, 09 Sep 2009 00:00:00 +0000</pubDate><guid>http://smsohan.com/blog/2009/09/09/cgi-story-on-agile-scaling-success-on/</guid><description>This intro is from the presenters:-
-PAS was a joint venture development initiative by 4 major oil and gas
-companies and CGI. Devon, Encana, Husky and Talisman joined with CGI to
-develop a new Production and Revenue Application. Each company put 3 senior
-business resources on the project. The development component of the PAS
-initiative cost $35M over 5 years with up to 90 people on the team. This</description></item><item><title>Rambling stories from my days @ Code71 : Startup days</title><link>http://smsohan.com/blog/2009/08/08/rambling-stories-from-my-days-code71/</link><pubDate>Sat, 08 Aug 2009 00:00:00 +0000</pubDate><guid>http://smsohan.com/blog/2009/08/08/rambling-stories-from-my-days-code71/</guid><description>Sighs!
-Back then, on Friday, May 26, 2006, I was a final year undergrad student at CSE, BUET. I was looking for a part-time software dev job opportunity and found a little one page advert for a student job at asha-technologies (lately renamed as Code71). Visited their website and thought it might be worth giving a try!
-As usual, I was interviewed over phone and enjoyed a long 2 hour interview on premise.</description></item><item><title>Lesson#2: Pace Your Sprint Rightly</title><link>http://smsohan.com/blog/2009/06/15/2009-06-15-lesson2-pace-your-sprint-rightly/</link><pubDate>Mon, 15 Jun 2009 00:00:00 +0000</pubDate><guid>http://smsohan.com/blog/2009/06/15/2009-06-15-lesson2-pace-your-sprint-rightly/</guid><description>In my previous post, I said about being incremental. Here come the next thing, being “ITERATIVE”. A prefer the term Sprint than Iteration.
-So, once you decided to take small increments, make sure you reach the targets sprinting.
-I suggest you prepare for sprinting with the right techniques and tools. A few recommendations-
-Never miss a daily standup meeting. Spend only 2 minutes (or less) per person answering the three questions – what did you do yesterday, what’s on the plate for today and what is blocking the race?</description></item><item><title>Lesson#2: Pace Your Sprint Rightly</title><link>http://smsohan.com/blog/2009/06/15/lesson2-pace-your-sprint-rightly/</link><pubDate>Mon, 15 Jun 2009 00:00:00 +0000</pubDate><guid>http://smsohan.com/blog/2009/06/15/lesson2-pace-your-sprint-rightly/</guid><description>In my previous post, I said about being incremental. Here come the next thing, being “ITERATIVE”. A prefer the term Sprint than Iteration.
-So, once you decided to take small increments, make sure you reach the targets sprinting.
-I suggest you prepare for sprinting with the right techniques and tools. A few recommendations-
-Never miss a daily standup meeting. Spend only 2 minutes (or less) per person answering the three questions – what did you do yesterday, what’s on the plate for today and what is blocking the race?</description></item><item><title>Its easier to get lost! Would you?</title><link>http://smsohan.com/blog/2009/06/03/its-easier-to-get-lost-would-you/</link><pubDate>Wed, 03 Jun 2009 00:00:00 +0000</pubDate><guid>http://smsohan.com/blog/2009/06/03/its-easier-to-get-lost-would-you/</guid><description>I was talking to a friend of mine, who started a IT start up and working full time with a few others to foster the business. He was telling me-
-“We have 13 projects running at this moment. We are working our heart out. But, we are not finding any time to do Test Driven Development, Continuous Integration and all the good things…”
-Well, I understand how it feels! As the title says, “Its easier to get lost!</description></item><item><title>Lesson#1: Going Incremental is Natural!</title><link>http://smsohan.com/blog/2009/06/03/lesson1-going-incremental-is-natural/</link><pubDate>Wed, 03 Jun 2009 00:00:00 +0000</pubDate><guid>http://smsohan.com/blog/2009/06/03/lesson1-going-incremental-is-natural/</guid><description>As Scrum and Agile processes tell you, do it in small sprints, 2 weeks preferably, and go incremental. Take a small piece at a time and sprint. I took this image from internet and credits to this site.
-It’s easy to work out the Natural way than to defy it! If you are iterative and incremental, you are reaching towards the right hand side of the image! And to make the evolution faster, I suggest you try out Scrumming with ScrumPad.</description></item><item><title>Pair Programming: How am I feeling?</title><link>http://smsohan.com/blog/2009/04/09/pair-programming-how-am-i-feeling/</link><pubDate>Thu, 09 Apr 2009 00:00:00 +0000</pubDate><guid>http://smsohan.com/blog/2009/04/09/pair-programming-how-am-i-feeling/</guid><description>For an explanation of Pair Programming, please visit this wiki entry.
-Good
-I am pair programming on the ScrumPad project now and the feeling in general is good. I have this perception is the work quality is better than doing alone. Also, the amount of time wasted to find small issues are now much reduced. Overall, its good.
-Productivity Increased
-I definitely found the productivity boosted by a factor of 1.</description></item><item><title>Design/Code Review: Now, It's time to realize!</title><link>http://smsohan.com/blog/2009/03/23/designcode-review-now-it-time-to/</link><pubDate>Mon, 23 Mar 2009 00:00:00 +0000</pubDate><guid>http://smsohan.com/blog/2009/03/23/designcode-review-now-it-time-to/</guid><description>Are you doing code reviews?
-Thank God, you are. Not?
-Well, you are not alone. You know, most of your bugs could be killed by reviews. Most of your technical debts could be paid by reviews. Your team could collectively learn more by reviews...
-Now, It's time to realize!
-Start now! It's simple. I have found the following approach to be useful-
-Pair up with one developer. Make it explicit to the team.</description></item><item><title>Part 1: How am I IMPACTing following Scrum?</title><link>http://smsohan.com/blog/2008/11/26/part-1-how-am-i-impacting/</link><pubDate>Wed, 26 Nov 2008 00:00:00 +0000</pubDate><guid>http://smsohan.com/blog/2008/11/26/part-1-how-am-i-impacting/</guid><description>In a previous post in this blog, I introduced the nice little acronym IMPACT for agile. To recap, here is what IMPACT stands for -
-"Iterative and Incremental development of a software by means of Merciless refactoring, Peer reviews, Automated acceptance testing, Continuous integration and of course, Test driven development"
-To give you a little background around my story, let me tell you about a project that I am working since June 2006.</description></item><item><title>Iterative and Incremental implementation of Code Reviews</title><link>http://smsohan.com/blog/2008/11/03/iterative-and-incremental/</link><pubDate>Mon, 03 Nov 2008 00:00:00 +0000</pubDate><guid>http://smsohan.com/blog/2008/11/03/iterative-and-incremental/</guid><description>Extreme Programming (XP) advocates for a pair-programming, taking the code review to its extreme. I have also found that pair programming generates a lot of speed and also helps producing better quality product in the first time. But, at the same time it's difficult to impress the management or prove return on investment associated with pair programming to the business people. So, what is the best possible solution? I believe, we can implement frequent peer code reviews to mimic the pair programming to some extent and get the benefit out of it.</description></item><item><title>INVEST - Characteristics of Effective User Stories</title><link>http://smsohan.com/blog/2008/05/28/invest-characteristics-of-effective/</link><pubDate>Wed, 28 May 2008 00:00:00 +0000</pubDate><guid>http://smsohan.com/blog/2008/05/28/invest-characteristics-of-effective/</guid><description>In Agile Software Development, for example SCRUM and XP, User Story is a tool to capture the requirements from the clients. The term User Story takes a very free form. Sometimes, we feel that there needs to be a boundary so that a user story is an effective one and not misused. I have a feeling that INVEST defines the border line on this regard.
-The INVEST principle is a very good guideline for defining user stories in an agile environment.</description></item><item><title>What does a Scrum Master really do?</title><link>http://smsohan.com/blog/2008/03/08/what-does-scrum-master-do/</link><pubDate>Sat, 08 Mar 2008 00:00:00 +0000</pubDate><guid>http://smsohan.com/blog/2008/03/08/what-does-scrum-master-do/</guid><description>Hmm! I am now a CSM (Certified Scrum Master) after two days of training with CST Pette Deemer.
-You want to congratulate me! Lets congratulate me first-
-You: Congratulations! It's really a great news! How does it feel to be a CSM?
-Me: Greaaaaaaaat! You know, its so cool that my profile gets a CSM on it!
-You: Oh Sohan! I am so sure that you will contribute more at the company?</description></item><item><title>Prerequisites for IID</title><link>http://smsohan.com/blog/2007/11/28/prerequisites-for-iid/</link><pubDate>Wed, 28 Nov 2007 00:00:00 +0000</pubDate><guid>http://smsohan.com/blog/2007/11/28/prerequisites-for-iid/</guid><description>Up to now, I have figured out that teams trying to behave agile sometimes fall into the cave of pretending to be agile (e.g. stand up meetings and less than just enough planning and short iterations so on!). Often, when this pretending takes places for days, it creates a illusion on the minds of the people that they might be doing the "right thing". And all on a sudden, someone discovers things are breaking and there is no way out of this disaster!</description></item><item><title>Two Aspects of Agile Software Development Process</title><link>http://smsohan.com/blog/2007/11/28/two-aspects-of-agile-software/</link><pubDate>Wed, 28 Nov 2007 00:00:00 +0000</pubDate><guid>http://smsohan.com/blog/2007/11/28/two-aspects-of-agile-software/</guid><description>I have been in practice with the famous agile software development process called "Scrum" for more than a year. I have had the opportunity to see a SCRUM team developing from scratch in a completely start-up environment.
-I will point to the two aspects as,
-1. Management aspects.
-2. Technical aspects.
-1. Management aspects
-I encapsulate the things like working on a story by story basis, standing up for daily status update meeting, producing deliveries in short iterations and without much of prior planning into this group.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>agile on Sohan&#39;s Blog</title>
+    <link>http://smsohan.com/categories/agile/</link>
+    <description>Recent content in agile on Sohan&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 22 Oct 2012 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://smsohan.com/categories/agile/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Pair Programming vs. Code Reviews</title>
+      <link>http://smsohan.com/blog/2012/10/22/pairing-vs-code-reviews/</link>
+      <pubDate>Mon, 22 Oct 2012 00:00:00 +0000</pubDate>
+      <guid>http://smsohan.com/blog/2012/10/22/pairing-vs-code-reviews/</guid>
+      <description>Photo credits to http://womendiving.blogspot.ca/2012/08/2012-olympic-games-10m-synchronized.html&#xA;Pair programming is like synchronized swimming. You do it together, you win it together. You try to improve your chances by helping your partner, and vice verca. Even if you lose, its highly likely you&amp;rsquo;ve improved simply by being together sharing a united goal.&#xA;Code review can be fun and really useful too. But deep deep care needs to be taken to ensure it remains same in spirit, that is, the unified shared goal.</description>
+    </item>
+    <item>
+      <title>What&#39;s up next?</title>
+      <link>http://smsohan.com/blog/2010/03/23/whats-up-next/</link>
+      <pubDate>Tue, 23 Mar 2010 00:00:00 +0000</pubDate>
+      <guid>http://smsohan.com/blog/2010/03/23/whats-up-next/</guid>
+      <description>Hello Readers:&#xA;Wish you all are doing great as the Spring already started :-)&#xA;Recently my grad courses are keeping me busy with assignments and projects as the term comes close to an end. So, I haven&#39;t had much time to spend on blogging other than posting the Ruby on Rails link blog called www.DrinkRails.com. However, for my readers, I thought I would post the recent presentation that I put for the Agile course here:</description>
+    </item>
+    <item>
+      <title>Lean Thinking: You will probably like to learn the essence of agile</title>
+      <link>http://smsohan.com/blog/2009/11/06/lean-thinking-you-will-probably-like-to/</link>
+      <pubDate>Fri, 06 Nov 2009 00:00:00 +0000</pubDate>
+      <guid>http://smsohan.com/blog/2009/11/06/lean-thinking-you-will-probably-like-to/</guid>
+      <description>Image taken from: http://www.leansoftwareinstitute.com/images/img_bigpicture.jpg&#xA;If you read the Poppendieck&#39;s book called, &#34;Lean Software Development : An Agile Toolkit&#34;, you probably liked it because it managed to get the essence out of agile practices. So, what are these core principles? Well, most of you already know the phrase, &#34;Inspect and Adapt&#34;. Now, you also know a bunch of specifications that facilitate this, for an instance, Scrum, XP etc.&#xA;Reading the book, I had a realization that, its good to talk using concrete facts as much as possible.</description>
+    </item>
+    <item>
+      <title>Communicating tools for working on remote projects</title>
+      <link>http://smsohan.com/blog/2009/10/17/communicating-tools-for-working-on/</link>
+      <pubDate>Sat, 17 Oct 2009 00:00:00 +0000</pubDate>
+      <guid>http://smsohan.com/blog/2009/10/17/communicating-tools-for-working-on/</guid>
+      <description>Ever since I started working in the software industry, as a freelancer or representing a company, I found the most challenging part of a remote software development project is &#34;Communication&#34;. In agile setup, collaboration plays a leading role to be effective and efficient.&#xA;By communication, I mean the following:-Getting the spec as intended by the client.Asking specific questions on time.Status update about progress, blocks and forthcoming events.Getting feedback as intended by the client.</description>
+    </item>
+    <item>
+      <title>The CGI story on agile scaling success on a large project</title>
+      <link>http://smsohan.com/blog/2009/09/09/cgi-story-on-agile-scaling-success-on/</link>
+      <pubDate>Wed, 09 Sep 2009 00:00:00 +0000</pubDate>
+      <guid>http://smsohan.com/blog/2009/09/09/cgi-story-on-agile-scaling-success-on/</guid>
+      <description>This intro is from the presenters:-&#xA;PAS was a joint venture development initiative by 4 major oil and gas&#xA;companies and CGI. Devon, Encana, Husky and Talisman joined with CGI to&#xA;develop a new Production and Revenue Application. Each company put 3 senior&#xA;business resources on the project. The development component of the PAS&#xA;initiative cost $35M over 5 years with up to 90 people on the team. This</description>
+    </item>
+    <item>
+      <title>Rambling stories from my days @ Code71 : Startup days</title>
+      <link>http://smsohan.com/blog/2009/08/08/rambling-stories-from-my-days-code71/</link>
+      <pubDate>Sat, 08 Aug 2009 00:00:00 +0000</pubDate>
+      <guid>http://smsohan.com/blog/2009/08/08/rambling-stories-from-my-days-code71/</guid>
+      <description>Sighs!&#xA;Back then, on Friday, May 26, 2006, I was a final year undergrad student at CSE, BUET. I was looking for a part-time software dev job opportunity and found a little one page advert for a student job at asha-technologies (lately renamed as Code71). Visited their website and thought it might be worth giving a try!&#xA;As usual, I was interviewed over phone and enjoyed a long 2 hour interview on premise.</description>
+    </item>
+    <item>
+      <title>Lesson#2: Pace Your Sprint Rightly</title>
+      <link>http://smsohan.com/blog/2009/06/15/2009-06-15-lesson2-pace-your-sprint-rightly/</link>
+      <pubDate>Mon, 15 Jun 2009 00:00:00 +0000</pubDate>
+      <guid>http://smsohan.com/blog/2009/06/15/2009-06-15-lesson2-pace-your-sprint-rightly/</guid>
+      <description>In my previous post, I said about being incremental. Here come the next thing, being “ITERATIVE”. A prefer the term Sprint than Iteration.&#xA;So, once you decided to take small increments, make sure you reach the targets sprinting.&#xA;I suggest you prepare for sprinting with the right techniques and tools. A few recommendations-&#xA;Never miss a daily standup meeting. Spend only 2 minutes (or less) per person answering the three questions – what did you do yesterday, what’s on the plate for today and what is blocking the race?</description>
+    </item>
+    <item>
+      <title>Lesson#2: Pace Your Sprint Rightly</title>
+      <link>http://smsohan.com/blog/2009/06/15/lesson2-pace-your-sprint-rightly/</link>
+      <pubDate>Mon, 15 Jun 2009 00:00:00 +0000</pubDate>
+      <guid>http://smsohan.com/blog/2009/06/15/lesson2-pace-your-sprint-rightly/</guid>
+      <description>In my previous post, I said about being incremental. Here come the next thing, being “ITERATIVE”. A prefer the term Sprint than Iteration.&#xA;So, once you decided to take small increments, make sure you reach the targets sprinting.&#xA;I suggest you prepare for sprinting with the right techniques and tools. A few recommendations-&#xA;Never miss a daily standup meeting. Spend only 2 minutes (or less) per person answering the three questions – what did you do yesterday, what’s on the plate for today and what is blocking the race?</description>
+    </item>
+    <item>
+      <title>Its easier to get lost! Would you?</title>
+      <link>http://smsohan.com/blog/2009/06/03/its-easier-to-get-lost-would-you/</link>
+      <pubDate>Wed, 03 Jun 2009 00:00:00 +0000</pubDate>
+      <guid>http://smsohan.com/blog/2009/06/03/its-easier-to-get-lost-would-you/</guid>
+      <description>I was talking to a friend of mine, who started a IT start up and working full time with a few others to foster the business. He was telling me-&#xA;“We have 13 projects running at this moment. We are working our heart out. But, we are not finding any time to do Test Driven Development, Continuous Integration and all the good things…”&#xA;Well, I understand how it feels! As the title says, “Its easier to get lost!</description>
+    </item>
+    <item>
+      <title>Lesson#1: Going Incremental is Natural!</title>
+      <link>http://smsohan.com/blog/2009/06/03/lesson1-going-incremental-is-natural/</link>
+      <pubDate>Wed, 03 Jun 2009 00:00:00 +0000</pubDate>
+      <guid>http://smsohan.com/blog/2009/06/03/lesson1-going-incremental-is-natural/</guid>
+      <description>As Scrum and Agile processes tell you, do it in small sprints, 2 weeks preferably, and go incremental. Take a small piece at a time and sprint. I took this image from internet and credits to this site.&#xA;It’s easy to work out the Natural way than to defy it! If you are iterative and incremental, you are reaching towards the right hand side of the image! And to make the evolution faster, I suggest you try out Scrumming with ScrumPad.</description>
+    </item>
+    <item>
+      <title>Pair Programming: How am I feeling?</title>
+      <link>http://smsohan.com/blog/2009/04/09/pair-programming-how-am-i-feeling/</link>
+      <pubDate>Thu, 09 Apr 2009 00:00:00 +0000</pubDate>
+      <guid>http://smsohan.com/blog/2009/04/09/pair-programming-how-am-i-feeling/</guid>
+      <description>For an explanation of Pair Programming, please visit this wiki entry.&#xA;Good&#xA;I am pair programming on the ScrumPad project now and the feeling in general is good. I have this perception is the work quality is better than doing alone. Also, the amount of time wasted to find small issues are now much reduced. Overall, its good.&#xA;Productivity Increased&#xA;I definitely found the productivity boosted by a factor of 1.</description>
+    </item>
+    <item>
+      <title>Design/Code Review: Now, It&#39;s time to realize!</title>
+      <link>http://smsohan.com/blog/2009/03/23/designcode-review-now-it-time-to/</link>
+      <pubDate>Mon, 23 Mar 2009 00:00:00 +0000</pubDate>
+      <guid>http://smsohan.com/blog/2009/03/23/designcode-review-now-it-time-to/</guid>
+      <description>Are you doing code reviews?&#xA;Thank God, you are. Not?&#xA;Well, you are not alone. You know, most of your bugs could be killed by reviews. Most of your technical debts could be paid by reviews. Your team could collectively learn more by reviews...&#xA;Now, It&#39;s time to realize!&#xA;Start now! It&#39;s simple. I have found the following approach to be useful-&#xA;Pair up with one developer. Make it explicit to the team.</description>
+    </item>
+    <item>
+      <title>Part 1: How am I IMPACTing following Scrum?</title>
+      <link>http://smsohan.com/blog/2008/11/26/part-1-how-am-i-impacting/</link>
+      <pubDate>Wed, 26 Nov 2008 00:00:00 +0000</pubDate>
+      <guid>http://smsohan.com/blog/2008/11/26/part-1-how-am-i-impacting/</guid>
+      <description>In a previous post in this blog, I introduced the nice little acronym IMPACT for agile. To recap, here is what IMPACT stands for -&#xA;&#34;Iterative and Incremental development of a software by means of Merciless refactoring, Peer reviews, Automated acceptance testing, Continuous integration and of course, Test driven development&#34;&#xA;To give you a little background around my story, let me tell you about a project that I am working since June 2006.</description>
+    </item>
+    <item>
+      <title>Iterative and Incremental implementation of Code Reviews</title>
+      <link>http://smsohan.com/blog/2008/11/03/iterative-and-incremental/</link>
+      <pubDate>Mon, 03 Nov 2008 00:00:00 +0000</pubDate>
+      <guid>http://smsohan.com/blog/2008/11/03/iterative-and-incremental/</guid>
+      <description>Extreme Programming (XP) advocates for a pair-programming, taking the code review to its extreme. I have also found that pair programming generates a lot of speed and also helps producing better quality product in the first time. But, at the same time it&#39;s difficult to impress the management or prove return on investment associated with pair programming to the business people. So, what is the best possible solution? I believe, we can implement frequent peer code reviews to mimic the pair programming to some extent and get the benefit out of it.</description>
+    </item>
+    <item>
+      <title>INVEST - Characteristics of Effective User Stories</title>
+      <link>http://smsohan.com/blog/2008/05/28/invest-characteristics-of-effective/</link>
+      <pubDate>Wed, 28 May 2008 00:00:00 +0000</pubDate>
+      <guid>http://smsohan.com/blog/2008/05/28/invest-characteristics-of-effective/</guid>
+      <description>In Agile Software Development, for example SCRUM and XP, User Story is a tool to capture the requirements from the clients. The term User Story takes a very free form. Sometimes, we feel that there needs to be a boundary so that a user story is an effective one and not misused. I have a feeling that INVEST defines the border line on this regard.&#xA;The INVEST principle is a very good guideline for defining user stories in an agile environment.</description>
+    </item>
+    <item>
+      <title>What does a Scrum Master really do?</title>
+      <link>http://smsohan.com/blog/2008/03/08/what-does-scrum-master-do/</link>
+      <pubDate>Sat, 08 Mar 2008 00:00:00 +0000</pubDate>
+      <guid>http://smsohan.com/blog/2008/03/08/what-does-scrum-master-do/</guid>
+      <description>Hmm! I am now a CSM (Certified Scrum Master) after two days of training with CST Pette Deemer.&#xA;You want to congratulate me! Lets congratulate me first-&#xA;You: Congratulations! It&#39;s really a great news! How does it feel to be a CSM?&#xA;Me: Greaaaaaaaat! You know, its so cool that my profile gets a CSM on it!&#xA;You: Oh Sohan! I am so sure that you will contribute more at the company?</description>
+    </item>
+    <item>
+      <title>Prerequisites for IID</title>
+      <link>http://smsohan.com/blog/2007/11/28/prerequisites-for-iid/</link>
+      <pubDate>Wed, 28 Nov 2007 00:00:00 +0000</pubDate>
+      <guid>http://smsohan.com/blog/2007/11/28/prerequisites-for-iid/</guid>
+      <description>Up to now, I have figured out that teams trying to behave agile sometimes fall into the cave of pretending to be agile (e.g. stand up meetings and less than just enough planning and short iterations so on!). Often, when this pretending takes places for days, it creates a illusion on the minds of the people that they might be doing the &#34;right thing&#34;. And all on a sudden, someone discovers things are breaking and there is no way out of this disaster!</description>
+    </item>
+    <item>
+      <title>Two Aspects of Agile Software Development Process</title>
+      <link>http://smsohan.com/blog/2007/11/28/two-aspects-of-agile-software/</link>
+      <pubDate>Wed, 28 Nov 2007 00:00:00 +0000</pubDate>
+      <guid>http://smsohan.com/blog/2007/11/28/two-aspects-of-agile-software/</guid>
+      <description>I have been in practice with the famous agile software development process called &#34;Scrum&#34; for more than a year. I have had the opportunity to see a SCRUM team developing from scratch in a completely start-up environment.&#xA;I will point to the two aspects as,&#xA;1. Management aspects.&#xA;2. Technical aspects.&#xA;1. Management aspects&#xA;I encapsulate the things like working on a story by story basis, standing up for daily status update meeting, producing deliveries in short iterations and without much of prior planning into this group.</description>
+    </item>
+  </channel>
+</rss>

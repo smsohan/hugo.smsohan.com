@@ -1,2 +1,19 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>ReadCodeWithSohan on Sohan's Blog</title><link>http://smsohan.com/categories/readcodewithsohan/</link><description>Recent content in ReadCodeWithSohan on Sohan's Blog</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Fri, 28 Feb 2020 00:00:00 +0000</lastBuildDate><atom:link href="http://smsohan.com/categories/readcodewithsohan/index.xml" rel="self" type="application/rss+xml"/><item><title>I Just Love to Read Code</title><link>http://smsohan.com/blog/2020/02/28/i-just-love-to-read-code/</link><pubDate>Fri, 28 Feb 2020 00:00:00 +0000</pubDate><guid>http://smsohan.com/blog/2020/02/28/i-just-love-to-read-code/</guid><description>This week I took a couple of days to focus on my mid-thirties. It got me thinking about what I actually love doing as a hobby. The list is fairly small, walks with the family, soccer, tennis, coffee with friends, reading, writing, car videos, and Netflix.
-Thinking about how I spend my idle time, I realized that I missed two things that I actually love and spend a fair amount of time on: stock markets and reading open-source code.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ReadCodeWithSohan on Sohan&#39;s Blog</title>
+    <link>http://smsohan.com/categories/readcodewithsohan/</link>
+    <description>Recent content in ReadCodeWithSohan on Sohan&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 28 Feb 2020 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://smsohan.com/categories/readcodewithsohan/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>I Just Love to Read Code</title>
+      <link>http://smsohan.com/blog/2020/02/28/i-just-love-to-read-code/</link>
+      <pubDate>Fri, 28 Feb 2020 00:00:00 +0000</pubDate>
+      <guid>http://smsohan.com/blog/2020/02/28/i-just-love-to-read-code/</guid>
+      <description>This week I took a couple of days to focus on my mid-thirties. It got me thinking about what I actually love doing as a hobby. The list is fairly small, walks with the family, soccer, tennis, coffee with friends, reading, writing, car videos, and Netflix.&#xA;Thinking about how I spend my idle time, I realized that I missed two things that I actually love and spend a fair amount of time on: stock markets and reading open-source code.</description>
+    </item>
+  </channel>
+</rss>

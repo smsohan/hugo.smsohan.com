@@ -1,14 +1,82 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>JavaScript on Sohan's Blog</title><link>http://smsohan.com/categories/javascript/</link><description>Recent content in JavaScript on Sohan's Blog</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Thu, 03 Apr 2014 00:00:00 +0000</lastBuildDate><atom:link href="http://smsohan.com/categories/javascript/index.xml" rel="self" type="application/rss+xml"/><item><title>AngularJS: Refresh or Die</title><link>http://smsohan.com/blog/2014/04/03/angularjs-refresh-or-die/</link><pubDate>Thu, 03 Apr 2014 00:00:00 +0000</pubDate><guid>http://smsohan.com/blog/2014/04/03/angularjs-refresh-or-die/</guid><description>Just worked on my first AngularJS project at http://loveyyc.info (source code) and wanted to share my thoughts about it while the memory is still fresh. My impression in a one-liner:
-AngularJS needs to rename a lot of things and introduce higher level abstraction
-A great technology only becomes so because people feel happy about it. The happiness for people like me comes from the fact that not only I understand the technology well, but also find it to be easy to use.</description></item><item><title>Introducing Asset Pipeline to Older Apps?</title><link>http://smsohan.com/blog/2013/10/08/how-to-introduce-asset-pipeline-for-older-apps/</link><pubDate>Tue, 08 Oct 2013 00:00:00 +0000</pubDate><guid>http://smsohan.com/blog/2013/10/08/how-to-introduce-asset-pipeline-for-older-apps/</guid><description>Introducing Asset Pipeline to an old project is quite hard. Most pre-asset pipeline projects used small JavaScript/CSS files that are often scoped to a single page or a part of the application. A typical example is as follows:
-$(function(){ $(&amp;#39;#login&amp;#39;).on(&amp;#39;click&amp;#39;, function(){ var isLoginValid = hasValue($(&amp;#39;#user_name&amp;#39;)) &amp;amp;&amp;amp; hasValue($(&amp;#39;#user_password&amp;#39;)); if(isLoginValid){ $(&amp;#39;#login_errors&amp;#39;).hide(); $(&amp;#39;#login_form&amp;#39;).submit(); } else { $(&amp;#39;#login_errors&amp;#39;).show(); return false; } }); }); Now, within the scope of the login page this code executes just fine.</description></item><item><title>AngularJS is Very Productive, and Cool too!</title><link>http://smsohan.com/blog/2013/06/14/angularjs-is-very-productive-and-cool/</link><pubDate>Fri, 14 Jun 2013 00:00:00 +0000</pubDate><guid>http://smsohan.com/blog/2013/06/14/angularjs-is-very-productive-and-cool/</guid><description>It has a very steep learning curve, but yields a superb productivity boost once you&amp;rsquo;ve learned it. Check out my demo of the wizard that we&amp;rsquo;ll discuss next.
-AngularJS works by extending HTML to produce declarative UI code and eliminating the need for a lot of boilerplate code. For example, the mental model of a wizard can be expressed using the following HTML:
-&amp;lt;wizard title=&amp;#34;Flight Search&amp;#34;&amp;gt; &amp;lt;step title=&amp;#34;Search&amp;#34;&amp;gt; &amp;lt;/step&amp;gt; &amp;lt;step title=&amp;#34;Select a flight&amp;#34;&amp;gt; &amp;lt;/step&amp;gt; &amp;lt;step title=&amp;#34;Select a return flight&amp;#34;&amp;gt; &amp;lt;/step&amp;gt; &amp;lt;step title=&amp;#34;Checkout&amp;#34;&amp;gt; &amp;lt;/step&amp;gt; &amp;lt;step title=&amp;#34;Confirm purchase&amp;#34;&amp;gt; &amp;lt;/step&amp;gt; &amp;lt;step title=&amp;#34;Receipt&amp;#34;&amp;gt; &amp;lt;/step&amp;gt; &amp;lt;/wizard&amp;gt; With AngularJS, one can write exactly this markup with the help of two custom directives, widget and step.</description></item><item><title>Simplicity and Client-Side MVC</title><link>http://smsohan.com/blog/2013/05/07/simplicity-and-client-side-mvc/</link><pubDate>Tue, 07 May 2013 00:00:00 +0000</pubDate><guid>http://smsohan.com/blog/2013/05/07/simplicity-and-client-side-mvc/</guid><description>After spending about 6 months on this new project using BackboneJS, and spending some hours learning AngularJS and EmberJS, my realization at this point is:
-Use Client-Side MVC very Selectively.
-Sometimes on a single page of your app, you need to offer a lot of interactions, each scoped to a small part of the page only. In such cases Client-Side MVC offers some neat features. I&amp;rsquo;ll try to share my perspective with some concrete examples where I&amp;rsquo;d say yes/no to Client-Side MVC.</description></item><item><title>LoveJS Presentation at CAMUG</title><link>http://smsohan.com/blog/2012/09/13/lovejs-presentation-at-camug/</link><pubDate>Thu, 13 Sep 2012 00:00:00 +0000</pubDate><guid>http://smsohan.com/blog/2012/09/13/lovejs-presentation-at-camug/</guid><description>I paired with @TylerMercier as we did a little hands-on demo on writing testable and OO JavaScript.
-This was mostly based on our pairing experience on the current project, but also had things that we learned from our previous web projects. I wanted to share some of the highlights of this session with my readers on this blog:
-From experience, I have seen a few charactersitics that make JavaScript coding a real fun.</description></item><item><title>Deploying to TV Screens</title><link>http://smsohan.com/blog/2012/07/28/deploying-to-tv-screens/</link><pubDate>Sat, 28 Jul 2012 00:00:00 +0000</pubDate><guid>http://smsohan.com/blog/2012/07/28/deploying-to-tv-screens/</guid><description>Off late, I am working on a project to render real time business data with interesting visualizations, so people can feel the pulse of the business. For the last couple of months, I have been planning to write a detailed post about it. But after a few false starts, I am finally settling on smaller posts, telling a small part of the story each time.
-So, have you ever worked on a web application that is primarily viewed through 55&amp;quot;+ 1080p TV screens?</description></item><item><title>My Take on Client-Side MVC</title><link>http://smsohan.com/blog/2012/03/30/my-take-on-client-side-mvc/</link><pubDate>Fri, 30 Mar 2012 00:00:00 +0000</pubDate><guid>http://smsohan.com/blog/2012/03/30/my-take-on-client-side-mvc/</guid><description>I just rolled off my last project this Wednesday. It was a great team, worked on some cutting edge technologies, mobile web, HTML5, mongo and some other fun stuff. Now that I got two "beach" days before jumping on to the next gig, I spent some time trying out Backbonejs to knockout one item from the long list of to-dos. This post is about my initial take on client side MVC, solely based on these two days with Backbonejs.</description></item><item><title>Care Driven Development: Javascript</title><link>http://smsohan.com/blog/2011/11/20/care-driven-development-javascript/</link><pubDate>Sun, 20 Nov 2011 00:00:00 +0000</pubDate><guid>http://smsohan.com/blog/2011/11/20/care-driven-development-javascript/</guid><description>There is * Driven Development, where they listed "all possible thing" driven development and dedicated a whole website to it! Well, I am adding one more to the list, "Care Driven Development", with an emphasis to Javascript coding.
-Javascript coding, do you care enough?CSS is the most hairy spagetti piece of almost any web project. And its not leading by a far distance to it's first cousin; Javascript. But, the good thing is, it just takes a little care to clean the bush out of Javascript and make it pretty.</description></item><item><title>Hardcoded URLs in Javascript are too Slippery</title><link>http://smsohan.com/blog/2011/09/23/hardcoded-urls-in-javascript-are-too/</link><pubDate>Fri, 23 Sep 2011 00:00:00 +0000</pubDate><guid>http://smsohan.com/blog/2011/09/23/hardcoded-urls-in-javascript-are-too/</guid><description>Photo credits to&amp;nbsp;Esteban Cavrico
-I was working on a web project that lets you delete some records using Ajax. The following is just an example, but you might be familiar with a similar code already:
-This code used to work when the DELETE endpoint was indeed under '/blog/posts'. However, at some point a developer wants to remove the '/blog' from all the endpoints to put them directly under '/posts'! You can see, in such cases it is very hard to catch the bug that would be caused by the faulty JS code.</description></item><item><title>JQuery - I will consider using it in my future web project</title><link>http://smsohan.com/blog/2008/08/04/jquery-i-will-consider-using-it-in-my/</link><pubDate>Mon, 04 Aug 2008 00:00:00 +0000</pubDate><guid>http://smsohan.com/blog/2008/08/04/jquery-i-will-consider-using-it-in-my/</guid><description>I find the problems with cross-browser issues with Javascript to be bothering at times. Also, I am most annoyed with Javascript because, with Javascript, I need to think about another programming language along with my server side programming. I have a feeling that Javascript codes make the web application harder to test using various automated test frameworks and adds complexities as there are different browsers who interpret the Javascript code in different ways.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>JavaScript on Sohan&#39;s Blog</title>
+    <link>http://smsohan.com/categories/javascript/</link>
+    <description>Recent content in JavaScript on Sohan&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 03 Apr 2014 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://smsohan.com/categories/javascript/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>AngularJS: Refresh or Die</title>
+      <link>http://smsohan.com/blog/2014/04/03/angularjs-refresh-or-die/</link>
+      <pubDate>Thu, 03 Apr 2014 00:00:00 +0000</pubDate>
+      <guid>http://smsohan.com/blog/2014/04/03/angularjs-refresh-or-die/</guid>
+      <description>Just worked on my first AngularJS project at http://loveyyc.info (source code) and wanted to share my thoughts about it while the memory is still fresh. My impression in a one-liner:&#xA;AngularJS needs to rename a lot of things and introduce higher level abstraction&#xA;A great technology only becomes so because people feel happy about it. The happiness for people like me comes from the fact that not only I understand the technology well, but also find it to be easy to use.</description>
+    </item>
+    <item>
+      <title>Introducing Asset Pipeline to Older Apps?</title>
+      <link>http://smsohan.com/blog/2013/10/08/how-to-introduce-asset-pipeline-for-older-apps/</link>
+      <pubDate>Tue, 08 Oct 2013 00:00:00 +0000</pubDate>
+      <guid>http://smsohan.com/blog/2013/10/08/how-to-introduce-asset-pipeline-for-older-apps/</guid>
+      <description>Introducing Asset Pipeline to an old project is quite hard. Most pre-asset pipeline projects used small JavaScript/CSS files that are often scoped to a single page or a part of the application. A typical example is as follows:&#xA;$(function(){ $(&amp;#39;#login&amp;#39;).on(&amp;#39;click&amp;#39;, function(){ var isLoginValid = hasValue($(&amp;#39;#user_name&amp;#39;)) &amp;amp;&amp;amp; hasValue($(&amp;#39;#user_password&amp;#39;)); if(isLoginValid){ $(&amp;#39;#login_errors&amp;#39;).hide(); $(&amp;#39;#login_form&amp;#39;).submit(); } else { $(&amp;#39;#login_errors&amp;#39;).show(); return false; } }); }); Now, within the scope of the login page this code executes just fine.</description>
+    </item>
+    <item>
+      <title>AngularJS is Very Productive, and Cool too!</title>
+      <link>http://smsohan.com/blog/2013/06/14/angularjs-is-very-productive-and-cool/</link>
+      <pubDate>Fri, 14 Jun 2013 00:00:00 +0000</pubDate>
+      <guid>http://smsohan.com/blog/2013/06/14/angularjs-is-very-productive-and-cool/</guid>
+      <description>It has a very steep learning curve, but yields a superb productivity boost once you&amp;rsquo;ve learned it. Check out my demo of the wizard that we&amp;rsquo;ll discuss next.&#xA;AngularJS works by extending HTML to produce declarative UI code and eliminating the need for a lot of boilerplate code. For example, the mental model of a wizard can be expressed using the following HTML:&#xA;&amp;lt;wizard title=&amp;#34;Flight Search&amp;#34;&amp;gt; &amp;lt;step title=&amp;#34;Search&amp;#34;&amp;gt; &amp;lt;/step&amp;gt; &amp;lt;step title=&amp;#34;Select a flight&amp;#34;&amp;gt; &amp;lt;/step&amp;gt; &amp;lt;step title=&amp;#34;Select a return flight&amp;#34;&amp;gt; &amp;lt;/step&amp;gt; &amp;lt;step title=&amp;#34;Checkout&amp;#34;&amp;gt; &amp;lt;/step&amp;gt; &amp;lt;step title=&amp;#34;Confirm purchase&amp;#34;&amp;gt; &amp;lt;/step&amp;gt; &amp;lt;step title=&amp;#34;Receipt&amp;#34;&amp;gt; &amp;lt;/step&amp;gt; &amp;lt;/wizard&amp;gt; With AngularJS, one can write exactly this markup with the help of two custom directives, widget and step.</description>
+    </item>
+    <item>
+      <title>Simplicity and Client-Side MVC</title>
+      <link>http://smsohan.com/blog/2013/05/07/simplicity-and-client-side-mvc/</link>
+      <pubDate>Tue, 07 May 2013 00:00:00 +0000</pubDate>
+      <guid>http://smsohan.com/blog/2013/05/07/simplicity-and-client-side-mvc/</guid>
+      <description>After spending about 6 months on this new project using BackboneJS, and spending some hours learning AngularJS and EmberJS, my realization at this point is:&#xA;Use Client-Side MVC very Selectively.&#xA;Sometimes on a single page of your app, you need to offer a lot of interactions, each scoped to a small part of the page only. In such cases Client-Side MVC offers some neat features. I&amp;rsquo;ll try to share my perspective with some concrete examples where I&amp;rsquo;d say yes/no to Client-Side MVC.</description>
+    </item>
+    <item>
+      <title>LoveJS Presentation at CAMUG</title>
+      <link>http://smsohan.com/blog/2012/09/13/lovejs-presentation-at-camug/</link>
+      <pubDate>Thu, 13 Sep 2012 00:00:00 +0000</pubDate>
+      <guid>http://smsohan.com/blog/2012/09/13/lovejs-presentation-at-camug/</guid>
+      <description>I paired with @TylerMercier as we did a little hands-on demo on writing testable and OO JavaScript.&#xA;This was mostly based on our pairing experience on the current project, but also had things that we learned from our previous web projects. I wanted to share some of the highlights of this session with my readers on this blog:&#xA;From experience, I have seen a few charactersitics that make JavaScript coding a real fun.</description>
+    </item>
+    <item>
+      <title>Deploying to TV Screens</title>
+      <link>http://smsohan.com/blog/2012/07/28/deploying-to-tv-screens/</link>
+      <pubDate>Sat, 28 Jul 2012 00:00:00 +0000</pubDate>
+      <guid>http://smsohan.com/blog/2012/07/28/deploying-to-tv-screens/</guid>
+      <description>Off late, I am working on a project to render real time business data with interesting visualizations, so people can feel the pulse of the business. For the last couple of months, I have been planning to write a detailed post about it. But after a few false starts, I am finally settling on smaller posts, telling a small part of the story each time.&#xA;So, have you ever worked on a web application that is primarily viewed through 55&amp;quot;+ 1080p TV screens?</description>
+    </item>
+    <item>
+      <title>My Take on Client-Side MVC</title>
+      <link>http://smsohan.com/blog/2012/03/30/my-take-on-client-side-mvc/</link>
+      <pubDate>Fri, 30 Mar 2012 00:00:00 +0000</pubDate>
+      <guid>http://smsohan.com/blog/2012/03/30/my-take-on-client-side-mvc/</guid>
+      <description>I just rolled off my last project this Wednesday. It was a great team, worked on some cutting edge technologies, mobile web, HTML5, mongo and some other fun stuff. Now that I got two &#34;beach&#34; days before jumping on to the next gig, I spent some time trying out Backbonejs to knockout one item from the long list of to-dos. This post is about my initial take on client side MVC, solely based on these two days with Backbonejs.</description>
+    </item>
+    <item>
+      <title>Care Driven Development: Javascript</title>
+      <link>http://smsohan.com/blog/2011/11/20/care-driven-development-javascript/</link>
+      <pubDate>Sun, 20 Nov 2011 00:00:00 +0000</pubDate>
+      <guid>http://smsohan.com/blog/2011/11/20/care-driven-development-javascript/</guid>
+      <description>There is * Driven Development, where they listed &#34;all possible thing&#34; driven development and dedicated a whole website to it! Well, I am adding one more to the list, &#34;Care Driven Development&#34;, with an emphasis to Javascript coding.&#xA;Javascript coding, do you care enough?CSS is the most hairy spagetti piece of almost any web project. And its not leading by a far distance to it&#39;s first cousin; Javascript. But, the good thing is, it just takes a little care to clean the bush out of Javascript and make it pretty.</description>
+    </item>
+    <item>
+      <title>Hardcoded URLs in Javascript are too Slippery</title>
+      <link>http://smsohan.com/blog/2011/09/23/hardcoded-urls-in-javascript-are-too/</link>
+      <pubDate>Fri, 23 Sep 2011 00:00:00 +0000</pubDate>
+      <guid>http://smsohan.com/blog/2011/09/23/hardcoded-urls-in-javascript-are-too/</guid>
+      <description>Photo credits to&amp;nbsp;Esteban Cavrico&#xA;I was working on a web project that lets you delete some records using Ajax. The following is just an example, but you might be familiar with a similar code already:&#xA;This code used to work when the DELETE endpoint was indeed under &#39;/blog/posts&#39;. However, at some point a developer wants to remove the &#39;/blog&#39; from all the endpoints to put them directly under &#39;/posts&#39;! You can see, in such cases it is very hard to catch the bug that would be caused by the faulty JS code.</description>
+    </item>
+    <item>
+      <title>JQuery - I will consider using it in my future web project</title>
+      <link>http://smsohan.com/blog/2008/08/04/jquery-i-will-consider-using-it-in-my/</link>
+      <pubDate>Mon, 04 Aug 2008 00:00:00 +0000</pubDate>
+      <guid>http://smsohan.com/blog/2008/08/04/jquery-i-will-consider-using-it-in-my/</guid>
+      <description>I find the problems with cross-browser issues with Javascript to be bothering at times. Also, I am most annoyed with Javascript because, with Javascript, I need to think about another programming language along with my server side programming. I have a feeling that Javascript codes make the web application harder to test using various automated test frameworks and adds complexities as there are different browsers who interpret the Javascript code in different ways.</description>
+    </item>
+  </channel>
+</rss>

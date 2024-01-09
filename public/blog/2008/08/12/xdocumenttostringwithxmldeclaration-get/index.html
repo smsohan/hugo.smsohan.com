@@ -1,9 +1,210 @@
-<!doctype html><html lang=en-us><head><meta charset=utf-8><meta http-equiv=x-ua-compatible content="IE=edge,chrome=1"><title>XDocument.ToStringWithXmlDeclaration() - Get the string representation of XDcoument with its Xml Declaration | Sohan's Blog</title><meta name=viewport content="width=device-width,minimum-scale=1"><meta name=description content="The System.Xml.Linq.XDocument.ToString() produces a serialized string version of the XDocument object. But unfortunately, while doing so, it leaves the xml declaration in the serialized version which may be required in your application.
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <title>XDocument.ToStringWithXmlDeclaration() - Get the string representation of XDcoument with its Xml Declaration | Sohan&#39;s Blog</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta name="description" content="The System.Xml.Linq.XDocument.ToString() produces a serialized string version of the XDocument object. But unfortunately, while doing so, it leaves the xml declaration in the serialized version which may be required in your application.
 Again, there is another method called Save that produces the serialized version including xml declaration. So, I think we can write a simple extension method for producing the xml declaration as shown in the following -
-14 class Program"><meta name=generator content="Hugo 0.108.0"><meta name=robots content="noindex, nofollow"><link rel=stylesheet href=/ananke/css/main.min.css><meta property="og:title" content="XDocument.ToStringWithXmlDeclaration() - Get the string representation of XDcoument with its Xml Declaration"><meta property="og:description" content="The System.Xml.Linq.XDocument.ToString() produces a serialized string version of the XDocument object. But unfortunately, while doing so, it leaves the xml declaration in the serialized version which may be required in your application.
+14 class Program">
+    <meta name="generator" content="Hugo 0.121.0">
+    
+    
+    
+    
+      <meta name="robots" content="noindex, nofollow">
+    
+
+    
+<link rel="stylesheet" href="/ananke/css/main.css" >
+
+
+
+    
+    
+    
+      
+
+    
+
+    
+    
+    <meta property="og:title" content="XDocument.ToStringWithXmlDeclaration() - Get the string representation of XDcoument with its Xml Declaration" />
+<meta property="og:description" content="The System.Xml.Linq.XDocument.ToString() produces a serialized string version of the XDocument object. But unfortunately, while doing so, it leaves the xml declaration in the serialized version which may be required in your application.
 Again, there is another method called Save that produces the serialized version including xml declaration. So, I think we can write a simple extension method for producing the xml declaration as shown in the following -
-14 class Program"><meta property="og:type" content="article"><meta property="og:url" content="http://smsohan.com/blog/2008/08/12/xdocumenttostringwithxmldeclaration-get/"><meta property="article:section" content="posts"><meta property="article:published_time" content="2008-08-12T00:00:00+00:00"><meta property="article:modified_time" content="2008-08-12T00:00:00+00:00"><meta itemprop=name content="XDocument.ToStringWithXmlDeclaration() - Get the string representation of XDcoument with its Xml Declaration"><meta itemprop=description content="The System.Xml.Linq.XDocument.ToString() produces a serialized string version of the XDocument object. But unfortunately, while doing so, it leaves the xml declaration in the serialized version which may be required in your application.
+14 class Program" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://smsohan.com/blog/2008/08/12/xdocumenttostringwithxmldeclaration-get/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2008-08-12T00:00:00+00:00" />
+<meta property="article:modified_time" content="2008-08-12T00:00:00+00:00" />
+
+<meta itemprop="name" content="XDocument.ToStringWithXmlDeclaration() - Get the string representation of XDcoument with its Xml Declaration">
+<meta itemprop="description" content="The System.Xml.Linq.XDocument.ToString() produces a serialized string version of the XDocument object. But unfortunately, while doing so, it leaves the xml declaration in the serialized version which may be required in your application.
 Again, there is another method called Save that produces the serialized version including xml declaration. So, I think we can write a simple extension method for producing the xml declaration as shown in the following -
-14 class Program"><meta itemprop=datePublished content="2008-08-12T00:00:00+00:00"><meta itemprop=dateModified content="2008-08-12T00:00:00+00:00"><meta itemprop=wordCount content="210"><meta itemprop=keywords content><meta name=twitter:card content="summary"><meta name=twitter:title content="XDocument.ToStringWithXmlDeclaration() - Get the string representation of XDcoument with its Xml Declaration"><meta name=twitter:description content="The System.Xml.Linq.XDocument.ToString() produces a serialized string version of the XDocument object. But unfortunately, while doing so, it leaves the xml declaration in the serialized version which may be required in your application.
+14 class Program"><meta itemprop="datePublished" content="2008-08-12T00:00:00+00:00" />
+<meta itemprop="dateModified" content="2008-08-12T00:00:00+00:00" />
+<meta itemprop="wordCount" content="210">
+<meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/><meta name="twitter:title" content="XDocument.ToStringWithXmlDeclaration() - Get the string representation of XDcoument with its Xml Declaration"/>
+<meta name="twitter:description" content="The System.Xml.Linq.XDocument.ToString() produces a serialized string version of the XDocument object. But unfortunately, while doing so, it leaves the xml declaration in the serialized version which may be required in your application.
 Again, there is another method called Save that produces the serialized version including xml declaration. So, I think we can write a simple extension method for producing the xml declaration as shown in the following -
-14 class Program"><style>.athelas,.body-text{font-family:helvetica neue,Helvetica,Arial,sans-serif}.body-text div,p,article,section{font-size:1rem;line-height:1.4rem}.athelas.fw1{font-weight:inherit}h1.f1{line-height:4rem}</style></head><body class="ma0 body-text"><header><div class=bg-navy><nav class="pv3 ph3 ph4-ns" role=navigation><div class="flex-l justify-between items-center center"><a href=/ class="f3 fw2 hover-white no-underline white-90 dib">Sohan's Blog</a><div class="flex-l items-center"><ul class="pl0 mr3"><li class="list f5 f4-ns fw4 dib pr3"><a class="hover-white no-underline white-90" href=/home/ title="About page">About</a></li></ul><div class=ananke-socials></div></div></div></nav></div></header><main class=pb7 role=main><article class="flex-l flex-wrap justify-between mw8 center ph3"><header class="mt4 w-100"><aside class="instapaper_ignoref b helvetica tracked">POSTS</aside><div id=sharing class="mt3 ananke-socials"></div><h1 class="f1 athelas mt3 mb1">XDocument.ToStringWithXmlDeclaration() - Get the string representation of XDcoument with its Xml Declaration</h1><time class="f6 mv4 dib tracked" datetime=2008-08-12T00:00:00Z>August 12, 2008</time></header><div class="nested-copy-line-height lh-copy body-text f4 nested-links mid-gray pr4-l w-two-thirds-l"><div class=post><p>The System.Xml.Linq.XDocument.ToString() produces a serialized string version of the XDocument object. But unfortunately, while doing so, it leaves the xml declaration in the serialized version which may be required in your application.</p><p>Again, there is another method called Save that produces the serialized version including xml declaration. So, I think we can write a simple extension method for producing the xml declaration as shown in the following -</p><div style="background:#fff repeat;-moz-background-clip:-moz-initial;-moz-background-origin:-moz-initial;-moz-background-inline-policy:-moz-initial;font-family:courier new;font-size:10pt;color:#000"><p style=margin:0><span style=color:#2b91af>14</span> <span style=color:blue>class</span> <span style=color:#2b91af>Program</span></p><p style=margin:0><span style=color:#2b91af>15</span> {</p><p style=margin:0><span style=color:#2b91af>16</span> <span style=color:blue>static</span> <span style=color:blue>void</span> Main(<span style=color:blue>string</span>[] args)</p><p style=margin:0><span style=color:#2b91af>17</span> {</p><p style=margin:0><span style=color:#2b91af>18</span></p><p style=margin:0><span style=color:#2b91af>19</span> <span style=color:#2b91af>XDocument</span> doc = <span style=color:blue>new</span> <span style=color:#2b91af>XDocument</span>(<span style=color:blue>new</span> <span style=color:#2b91af>XDeclaration</span>(<span style=color:#a31515>"1.0"</span>, <span style=color:#a31515>"utf-8"</span>, <span style=color:blue>null</span>), <span style=color:blue>new</span> <span style=color:#2b91af>XElement</span>(<span style=color:#a31515>"root"</span>));</p><p style=margin:0><span style=color:#2b91af>20</span> <span style=color:#2b91af>Console</span>.WriteLine(doc.ToStringWithXmlDeclaration());</p><p style=margin:0><span style=color:#2b91af>21</span> }</p><p style=margin:0><span style=color:#2b91af>22</span> }</p><p style=margin:0><span style=color:#2b91af>23</span></p><p style=margin:0><span style=color:#2b91af>24</span></p><p style=margin:0><span style=color:#2b91af>25</span> <span style=color:blue>public</span> <span style=color:blue>static</span> <span style=color:blue>class</span> <span style=color:#2b91af>XDocumentExtensions</span></p><p style=margin:0><span style=color:#2b91af>26</span> {</p><p style=margin:0><span style=color:#2b91af>27</span> <span style=color:blue>public</span> <span style=color:blue>static</span> <span style=color:blue>string</span> ToStringWithXmlDeclaration(<span style=color:blue>this</span> <span style=color:#2b91af>XDocument</span> doc)</p><p style=margin:0><span style=color:#2b91af>28</span> {</p><p style=margin:0><span style=color:#2b91af>29</span> <span style=color:#2b91af>StringBuilder</span> builder = <span style=color:blue>new</span> <span style=color:#2b91af>StringBuilder</span>();</p><p style=margin:0><span style=color:#2b91af>30</span> <span style=color:#2b91af>StringWriter</span> writer = <span style=color:blue>new</span> <span style=color:#2b91af>StringWriter</span>(builder);</p><p style=margin:0><span style=color:#2b91af>31</span> doc.Save(writer);</p><p style=margin:0><span style=color:#2b91af>32</span> writer.Flush();</p><p style=margin:0><span style=color:#2b91af>33</span> <span style=color:blue>return</span> builder.ToString();</p><p style=margin:0><span style=color:#2b91af>34</span> }</p><p style=margin:0><span style=color:#2b91af>35</span> }</p></div><p>Apart from its purpose, this is also an example use of the Extension Method feature of C# 3.0.</p></div><h2>Comments</h2><div class=comments><div class=comment><div class=author>Sohan</div><div class=content>@Dan:<br>Didn't know that. Thanks for sharing.</div></div><div class=comment><div class=author>Dan</div><div class=content>You can use also<br><br>return doc.Declaration.ToString() + doc.ToString();</div></div><div class=comment><div class=author>Sohan</div><div class=content>@Dragon:<br>Thanks for suggesting the improvement.</div></div><div class=comment><div class=author>Dragon</div><div class=content>I think better:<br><br>public static string ToStringWithXmlDeclaration(this XDocument doc)<br>{<br>StringBuilder builder = new StringBuilder();<br>using (TextWriter writer = new StringWriter(builder))<br>{<br>doc.Save(writer);<br>}<br>return builder.ToString();<br>}</div></div></div><ul class=pa0></ul><div class="mt6 instapaper_ignoref"></div></div><aside class="w-30-l mt6-l"></aside></article></main><footer class="bg-navy bottom-0 w-100 pa3" role=contentinfo><div class="flex justify-between"><a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href=http://smsohan.com/>&copy; Sohan's Blog 2023</a><div><div class=ananke-socials></div></div></div></footer></body></html>
+14 class Program"/>
+
+	<style>
+    .athelas, .body-text {
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    }
+
+    .body-text div, p, article, section {
+        font-size: 1rem;
+        line-height: 1.4rem;
+    }
+    .athelas.fw1 {
+        font-weight: inherit;
+    }
+
+    h1.f1 {
+        line-height: 4rem;
+    }
+</style>
+  </head>
+
+  <body class="ma0 body-text">
+
+    
+   
+  
+
+  <header>
+    <div class="bg-navy">
+      <nav class="pv3 ph3 ph4-ns" role="navigation">
+  <div class="flex-l justify-between items-center center">
+    <a href="/" class="f3 fw2 hover-white no-underline white-90 dib">
+      
+        Sohan&#39;s Blog
+      
+    </a>
+    <div class="flex-l items-center">
+      
+
+      
+        <ul class="pl0 mr3">
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white no-underline white-90" href="/home/" title="About page">
+              About
+            </a>
+          </li>
+          
+        </ul>
+      
+      
+<div class="ananke-socials">
+  
+</div>
+
+    </div>
+  </div>
+</nav>
+
+    </div>
+  </header>
+
+
+
+    <main class="pb7" role="main">
+      
+  
+  <article class="flex-l flex-wrap justify-between mw8 center ph3">
+    <header class="mt4 w-100">
+      <aside class="instapaper_ignoref b helvetica tracked">
+          
+        POSTS
+      </aside>
+      
+
+
+
+
+
+
+
+
+
+
+  <div id="sharing" class="mt3 ananke-socials">
+    
+  </div>
+
+
+      <h1 class="f1 athelas mt3 mb1">XDocument.ToStringWithXmlDeclaration() - Get the string representation of XDcoument with its Xml Declaration</h1>
+      
+      
+      
+      <time class="f6 mv4 dib tracked" datetime="2008-08-12T00:00:00Z">August 12, 2008</time>
+      
+
+      
+      
+    </header>
+    <div class="nested-copy-line-height lh-copy body-text f4 nested-links mid-gray pr4-l w-two-thirds-l">
+<div class='post'>
+<p>The System.Xml.Linq.XDocument.ToString() produces a serialized string version of the XDocument object. But unfortunately, while doing so, it leaves the xml declaration in the serialized version which may be required in your application.</p>  <p>Again, there is another method called Save that produces the serialized version including xml declaration. So, I think we can write a simple extension method for producing the xml declaration as shown in the following -</p> <!-- {\rtf1\ansi\ansicpg\lang1024\noproof65001\uc1 \deff0{\fonttbl{\f0\fnil\fcharset0\fprq1 Courier New;}}{\colortbl;??\red0\green0\blue255;\red255\green255\blue255;\red0\green0\blue0;\red43\green145\blue175;\red163\green21\blue21;}??\fs20 \cf1 class\cf0  \cf4 Program\par ??\cf0     \{\par ??        \cf1 static\cf0  \cf1 void\cf0  Main(\cf1 string\cf0 [] args)\par ??        \{\par ??\par ??            \cf4 XDocument\cf0  doc = \cf1 new\cf0  \cf4 XDocument\cf0 (\cf1 new\cf0  \cf4 XDeclaration\cf0 (\cf5 "1.0"\cf0 , \cf5 "utf-8"\cf0 , \cf1 null\cf0 ), \cf1 new\cf0  \cf4 XElement\cf0 (\cf5 "root"\cf0 ));\par ??            \cf4 Console\cf0 .WriteLine(doc.ToStringWithXmlDeclaration());\par ??        \}\par ??    \}\par ??\par ??\par ??    \cf1 public\cf0  \cf1 static\cf0  \cf1 class\cf0  \cf4 XDocumentExtensions\par ??\cf0     \{\par ??        \cf1 public\cf0  \cf1 static\cf0  \cf1 string\cf0  ToStringWithXmlDeclaration(\cf1 this\cf0  \cf4 XDocument\cf0  doc)\par ??        \{\par ??            \cf4 StringBuilder\cf0  builder   = \cf1 new\cf0  \cf4 StringBuilder\cf0 ();\par ??            \cf4 StringWriter\cf0  writer     = \cf1 new\cf0  \cf4 StringWriter\cf0 (builder);\par ??            doc.Save(writer);\par ??            writer.Flush();\par ??            \cf1 return\cf0  builder.ToString();\par ??        \}\par ??    \}} -->  <div    style="background: white none repeat scroll 0% 0%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;font-family:courier new;font-size:10pt;color:black;">   <p style="margin: 0px;"><span style="color: rgb(43, 145, 175);">   14</span> <span style="color:blue;">class</span> <span style="color: rgb(43, 145, 175);">Program</span></p>    <p style="margin: 0px;"><span style="color: rgb(43, 145, 175);">   15</span>     {</p>    <p style="margin: 0px;"><span style="color: rgb(43, 145, 175);">   16</span>         <span style="color:blue;">static</span> <span style="color:blue;">void</span> Main(<span style="color:blue;">string</span>[] args)</p>    <p style="margin: 0px;"><span style="color: rgb(43, 145, 175);">   17</span>         {</p>    <p style="margin: 0px;"><span style="color: rgb(43, 145, 175);">   18</span> </p>    <p style="margin: 0px;"><span style="color: rgb(43, 145, 175);">   19</span>             <span style="color: rgb(43, 145, 175);">XDocument</span> doc = <span style="color:blue;">new</span> <span style="color: rgb(43, 145, 175);">XDocument</span>(<span style="color:blue;">new</span> <span style="color: rgb(43, 145, 175);">XDeclaration</span>(<span style="color: rgb(163, 21, 21);">"1.0"</span>, <span style="color: rgb(163, 21, 21);">"utf-8"</span>, <span style="color:blue;">null</span>), <span style="color:blue;">new</span> <span style="color: rgb(43, 145, 175);">XElement</span>(<span style="color: rgb(163, 21, 21);">"root"</span>));</p>    <p style="margin: 0px;"><span style="color: rgb(43, 145, 175);">   20</span>             <span style="color: rgb(43, 145, 175);">Console</span>.WriteLine(doc.ToStringWithXmlDeclaration());</p>    <p style="margin: 0px;"><span style="color: rgb(43, 145, 175);">   21</span>         }</p>    <p style="margin: 0px;"><span style="color: rgb(43, 145, 175);">   22</span>     }</p>    <p style="margin: 0px;"><span style="color: rgb(43, 145, 175);">   23</span> </p>    <p style="margin: 0px;"><span style="color: rgb(43, 145, 175);">   24</span> </p>    <p style="margin: 0px;"><span style="color: rgb(43, 145, 175);">   25</span>     <span style="color:blue;">public</span> <span style="color:blue;">static</span> <span style="color:blue;">class</span> <span style="color: rgb(43, 145, 175);">XDocumentExtensions</span></p>    <p style="margin: 0px;"><span style="color: rgb(43, 145, 175);">   26</span>     {</p>    <p style="margin: 0px;"><span style="color: rgb(43, 145, 175);">   27</span>         <span style="color:blue;">public</span> <span style="color:blue;">static</span> <span style="color:blue;">string</span> ToStringWithXmlDeclaration(<span style="color:blue;">this</span> <span style="color: rgb(43, 145, 175);">XDocument</span> doc)</p>    <p style="margin: 0px;"><span style="color: rgb(43, 145, 175);">   28</span>         {</p>    <p style="margin: 0px;"><span style="color: rgb(43, 145, 175);">   29</span>             <span style="color: rgb(43, 145, 175);">StringBuilder</span> builder   = <span style="color:blue;">new</span> <span style="color: rgb(43, 145, 175);">StringBuilder</span>();</p>    <p style="margin: 0px;"><span style="color: rgb(43, 145, 175);">   30</span>             <span style="color: rgb(43, 145, 175);">StringWriter</span> writer    = <span style="color:blue;">new</span> <span style="color: rgb(43, 145, 175);">StringWriter</span>(builder);</p>    <p style="margin: 0px;"><span style="color: rgb(43, 145, 175);">   31</span>             doc.Save(writer);</p>    <p style="margin: 0px;"><span style="color: rgb(43, 145, 175);">   32</span>             writer.Flush();</p>    <p style="margin: 0px;"><span style="color: rgb(43, 145, 175);">   33</span>             <span style="color:blue;">return</span> builder.ToString();</p>    <p style="margin: 0px;"><span style="color: rgb(43, 145, 175);">   34</span>         }</p>    <p style="margin: 0px;"><span style="color: rgb(43, 145, 175);">   35</span>     }</p> </div>  <p>Apart from its purpose, this is also an example use of the Extension Method feature of C# 3.0.</p></div>
+<h2>Comments</h2>
+<div class='comments'>
+<div class='comment'>
+<div class='author'>Sohan</div>
+<div class='content'>
+@Dan:<br />Didn&#39;t know that. Thanks for sharing.</div>
+</div>
+<div class='comment'>
+<div class='author'>Dan</div>
+<div class='content'>
+You can use also <br /><br />return doc.Declaration.ToString() + doc.ToString();</div>
+</div>
+<div class='comment'>
+<div class='author'>Sohan</div>
+<div class='content'>
+@Dragon:<br />Thanks for suggesting the improvement.</div>
+</div>
+<div class='comment'>
+<div class='author'>Dragon</div>
+<div class='content'>
+I think better:<br /><br />public static string ToStringWithXmlDeclaration(this XDocument doc)<br />{<br /> StringBuilder builder = new StringBuilder();<br /> using (TextWriter  writer = new  StringWriter(builder))<br /> {<br />  doc.Save(writer);<br /> }<br /> return builder.ToString();<br />}</div>
+</div>
+</div>
+<ul class="pa0">
+  
+</ul>
+<div class="mt6 instapaper_ignoref">
+      
+      
+      </div>
+    </div>
+
+    <aside class="w-30-l mt6-l">
+
+
+
+
+</aside>
+
+  </article>
+
+    </main>
+    <footer class="bg-navy bottom-0 w-100 pa3" role="contentinfo">
+  <div class="flex justify-between">
+  <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="http://smsohan.com/" >
+    &copy;  Sohan's Blog 2024 
+  </a>
+    <div>
+<div class="ananke-socials">
+  
+</div>
+</div>
+  </div>
+</footer>
+
+  </body>
+</html>

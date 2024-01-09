@@ -1,33 +1,159 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Architecture on Sohan's Blog</title><link>http://smsohan.com/categories/architecture/</link><description>Recent content in Architecture on Sohan's Blog</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Mon, 07 Dec 2020 00:00:00 +0000</lastBuildDate><atom:link href="http://smsohan.com/categories/architecture/index.xml" rel="self" type="application/rss+xml"/><item><title>A Tribute to Time Travel APIs in Ruby on Rails</title><link>http://smsohan.com/blog/2020/12/07/tribute-to-rails-date-time-great-invisible-design/</link><pubDate>Mon, 07 Dec 2020 00:00:00 +0000</pubDate><guid>http://smsohan.com/blog/2020/12/07/tribute-to-rails-date-time-great-invisible-design/</guid><description>Good design is obvious. Great design is transparent. — Joe Sparano
-Ruby on Rails delighted me all through my career. The community is one with a taste for art, thanks to DHH&amp;rsquo;s ability to write well. He set a high bar and the community also lives up to it. One API that absolutely blows my mind is how delightful it is to work with date and time in Ruby on Rails.</description></item><item><title>How About Full-Stack Micro-Services?</title><link>http://smsohan.com/blog/2019/11/17/how-about-full-stack-micro-services/</link><pubDate>Sun, 17 Nov 2019 00:00:00 +0000</pubDate><guid>http://smsohan.com/blog/2019/11/17/how-about-full-stack-micro-services/</guid><description>Source: [Audrey on Flickr](https://flic.kr/p/pUW8f9) I think nobody knows how to stitch together an app with full-stack micro-services. I have the following open-questions if you disagree. Of course, if we could send people to moon, we could solve these problems. But the question is, is it worth and should your team solve these problems? Especially, for small teams?
-How to render the UI from tens of independent micro-services into the same web page?</description></item><item><title>Software Architecture is all about Ugly Boxes and Lines - My Wishlist</title><link>http://smsohan.com/blog/2019/08/10/software-architecture-is-all-aboout-ugly-boxes-and-lines/</link><pubDate>Sat, 10 Aug 2019 00:00:00 +0000</pubDate><guid>http://smsohan.com/blog/2019/08/10/software-architecture-is-all-aboout-ugly-boxes-and-lines/</guid><description>In my last post, I claimed software architecture is all talk and no show. When we have a visible one, it&amp;rsquo;s a bunch of poorly drawn boxes and lines. I don&amp;rsquo;t have a problem with boxes or lines, but I do like beautiful drawings.
-Despite many standards, we still mostly use whiteboard drawing of boxes and lines for sharing software design as we build new systems or introduce new team members.</description></item><item><title>All Talk No Show: Software Architecture</title><link>http://smsohan.com/blog/2019/08/02/all-talk-no-show-software-architecture/</link><pubDate>Fri, 02 Aug 2019 00:00:00 +0000</pubDate><guid>http://smsohan.com/blog/2019/08/02/all-talk-no-show-software-architecture/</guid><description>We have a problem with software architecture. Let&amp;rsquo;s face it. Find the architecture diagrams of the products you&amp;rsquo;re working on and answer these questions:
-Did you find it? Does everyone in your team know where to find it? Is it up-to-date? Can you see how this system scales, handles failover, monitors performance, or how it&amp;rsquo;s secured? Can you see how it evolved over time? Can you train a new team-member using this diagram?</description></item><item><title>On Keeping Things Simple</title><link>http://smsohan.com/blog/2014/09/25/on-keeping-things-simple/</link><pubDate>Thu, 25 Sep 2014 00:00:00 +0000</pubDate><guid>http://smsohan.com/blog/2014/09/25/on-keeping-things-simple/</guid><description>Software architecture, or any design for that matter, needs to strike a fine balance between simplicity and power. Sometimes, the design needs to deliberately remove elements that&amp;rsquo;d make life better in some way but also cause a lot of frictions in other ways, ways that may not really impact the designer.
-A few examples to explain this. Client side MVC frameworks on top of a server side MVC framework. Client side URL routing on top of server side URL routing.</description></item><item><title>Monolith vs Microservices</title><link>http://smsohan.com/blog/2014/09/18/monolith-vs-micro-services/</link><pubDate>Thu, 18 Sep 2014 00:00:00 +0000</pubDate><guid>http://smsohan.com/blog/2014/09/18/monolith-vs-micro-services/</guid><description>Microservices are talk of the town these days. I wanted to share my thoughts on microservices based on some experiments that we are running into at our current project.
-SOURCE: https://www.flickr.com/photos/31366276@N03/9327275207/in/photostream/
-Recently, we deployed a microservice for two-step verification feature on one of our projects. This was a strict business requirement, because having a separate server to store your 2nd-factor authorization provides additional security in case the servers hosting your primary factor are compromised.</description></item><item><title>Implementation Challenges with a Multi-Tenant/SaaS Database</title><link>http://smsohan.com/blog/2013/04/04/implementation-challenges-with-with-a-saas-database/</link><pubDate>Thu, 04 Apr 2013 00:00:00 +0000</pubDate><guid>http://smsohan.com/blog/2013/04/04/implementation-challenges-with-with-a-saas-database/</guid><description>{% img right http://farm1.staticflickr.com/21/26445881_7c69777b7b.jpg 500 353 &amp;lsquo;Photo credits to corydalus&amp;rsquo; &amp;lsquo;climbing&amp;rsquo;%}
-This 2006 MSDN article points out some key aspects of designing a multi-tenant database for SaaS applications. As you can read in the article, SaaS databases need to pick one of the following three configurations:
-separate databases shared database, separate schema and shared database, shared schema. A number of factors including economic, security, skillset, etc. contribute to the selection of the best suitable configuration.</description></item><item><title>Solution Architecting Using Queues?</title><link>http://smsohan.com/blog/2013/03/07/solution-architecting/</link><pubDate>Thu, 07 Mar 2013 00:00:00 +0000</pubDate><guid>http://smsohan.com/blog/2013/03/07/solution-architecting/</guid><description>When building a bunch of applications that need to interact with each other, Queues or Message Oriented Middleware services offer some very useful features. To name a few, you get features like a) Guaranteed message delivery, b) routing, c) throttling, etc., for free. Tools like ActiveMQ, RabbitMQ, MSMQ, JMS servers are tuned and time tested to handle such requirements robustly. I&amp;rsquo;ve had good experience with these tools for the happy paths.</description></item><item><title>Practical API Design Challenges for Client Side MVC</title><link>http://smsohan.com/blog/2013/02/25/practial-challenges-with-client-side-mvc/</link><pubDate>Mon, 25 Feb 2013 00:00:00 +0000</pubDate><guid>http://smsohan.com/blog/2013/02/25/practial-challenges-with-client-side-mvc/</guid><description>This following list is probably a subset of a bigger one, but I&amp;rsquo;ve composed it based on my experience using BackboneJS + Rails on the current project at work. So, here goes the list:
-###Designing Granularity of the API###
-Using RESTful API, it makes sense to have separate API methods to repesent each type of resource. However, to construct a meaninful UI for the end user, often time we need to represent multiple resources on the same screen.</description></item><item><title>MongoDB is Abusing JSON!</title><link>http://smsohan.com/blog/2013/01/17/abusing-json/</link><pubDate>Thu, 17 Jan 2013 00:00:00 +0000</pubDate><guid>http://smsohan.com/blog/2013/01/17/abusing-json/</guid><description>I find the MongoDB API is abusing JSON in a really bad way. JSON is probably a good format for storing the documents in MongoDB, but using JSON for it&amp;rsquo;s weird API is simply a terrible idea. Here&amp;rsquo;s an example from the SQL to Aggregation Framework Mapping Chart
-db.orders.aggregate( [ { $group: { _id: { cust_id: &amp;#34;$cust_id&amp;#34;, ord_date: &amp;#34;$ord_date&amp;#34; }, total: { $sum: &amp;#34;$price&amp;#34; } } }, { $match: { total: { $gt: 250 } } } ] ) I find the UI of this query to be distasteful at the best.</description></item><item><title>Hybrid Persistence</title><link>http://smsohan.com/blog/2013/01/08/hybrid-persistence/</link><pubDate>Tue, 08 Jan 2013 00:00:00 +0000</pubDate><guid>http://smsohan.com/blog/2013/01/08/hybrid-persistence/</guid><description>Often times the business requirements demand for database features that aren&amp;rsquo;t easily achievable using a single type of database. And now we have quite a few options to choose from, for example Key Value stores, Document databases, Relational databases etc, each providing some mutually exclusive features from the rest. So, it can be tempting to introduce multiple databases to rip the benefits of each.
-But, it comes with a few gotchas that are worth knowing.</description></item><item><title>How much to validate?</title><link>http://smsohan.com/blog/2012/12/14/how-much-to-validate/</link><pubDate>Fri, 14 Dec 2012 00:00:00 +0000</pubDate><guid>http://smsohan.com/blog/2012/12/14/how-much-to-validate/</guid><description>Input validation is often required to safe guard against inappropriate use. For example, consider the following API:
-class TransfersController def create() from_account_id, to_account_id, amount = params[:from_account_id], params[:to_account_id], params[:amount] from_account = Account.find(from_account_id) to_account = Account.find(to_account_id) @transfer = Transfer.create!(from_account, to_account, amount) redirect_to @transfer end end In this case, the API is expecting a from_account_id which we know, can be easily exploited unless a validation is performed on the server. Say, a simple validation would do this:</description></item><item><title>ORM or Not?</title><link>http://smsohan.com/blog/2012/11/06/orm-or-not/</link><pubDate>Tue, 06 Nov 2012 00:00:00 +0000</pubDate><guid>http://smsohan.com/blog/2012/11/06/orm-or-not/</guid><description>Yes to ORM, No to custom queries. Here&amp;rsquo;s a bullet list:
-You&amp;rsquo;d probably end up writing your own ORM anyway. Doing so, you&amp;rsquo;d spend a lot of money writing library level code instead of your business logic. The time tested ones are likely to be better than yours. Beware, you&amp;rsquo;d have to figure out some complex issues: connection pooling, concurrency/locking, caching, transactions, updates, versioning, documentation etc. If you find yourself ORM is falling short of what you need, you&amp;rsquo;re either presenting information overload or using a transactional database as a reporting store.</description></item><item><title>Design of a MongoDB Analytics Database</title><link>http://smsohan.com/blog/2012/08/05/design-of-a-mongodb-analytics-database/</link><pubDate>Sun, 05 Aug 2012 00:00:00 +0000</pubDate><guid>http://smsohan.com/blog/2012/08/05/design-of-a-mongodb-analytics-database/</guid><description>We built a MongoDB based realtime analytics solution and learned a few things in the process. I would like to share some of our learnings in this post.
-When tasked to find a good database for holding realtime analytics data, I was searching through the wisdom of internet to come up with a good choice. At a high level, the database needed to deliver the following:
-Atomic counters so that events could be counted fast.</description></item><item><title>Object Versioning is an Open Design Problem</title><link>http://smsohan.com/blog/2012/01/17/object-versioning-is-open-design/</link><pubDate>Tue, 17 Jan 2012 00:00:00 +0000</pubDate><guid>http://smsohan.com/blog/2012/01/17/object-versioning-is-open-design/</guid><description>This unsolvable maze is a local food from Bangladesh, known as Jilapi
-Photo credits to&amp;nbsp;udvranto pothikObject Versioning is often required by a business rule, for example, to maintain an audit trail or to be able to revert to a previous version, etc. This is the 3rd time in my career where this Object Versioning requirement made me think like -
-There's gotta be an easier solution!&amp;nbsp;But, I am yet to find one.</description></item><item><title>The Perils of Soft Delete</title><link>http://smsohan.com/blog/2011/09/28/perils-of-soft-delete/</link><pubDate>Wed, 28 Sep 2011 00:00:00 +0000</pubDate><guid>http://smsohan.com/blog/2011/09/28/perils-of-soft-delete/</guid><description>Often times, applications cannot get rid of the database records for business rules. For example, if you are a cable TV provider, you might have a customer calling you to stop the National Geographic Channel subscription from next month.&amp;nbsp;Ideally you would like to delete this record, but you can't do it until the effective date:( If you delete it, the next invoice will not be able to charge for this channel, although it's still being used.</description></item><item><title>Service API and Exceptions</title><link>http://smsohan.com/blog/2011/06/22/service-api-and-exceptions/</link><pubDate>Wed, 22 Jun 2011 00:00:00 +0000</pubDate><guid>http://smsohan.com/blog/2011/06/22/service-api-and-exceptions/</guid><description>Too often I see I am using a REST/SOAP API to talk to a third party system that frustrates me because of poor error messaging. Here's an example to illustrate a typical frustration:
-Call: city_service.update_residence_address(city_dueler, new_address)
-Response: &amp;lt;status&amp;gt;Failed&amp;lt;/status&amp;gt;&amp;lt;error&amp;gt;Invalid address&amp;lt;/error&amp;gt;
-But the address just seems right to me. So, I need to know specific reason about why the address is wrong. The error message leaves this critical detail. What happens next is, I look for the log files created by the city_service, conceptually supposed to be a third party hosted service.</description></item><item><title>ActionMailer 3 - why do you call instance methods as class/self methods?</title><link>http://smsohan.com/blog/2011/01/28/actionmailer-3-why-do-you-call-instance/</link><pubDate>Fri, 28 Jan 2011 00:00:00 +0000</pubDate><guid>http://smsohan.com/blog/2011/01/28/actionmailer-3-why-do-you-call-instance/</guid><description>I didn't even notice this little trick! As long as I didn't have to call deliver_welcome_message (or deliver_*) methods that would magically call welcome_message, I was happy that now the magic is gone. Things are transparent!
-Here's an example showing the change: Say you have the following mailer:
-class Notifier &amp;lt; ActionMailer::Base
-def welcome_message(new_user)
-#a warm welcome message
-end
-endNow, prior to Rails 3, or ActionMailer 3, you would write the following to actually call this method to get the benefits of ActionMailer magics, such as finding the view based on method name and so on:</description></item><item><title>OO Design Dilemma: Auditing Changes Across Hierarchical Objects</title><link>http://smsohan.com/blog/2010/09/15/oo-design-dilemma-auditing-changes/</link><pubDate>Wed, 15 Sep 2010 00:00:00 +0000</pubDate><guid>http://smsohan.com/blog/2010/09/15/oo-design-dilemma-auditing-changes/</guid><description>Here is a sample UML class diagram of the situation that posed me the OO design dilemma a few days ago.
-Let me explain with an example,
-The Electronic Items catalog has many Televisions. The Sony Televisions come with different specifications, such as refresh rate of 240 Hz, 120 Hz and 60 Hz. However, the 240 Hz ones also comes in different colors - Black and Grey.Now, a store manager needs to see the recent changes across all catalogs, such as electronic items, musical instruments and so on.</description></item><item><title>Rails modeling guide#1: right structure of a ruby on rails model</title><link>http://smsohan.com/blog/2009/07/16/rails-modeling-guide1-right-structure/</link><pubDate>Thu, 16 Jul 2009 00:00:00 +0000</pubDate><guid>http://smsohan.com/blog/2009/07/16/rails-modeling-guide1-right-structure/</guid><description>Rails models are no exception compared to the super models! You are in the business if and only if you got a good physical structure and can stick to it for years...
-At Code71, we are keeping our rails models attractive following a few guidelines. I will be posting these guidelines in a series and here goes the first one - about the physical structure of the ruby on rails models.</description></item><item><title>Rails modeling guide#2: naming convention for ruby on rails model methods</title><link>http://smsohan.com/blog/2009/07/16/rails-modeling-guide2-naming-ruby-on/</link><pubDate>Thu, 16 Jul 2009 00:00:00 +0000</pubDate><guid>http://smsohan.com/blog/2009/07/16/rails-modeling-guide2-naming-ruby-on/</guid><description>Naming conventions play an important role to the software's overall architecture. It is not a rocket science, still, it may lead to unhappy consequences if not taken care of at the early stage of a project. This small best practices can make a code base significantly improved.
-Rails does a good job by using the dynamic power of ruby and providing with a handful of dynamic methods with the models.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Architecture on Sohan&#39;s Blog</title>
+    <link>http://smsohan.com/categories/architecture/</link>
+    <description>Recent content in Architecture on Sohan&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 07 Dec 2020 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://smsohan.com/categories/architecture/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>A Tribute to Time Travel APIs in Ruby on Rails</title>
+      <link>http://smsohan.com/blog/2020/12/07/tribute-to-rails-date-time-great-invisible-design/</link>
+      <pubDate>Mon, 07 Dec 2020 00:00:00 +0000</pubDate>
+      <guid>http://smsohan.com/blog/2020/12/07/tribute-to-rails-date-time-great-invisible-design/</guid>
+      <description>Good design is obvious. Great design is transparent. — Joe Sparano&#xA;Ruby on Rails delighted me all through my career. The community is one with a taste for art, thanks to DHH&amp;rsquo;s ability to write well. He set a high bar and the community also lives up to it. One API that absolutely blows my mind is how delightful it is to work with date and time in Ruby on Rails.</description>
+    </item>
+    <item>
+      <title>How About Full-Stack Micro-Services?</title>
+      <link>http://smsohan.com/blog/2019/11/17/how-about-full-stack-micro-services/</link>
+      <pubDate>Sun, 17 Nov 2019 00:00:00 +0000</pubDate>
+      <guid>http://smsohan.com/blog/2019/11/17/how-about-full-stack-micro-services/</guid>
+      <description>Source: [Audrey on Flickr](https://flic.kr/p/pUW8f9) I think nobody knows how to stitch together an app with full-stack micro-services. I have the following open-questions if you disagree. Of course, if we could send people to moon, we could solve these problems. But the question is, is it worth and should your team solve these problems? Especially, for small teams?&#xA;How to render the UI from tens of independent micro-services into the same web page?</description>
+    </item>
+    <item>
+      <title>Software Architecture is all about Ugly Boxes and Lines - My Wishlist</title>
+      <link>http://smsohan.com/blog/2019/08/10/software-architecture-is-all-aboout-ugly-boxes-and-lines/</link>
+      <pubDate>Sat, 10 Aug 2019 00:00:00 +0000</pubDate>
+      <guid>http://smsohan.com/blog/2019/08/10/software-architecture-is-all-aboout-ugly-boxes-and-lines/</guid>
+      <description>In my last post, I claimed software architecture is all talk and no show. When we have a visible one, it&amp;rsquo;s a bunch of poorly drawn boxes and lines. I don&amp;rsquo;t have a problem with boxes or lines, but I do like beautiful drawings.&#xA;Despite many standards, we still mostly use whiteboard drawing of boxes and lines for sharing software design as we build new systems or introduce new team members.</description>
+    </item>
+    <item>
+      <title>All Talk No Show: Software Architecture</title>
+      <link>http://smsohan.com/blog/2019/08/02/all-talk-no-show-software-architecture/</link>
+      <pubDate>Fri, 02 Aug 2019 00:00:00 +0000</pubDate>
+      <guid>http://smsohan.com/blog/2019/08/02/all-talk-no-show-software-architecture/</guid>
+      <description>We have a problem with software architecture. Let&amp;rsquo;s face it. Find the architecture diagrams of the products you&amp;rsquo;re working on and answer these questions:&#xA;Did you find it? Does everyone in your team know where to find it? Is it up-to-date? Can you see how this system scales, handles failover, monitors performance, or how it&amp;rsquo;s secured? Can you see how it evolved over time? Can you train a new team-member using this diagram?</description>
+    </item>
+    <item>
+      <title>On Keeping Things Simple</title>
+      <link>http://smsohan.com/blog/2014/09/25/on-keeping-things-simple/</link>
+      <pubDate>Thu, 25 Sep 2014 00:00:00 +0000</pubDate>
+      <guid>http://smsohan.com/blog/2014/09/25/on-keeping-things-simple/</guid>
+      <description>Software architecture, or any design for that matter, needs to strike a fine balance between simplicity and power. Sometimes, the design needs to deliberately remove elements that&amp;rsquo;d make life better in some way but also cause a lot of frictions in other ways, ways that may not really impact the designer.&#xA;A few examples to explain this. Client side MVC frameworks on top of a server side MVC framework. Client side URL routing on top of server side URL routing.</description>
+    </item>
+    <item>
+      <title>Monolith vs Microservices</title>
+      <link>http://smsohan.com/blog/2014/09/18/monolith-vs-micro-services/</link>
+      <pubDate>Thu, 18 Sep 2014 00:00:00 +0000</pubDate>
+      <guid>http://smsohan.com/blog/2014/09/18/monolith-vs-micro-services/</guid>
+      <description>Microservices are talk of the town these days. I wanted to share my thoughts on microservices based on some experiments that we are running into at our current project.&#xA;SOURCE: https://www.flickr.com/photos/31366276@N03/9327275207/in/photostream/&#xA;Recently, we deployed a microservice for two-step verification feature on one of our projects. This was a strict business requirement, because having a separate server to store your 2nd-factor authorization provides additional security in case the servers hosting your primary factor are compromised.</description>
+    </item>
+    <item>
+      <title>Implementation Challenges with a Multi-Tenant/SaaS Database</title>
+      <link>http://smsohan.com/blog/2013/04/04/implementation-challenges-with-with-a-saas-database/</link>
+      <pubDate>Thu, 04 Apr 2013 00:00:00 +0000</pubDate>
+      <guid>http://smsohan.com/blog/2013/04/04/implementation-challenges-with-with-a-saas-database/</guid>
+      <description>{% img right http://farm1.staticflickr.com/21/26445881_7c69777b7b.jpg 500 353 &amp;lsquo;Photo credits to corydalus&amp;rsquo; &amp;lsquo;climbing&amp;rsquo;%}&#xA;This 2006 MSDN article points out some key aspects of designing a multi-tenant database for SaaS applications. As you can read in the article, SaaS databases need to pick one of the following three configurations:&#xA;separate databases shared database, separate schema and shared database, shared schema. A number of factors including economic, security, skillset, etc. contribute to the selection of the best suitable configuration.</description>
+    </item>
+    <item>
+      <title>Solution Architecting Using Queues?</title>
+      <link>http://smsohan.com/blog/2013/03/07/solution-architecting/</link>
+      <pubDate>Thu, 07 Mar 2013 00:00:00 +0000</pubDate>
+      <guid>http://smsohan.com/blog/2013/03/07/solution-architecting/</guid>
+      <description>When building a bunch of applications that need to interact with each other, Queues or Message Oriented Middleware services offer some very useful features. To name a few, you get features like a) Guaranteed message delivery, b) routing, c) throttling, etc., for free. Tools like ActiveMQ, RabbitMQ, MSMQ, JMS servers are tuned and time tested to handle such requirements robustly. I&amp;rsquo;ve had good experience with these tools for the happy paths.</description>
+    </item>
+    <item>
+      <title>Practical API Design Challenges for Client Side MVC</title>
+      <link>http://smsohan.com/blog/2013/02/25/practial-challenges-with-client-side-mvc/</link>
+      <pubDate>Mon, 25 Feb 2013 00:00:00 +0000</pubDate>
+      <guid>http://smsohan.com/blog/2013/02/25/practial-challenges-with-client-side-mvc/</guid>
+      <description>This following list is probably a subset of a bigger one, but I&amp;rsquo;ve composed it based on my experience using BackboneJS + Rails on the current project at work. So, here goes the list:&#xA;###Designing Granularity of the API###&#xA;Using RESTful API, it makes sense to have separate API methods to repesent each type of resource. However, to construct a meaninful UI for the end user, often time we need to represent multiple resources on the same screen.</description>
+    </item>
+    <item>
+      <title>MongoDB is Abusing JSON!</title>
+      <link>http://smsohan.com/blog/2013/01/17/abusing-json/</link>
+      <pubDate>Thu, 17 Jan 2013 00:00:00 +0000</pubDate>
+      <guid>http://smsohan.com/blog/2013/01/17/abusing-json/</guid>
+      <description>I find the MongoDB API is abusing JSON in a really bad way. JSON is probably a good format for storing the documents in MongoDB, but using JSON for it&amp;rsquo;s weird API is simply a terrible idea. Here&amp;rsquo;s an example from the SQL to Aggregation Framework Mapping Chart&#xA;db.orders.aggregate( [ { $group: { _id: { cust_id: &amp;#34;$cust_id&amp;#34;, ord_date: &amp;#34;$ord_date&amp;#34; }, total: { $sum: &amp;#34;$price&amp;#34; } } }, { $match: { total: { $gt: 250 } } } ] ) I find the UI of this query to be distasteful at the best.</description>
+    </item>
+    <item>
+      <title>Hybrid Persistence</title>
+      <link>http://smsohan.com/blog/2013/01/08/hybrid-persistence/</link>
+      <pubDate>Tue, 08 Jan 2013 00:00:00 +0000</pubDate>
+      <guid>http://smsohan.com/blog/2013/01/08/hybrid-persistence/</guid>
+      <description>Often times the business requirements demand for database features that aren&amp;rsquo;t easily achievable using a single type of database. And now we have quite a few options to choose from, for example Key Value stores, Document databases, Relational databases etc, each providing some mutually exclusive features from the rest. So, it can be tempting to introduce multiple databases to rip the benefits of each.&#xA;But, it comes with a few gotchas that are worth knowing.</description>
+    </item>
+    <item>
+      <title>How much to validate?</title>
+      <link>http://smsohan.com/blog/2012/12/14/how-much-to-validate/</link>
+      <pubDate>Fri, 14 Dec 2012 00:00:00 +0000</pubDate>
+      <guid>http://smsohan.com/blog/2012/12/14/how-much-to-validate/</guid>
+      <description>Input validation is often required to safe guard against inappropriate use. For example, consider the following API:&#xA;class TransfersController def create() from_account_id, to_account_id, amount = params[:from_account_id], params[:to_account_id], params[:amount] from_account = Account.find(from_account_id) to_account = Account.find(to_account_id) @transfer = Transfer.create!(from_account, to_account, amount) redirect_to @transfer end end In this case, the API is expecting a from_account_id which we know, can be easily exploited unless a validation is performed on the server. Say, a simple validation would do this:</description>
+    </item>
+    <item>
+      <title>ORM or Not?</title>
+      <link>http://smsohan.com/blog/2012/11/06/orm-or-not/</link>
+      <pubDate>Tue, 06 Nov 2012 00:00:00 +0000</pubDate>
+      <guid>http://smsohan.com/blog/2012/11/06/orm-or-not/</guid>
+      <description>Yes to ORM, No to custom queries. Here&amp;rsquo;s a bullet list:&#xA;You&amp;rsquo;d probably end up writing your own ORM anyway. Doing so, you&amp;rsquo;d spend a lot of money writing library level code instead of your business logic. The time tested ones are likely to be better than yours. Beware, you&amp;rsquo;d have to figure out some complex issues: connection pooling, concurrency/locking, caching, transactions, updates, versioning, documentation etc. If you find yourself ORM is falling short of what you need, you&amp;rsquo;re either presenting information overload or using a transactional database as a reporting store.</description>
+    </item>
+    <item>
+      <title>Design of a MongoDB Analytics Database</title>
+      <link>http://smsohan.com/blog/2012/08/05/design-of-a-mongodb-analytics-database/</link>
+      <pubDate>Sun, 05 Aug 2012 00:00:00 +0000</pubDate>
+      <guid>http://smsohan.com/blog/2012/08/05/design-of-a-mongodb-analytics-database/</guid>
+      <description>We built a MongoDB based realtime analytics solution and learned a few things in the process. I would like to share some of our learnings in this post.&#xA;When tasked to find a good database for holding realtime analytics data, I was searching through the wisdom of internet to come up with a good choice. At a high level, the database needed to deliver the following:&#xA;Atomic counters so that events could be counted fast.</description>
+    </item>
+    <item>
+      <title>Object Versioning is an Open Design Problem</title>
+      <link>http://smsohan.com/blog/2012/01/17/object-versioning-is-open-design/</link>
+      <pubDate>Tue, 17 Jan 2012 00:00:00 +0000</pubDate>
+      <guid>http://smsohan.com/blog/2012/01/17/object-versioning-is-open-design/</guid>
+      <description>This unsolvable maze is a local food from Bangladesh, known as Jilapi&#xA;Photo credits to&amp;nbsp;udvranto pothikObject Versioning is often required by a business rule, for example, to maintain an audit trail or to be able to revert to a previous version, etc. This is the 3rd time in my career where this Object Versioning requirement made me think like -&#xA;There&#39;s gotta be an easier solution!&amp;nbsp;But, I am yet to find one.</description>
+    </item>
+    <item>
+      <title>The Perils of Soft Delete</title>
+      <link>http://smsohan.com/blog/2011/09/28/perils-of-soft-delete/</link>
+      <pubDate>Wed, 28 Sep 2011 00:00:00 +0000</pubDate>
+      <guid>http://smsohan.com/blog/2011/09/28/perils-of-soft-delete/</guid>
+      <description>Often times, applications cannot get rid of the database records for business rules. For example, if you are a cable TV provider, you might have a customer calling you to stop the National Geographic Channel subscription from next month.&amp;nbsp;Ideally you would like to delete this record, but you can&#39;t do it until the effective date:( If you delete it, the next invoice will not be able to charge for this channel, although it&#39;s still being used.</description>
+    </item>
+    <item>
+      <title>Service API and Exceptions</title>
+      <link>http://smsohan.com/blog/2011/06/22/service-api-and-exceptions/</link>
+      <pubDate>Wed, 22 Jun 2011 00:00:00 +0000</pubDate>
+      <guid>http://smsohan.com/blog/2011/06/22/service-api-and-exceptions/</guid>
+      <description>Too often I see I am using a REST/SOAP API to talk to a third party system that frustrates me because of poor error messaging. Here&#39;s an example to illustrate a typical frustration:&#xA;Call: city_service.update_residence_address(city_dueler, new_address)&#xA;Response: &amp;lt;status&amp;gt;Failed&amp;lt;/status&amp;gt;&amp;lt;error&amp;gt;Invalid address&amp;lt;/error&amp;gt;&#xA;But the address just seems right to me. So, I need to know specific reason about why the address is wrong. The error message leaves this critical detail. What happens next is, I look for the log files created by the city_service, conceptually supposed to be a third party hosted service.</description>
+    </item>
+    <item>
+      <title>ActionMailer 3 - why do you call instance methods as class/self methods?</title>
+      <link>http://smsohan.com/blog/2011/01/28/actionmailer-3-why-do-you-call-instance/</link>
+      <pubDate>Fri, 28 Jan 2011 00:00:00 +0000</pubDate>
+      <guid>http://smsohan.com/blog/2011/01/28/actionmailer-3-why-do-you-call-instance/</guid>
+      <description>I didn&#39;t even notice this little trick! As long as I didn&#39;t have to call deliver_welcome_message (or deliver_*) methods that would magically call welcome_message, I was happy that now the magic is gone. Things are transparent!&#xA;Here&#39;s an example showing the change: Say you have the following mailer:&#xA;class Notifier &amp;lt; ActionMailer::Base&#xA;def welcome_message(new_user)&#xA;#a warm welcome message&#xA;end&#xA;endNow, prior to Rails 3, or ActionMailer 3, you would write the following to actually call this method to get the benefits of ActionMailer magics, such as finding the view based on method name and so on:</description>
+    </item>
+    <item>
+      <title>OO Design Dilemma: Auditing Changes Across Hierarchical Objects</title>
+      <link>http://smsohan.com/blog/2010/09/15/oo-design-dilemma-auditing-changes/</link>
+      <pubDate>Wed, 15 Sep 2010 00:00:00 +0000</pubDate>
+      <guid>http://smsohan.com/blog/2010/09/15/oo-design-dilemma-auditing-changes/</guid>
+      <description>Here is a sample UML class diagram of the situation that posed me the OO design dilemma a few days ago.&#xA;Let me explain with an example,&#xA;The Electronic Items catalog has many Televisions. The Sony Televisions come with different specifications, such as refresh rate of 240 Hz, 120 Hz and 60 Hz. However, the 240 Hz ones also comes in different colors - Black and Grey.Now, a store manager needs to see the recent changes across all catalogs, such as electronic items, musical instruments and so on.</description>
+    </item>
+    <item>
+      <title>Rails modeling guide#1: right structure of a ruby on rails model</title>
+      <link>http://smsohan.com/blog/2009/07/16/rails-modeling-guide1-right-structure/</link>
+      <pubDate>Thu, 16 Jul 2009 00:00:00 +0000</pubDate>
+      <guid>http://smsohan.com/blog/2009/07/16/rails-modeling-guide1-right-structure/</guid>
+      <description>Rails models are no exception compared to the super models! You are in the business if and only if you got a good physical structure and can stick to it for years...&#xA;At Code71, we are keeping our rails models attractive following a few guidelines. I will be posting these guidelines in a series and here goes the first one - about the physical structure of the ruby on rails models.</description>
+    </item>
+    <item>
+      <title>Rails modeling guide#2: naming convention for ruby on rails model methods</title>
+      <link>http://smsohan.com/blog/2009/07/16/rails-modeling-guide2-naming-ruby-on/</link>
+      <pubDate>Thu, 16 Jul 2009 00:00:00 +0000</pubDate>
+      <guid>http://smsohan.com/blog/2009/07/16/rails-modeling-guide2-naming-ruby-on/</guid>
+      <description>Naming conventions play an important role to the software&#39;s overall architecture. It is not a rocket science, still, it may lead to unhappy consequences if not taken care of at the early stage of a project. This small best practices can make a code base significantly improved.&#xA;Rails does a good job by using the dynamic power of ruby and providing with a handful of dynamic methods with the models.</description>
+    </item>
+  </channel>
+</rss>

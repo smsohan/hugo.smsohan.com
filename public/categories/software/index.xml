@@ -1,4 +1,33 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Software on Sohan's Blog</title><link>http://smsohan.com/categories/software/</link><description>Recent content in Software on Sohan's Blog</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Tue, 13 Aug 2019 00:00:00 +0000</lastBuildDate><atom:link href="http://smsohan.com/categories/software/index.xml" rel="self" type="application/rss+xml"/><item><title>What We Learned About Feature Flags in Five Years</title><link>http://smsohan.com/blog/2019/08/13/what-we-learned-about-feature-flag-in-five-years/</link><pubDate>Tue, 13 Aug 2019 00:00:00 +0000</pubDate><guid>http://smsohan.com/blog/2019/08/13/what-we-learned-about-feature-flag-in-five-years/</guid><description>Looking at our git logs from Cisco AMP for Endpoints Console, I see that we introduced feature flags back in January, 2014. The reason I got interested in it is because even after all these years of use, today I had to build a new concept on our feature flag code. If you&amp;rsquo;re already using feature flags or thinking about adding feature flags to your project, this experience report may be helpful.</description></item><item><title>Configure Me Not</title><link>http://smsohan.com/blog/2013/11/03/configure-me-not/</link><pubDate>Sun, 03 Nov 2013 00:00:00 +0000</pubDate><guid>http://smsohan.com/blog/2013/11/03/configure-me-not/</guid><description>Configuration in software provides a method to build systems that can adapt to different configurations. For example, if a website&amp;rsquo;s language and date/currency formats are configurable, then it can be configured to support multiple languages and regional formats. Configuration makes it possible to deliver such features without needing a log of change in the application source code.
-However, this notion of flexibility that configuration provides can be a trap at times.</description></item><item><title>Development Environments and Dependency Hell</title><link>http://smsohan.com/blog/2012/10/25/development-environments-and-dependencies-hell/</link><pubDate>Thu, 25 Oct 2012 00:00:00 +0000</pubDate><guid>http://smsohan.com/blog/2012/10/25/development-environments-and-dependencies-hell/</guid><description>It used to be pretty straight forward to get up and running with a Rails app. You&amp;rsquo;d expect something like the following:
-git clone git@blah/blah.git cd blah bundle rake db:migrate rails s If the project is using rvm and bundler, the ruby versions and gem depdendencies are all taken care of. So far life is good this way.
-But it starts getting complicated. For example, your project probably uses MySQL and no matter what, I can&amp;rsquo;t remeber all the c libraries that are pre-requisites for the mysql2 gem to actually install successfully.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Software on Sohan&#39;s Blog</title>
+    <link>http://smsohan.com/categories/software/</link>
+    <description>Recent content in Software on Sohan&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 13 Aug 2019 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://smsohan.com/categories/software/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>What We Learned About Feature Flags in Five Years</title>
+      <link>http://smsohan.com/blog/2019/08/13/what-we-learned-about-feature-flag-in-five-years/</link>
+      <pubDate>Tue, 13 Aug 2019 00:00:00 +0000</pubDate>
+      <guid>http://smsohan.com/blog/2019/08/13/what-we-learned-about-feature-flag-in-five-years/</guid>
+      <description>Looking at our git logs from Cisco AMP for Endpoints Console, I see that we introduced feature flags back in January, 2014. The reason I got interested in it is because even after all these years of use, today I had to build a new concept on our feature flag code. If you&amp;rsquo;re already using feature flags or thinking about adding feature flags to your project, this experience report may be helpful.</description>
+    </item>
+    <item>
+      <title>Configure Me Not</title>
+      <link>http://smsohan.com/blog/2013/11/03/configure-me-not/</link>
+      <pubDate>Sun, 03 Nov 2013 00:00:00 +0000</pubDate>
+      <guid>http://smsohan.com/blog/2013/11/03/configure-me-not/</guid>
+      <description>Configuration in software provides a method to build systems that can adapt to different configurations. For example, if a website&amp;rsquo;s language and date/currency formats are configurable, then it can be configured to support multiple languages and regional formats. Configuration makes it possible to deliver such features without needing a log of change in the application source code.&#xA;However, this notion of flexibility that configuration provides can be a trap at times.</description>
+    </item>
+    <item>
+      <title>Development Environments and Dependency Hell</title>
+      <link>http://smsohan.com/blog/2012/10/25/development-environments-and-dependencies-hell/</link>
+      <pubDate>Thu, 25 Oct 2012 00:00:00 +0000</pubDate>
+      <guid>http://smsohan.com/blog/2012/10/25/development-environments-and-dependencies-hell/</guid>
+      <description>It used to be pretty straight forward to get up and running with a Rails app. You&amp;rsquo;d expect something like the following:&#xA;git clone git@blah/blah.git cd blah bundle rake db:migrate rails s If the project is using rvm and bundler, the ruby versions and gem depdendencies are all taken care of. So far life is good this way.&#xA;But it starts getting complicated. For example, your project probably uses MySQL and no matter what, I can&amp;rsquo;t remeber all the c libraries that are pre-requisites for the mysql2 gem to actually install successfully.</description>
+    </item>
+  </channel>
+</rss>

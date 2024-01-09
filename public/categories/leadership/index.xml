@@ -1,2 +1,26 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Leadership on Sohan's Blog</title><link>http://smsohan.com/categories/leadership/</link><description>Recent content in Leadership on Sohan's Blog</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Wed, 04 Nov 2020 00:00:00 +0000</lastBuildDate><atom:link href="http://smsohan.com/categories/leadership/index.xml" rel="self" type="application/rss+xml"/><item><title>My YouTube Playlist for Leadership</title><link>http://smsohan.com/blog/2020/11/04/youtube/</link><pubDate>Wed, 04 Nov 2020 00:00:00 +0000</pubDate><guid>http://smsohan.com/blog/2020/11/04/youtube/</guid><description>This summer I was interviewing for a new job. This was the first time I was interviewing for an engineering manager role. Soon I realized these interviews were wildly different from interviews for developer roles. During typical developer interviews, I solved coding and system design problems and discussed personal aspirations in behavioral interviews. In contrast, leadership interview qeustions were really open-ended. Honestly, I found it very hard to answer these questions concisely.</description></item><item><title>How am I Developing the People I Support as a People Leader?</title><link>http://smsohan.com/blog/2019/03/26/how-am-i-developing-the-people-i-support-as-a-people-leader/</link><pubDate>Tue, 26 Mar 2019 00:00:00 +0000</pubDate><guid>http://smsohan.com/blog/2019/03/26/how-am-i-developing-the-people-i-support-as-a-people-leader/</guid><description>After being a people leader at work for the past six years, I’m now going through a phase of introspection. Essentially, I’m trying to understand my own philosophy about people leadership so that I can clearly communicate it to the people that I support.
-My most important realization is, people leadership is all about developing people. What I mean by this is, for everyone I’m supporting, I must carefully build a plan that provides them with the opportunities to stay motivated so that they can thrive.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Leadership on Sohan&#39;s Blog</title>
+    <link>http://smsohan.com/categories/leadership/</link>
+    <description>Recent content in Leadership on Sohan&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 04 Nov 2020 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://smsohan.com/categories/leadership/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>My YouTube Playlist for Leadership</title>
+      <link>http://smsohan.com/blog/2020/11/04/youtube/</link>
+      <pubDate>Wed, 04 Nov 2020 00:00:00 +0000</pubDate>
+      <guid>http://smsohan.com/blog/2020/11/04/youtube/</guid>
+      <description>This summer I was interviewing for a new job. This was the first time I was interviewing for an engineering manager role. Soon I realized these interviews were wildly different from interviews for developer roles. During typical developer interviews, I solved coding and system design problems and discussed personal aspirations in behavioral interviews. In contrast, leadership interview qeustions were really open-ended. Honestly, I found it very hard to answer these questions concisely.</description>
+    </item>
+    <item>
+      <title>How am I Developing the People I Support as a People Leader?</title>
+      <link>http://smsohan.com/blog/2019/03/26/how-am-i-developing-the-people-i-support-as-a-people-leader/</link>
+      <pubDate>Tue, 26 Mar 2019 00:00:00 +0000</pubDate>
+      <guid>http://smsohan.com/blog/2019/03/26/how-am-i-developing-the-people-i-support-as-a-people-leader/</guid>
+      <description>After being a people leader at work for the past six years, I’m now going through a phase of introspection. Essentially, I’m trying to understand my own philosophy about people leadership so that I can clearly communicate it to the people that I support.&#xA;My most important realization is, people leadership is all about developing people. What I mean by this is, for everyone I’m supporting, I must carefully build a plan that provides them with the opportunities to stay motivated so that they can thrive.</description>
+    </item>
+  </channel>
+</rss>

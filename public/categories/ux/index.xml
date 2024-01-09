@@ -1,3 +1,26 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>UX on Sohan's Blog</title><link>http://smsohan.com/categories/ux/</link><description>Recent content in UX on Sohan's Blog</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Tue, 02 Apr 2013 00:00:00 +0000</lastBuildDate><atom:link href="http://smsohan.com/categories/ux/index.xml" rel="self" type="application/rss+xml"/><item><title>Interesting User Interaction Data on Dashboard Widgets</title><link>http://smsohan.com/blog/2013/04/02/interesting-user-interaction-data-on-dashboard-widgets/</link><pubDate>Tue, 02 Apr 2013 00:00:00 +0000</pubDate><guid>http://smsohan.com/blog/2013/04/02/interesting-user-interaction-data-on-dashboard-widgets/</guid><description>At SourceFire, among other things, we build a cloud based Advanced Malware Protection software. As security products go, we collect a huge amount of data about events that happen on the user devices so we can identify and potentially quarantine malicuous events. Security in itself is a big specialized domain, but this post is about a dashboard that we serve as the main point of entry into the big data that we collect from enterprises and consumers.</description></item><item><title>How to Annoy Your Customers? Learn from GoDaddy Account Status Email</title><link>http://smsohan.com/blog/2011/07/22/how-to-annoy-your-customer-learn-from/</link><pubDate>Fri, 22 Jul 2011 00:00:00 +0000</pubDate><guid>http://smsohan.com/blog/2011/07/22/how-to-annoy-your-customer-learn-from/</guid><description>Just looking at this screenshot alone, what do you think it is?I have a few domains registered with GoDaddy. I went with them, because at that time, I didn't know of another renowned provider. But they have always been the best of producing the most confusing ever user interface. The account status email is one step ahead in that same direction.
-This is how it starts:
-At the top right corner, it says July 2011, in grayed out font!</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>UX on Sohan&#39;s Blog</title>
+    <link>http://smsohan.com/categories/ux/</link>
+    <description>Recent content in UX on Sohan&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 02 Apr 2013 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://smsohan.com/categories/ux/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Interesting User Interaction Data on Dashboard Widgets</title>
+      <link>http://smsohan.com/blog/2013/04/02/interesting-user-interaction-data-on-dashboard-widgets/</link>
+      <pubDate>Tue, 02 Apr 2013 00:00:00 +0000</pubDate>
+      <guid>http://smsohan.com/blog/2013/04/02/interesting-user-interaction-data-on-dashboard-widgets/</guid>
+      <description>At SourceFire, among other things, we build a cloud based Advanced Malware Protection software. As security products go, we collect a huge amount of data about events that happen on the user devices so we can identify and potentially quarantine malicuous events. Security in itself is a big specialized domain, but this post is about a dashboard that we serve as the main point of entry into the big data that we collect from enterprises and consumers.</description>
+    </item>
+    <item>
+      <title>How to Annoy Your Customers? Learn from GoDaddy Account Status Email</title>
+      <link>http://smsohan.com/blog/2011/07/22/how-to-annoy-your-customer-learn-from/</link>
+      <pubDate>Fri, 22 Jul 2011 00:00:00 +0000</pubDate>
+      <guid>http://smsohan.com/blog/2011/07/22/how-to-annoy-your-customer-learn-from/</guid>
+      <description>Just looking at this screenshot alone, what do you think it is?I have a few domains registered with GoDaddy. I went with them, because at that time, I didn&#39;t know of another renowned provider. But they have always been the best of producing the most confusing ever user interface. The account status email is one step ahead in that same direction.&#xA;This is how it starts:&#xA;At the top right corner, it says July 2011, in grayed out font!</description>
+    </item>
+  </channel>
+</rss>

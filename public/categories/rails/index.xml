@@ -1,62 +1,250 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Rails on Sohan's Blog</title><link>http://smsohan.com/categories/rails/</link><description>Recent content in Rails on Sohan's Blog</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Tue, 08 Oct 2013 00:00:00 +0000</lastBuildDate><atom:link href="http://smsohan.com/categories/rails/index.xml" rel="self" type="application/rss+xml"/><item><title>Introducing Asset Pipeline to Older Apps?</title><link>http://smsohan.com/blog/2013/10/08/how-to-introduce-asset-pipeline-for-older-apps/</link><pubDate>Tue, 08 Oct 2013 00:00:00 +0000</pubDate><guid>http://smsohan.com/blog/2013/10/08/how-to-introduce-asset-pipeline-for-older-apps/</guid><description>Introducing Asset Pipeline to an old project is quite hard. Most pre-asset pipeline projects used small JavaScript/CSS files that are often scoped to a single page or a part of the application. A typical example is as follows:
-$(function(){ $(&amp;#39;#login&amp;#39;).on(&amp;#39;click&amp;#39;, function(){ var isLoginValid = hasValue($(&amp;#39;#user_name&amp;#39;)) &amp;amp;&amp;amp; hasValue($(&amp;#39;#user_password&amp;#39;)); if(isLoginValid){ $(&amp;#39;#login_errors&amp;#39;).hide(); $(&amp;#39;#login_form&amp;#39;).submit(); } else { $(&amp;#39;#login_errors&amp;#39;).show(); return false; } }); }); Now, within the scope of the login page this code executes just fine.</description></item><item><title>Released streamy_csv gem</title><link>http://smsohan.com/blog/2013/05/10/released-streamy-csv-gem/</link><pubDate>Fri, 10 May 2013 00:00:00 +0000</pubDate><guid>http://smsohan.com/blog/2013/05/10/released-streamy-csv-gem/</guid><description>Following the previous post, I decided to spin off a little ruby gem for you folks. Get streamy_csv, and write only your application code while it&amp;rsquo;ll do the boilerplate work for you.
-In a nutshell, with this gem in your application, all you need to do is this:
-Class ExportsController def index stream_csv(&amp;#39;data.csv&amp;#39;, MyModel.header_row) do |rows| MyModel.find_each do |my_model| rows &amp;lt;&amp;lt; my_model.to_csv_row end end end end Find more at https://github.com/smsohan/streamy_csv</description></item><item><title>Generating and Streaming Potentially Large CSV files using Ruby on Rails</title><link>http://smsohan.com/blog/2013/05/09/genereating-and-streaming-potentially-large-csv-files-using-ruby-on-rails/</link><pubDate>Thu, 09 May 2013 00:00:00 +0000</pubDate><guid>http://smsohan.com/blog/2013/05/09/genereating-and-streaming-potentially-large-csv-files-using-ruby-on-rails/</guid><description>Most applications I&amp;rsquo;ve worked on at some point required that &amp;lsquo;Export&amp;rsquo; feature so people would be able to play with the data using the familiar Excel interface. I&amp;rsquo;m sharing some code here from a recent work that did the following:
-Generate a CSV file for download with up to 100,000 rows in it. Since the contents of the file depends on some dynamic parameters, and the underlying data is changing all the time, the file must be generated live.</description></item><item><title>On ActiveRecord Query Enhancers</title><link>http://smsohan.com/blog/2013/01/21/on-activerecord-query-enhancers/</link><pubDate>Mon, 21 Jan 2013 00:00:00 +0000</pubDate><guid>http://smsohan.com/blog/2013/01/21/on-activerecord-query-enhancers/</guid><description>The question is, should we use the third-party ActiveRecord Query Enhancers like SearchLogic/Squeel/MetaSearch?
-Quoting from Squeel&amp;rsquo;s Github README page,
-Squeel lets you rewrite... Article.where [&amp;#39;created_at &amp;gt;= ?&amp;#39;, 2.weeks.ago] ...as... Article.where{created_at &amp;gt;= 2.weeks.ago} This is a good thing. If you don&amp;#39;t agree, Squeel might not be for you. At work, we are migrating a Rails 3.0 project into Rails 3.2. We used MetaSearch in the project quite extensively and now discussing if using Squeel (successor of MetaSearch for newer Rails versions) would be a good decision.</description></item><item><title>Deploying to TV Screens</title><link>http://smsohan.com/blog/2012/07/28/deploying-to-tv-screens/</link><pubDate>Sat, 28 Jul 2012 00:00:00 +0000</pubDate><guid>http://smsohan.com/blog/2012/07/28/deploying-to-tv-screens/</guid><description>Off late, I am working on a project to render real time business data with interesting visualizations, so people can feel the pulse of the business. For the last couple of months, I have been planning to write a detailed post about it. But after a few false starts, I am finally settling on smaller posts, telling a small part of the story each time.
-So, have you ever worked on a web application that is primarily viewed through 55&amp;quot;+ 1080p TV screens?</description></item><item><title>Whats Coming in MvcMailer NuGet 1.0?</title><link>http://smsohan.com/blog/2011/03/04/whats-coming-in-mvcmailer-nuget-10/</link><pubDate>Fri, 04 Mar 2011 00:00:00 +0000</pubDate><guid>http://smsohan.com/blog/2011/03/04/whats-coming-in-mvcmailer-nuget-10/</guid><description>Thanks to 365+ downloads of the MvcMailer NuGet before it hit version 1.0 and now its time to wrap up the NuGet package for an official first release. I got several encouraging feedback on this package and here's what you get from this first release:
-Use Scaffold Mailer to generate your mailers with views. Compose rich emails using your favorite ASP.NET MVC view engine.Use master pages and pass data using ViewData/ViewBag.</description></item><item><title>ActionMailer 3 - why do you call instance methods as class/self methods?</title><link>http://smsohan.com/blog/2011/01/28/actionmailer-3-why-do-you-call-instance/</link><pubDate>Fri, 28 Jan 2011 00:00:00 +0000</pubDate><guid>http://smsohan.com/blog/2011/01/28/actionmailer-3-why-do-you-call-instance/</guid><description>I didn't even notice this little trick! As long as I didn't have to call deliver_welcome_message (or deliver_*) methods that would magically call welcome_message, I was happy that now the magic is gone. Things are transparent!
-Here's an example showing the change: Say you have the following mailer:
-class Notifier &amp;lt; ActionMailer::Base
-def welcome_message(new_user)
-#a warm welcome message
-end
-endNow, prior to Rails 3, or ActionMailer 3, you would write the following to actually call this method to get the benefits of ActionMailer magics, such as finding the view based on method name and so on:</description></item><item><title>Book Review: Jose Valim's Crafting Rails Applications</title><link>http://smsohan.com/blog/2010/12/10/book-review-jose-valims-crafting-rails/</link><pubDate>Fri, 10 Dec 2010 00:00:00 +0000</pubDate><guid>http://smsohan.com/blog/2010/12/10/book-review-jose-valims-crafting-rails/</guid><description>Have you already read this?
-The following excerpt &amp;nbsp;by Jose Valim at the end of the book nicely summarizes it:
-Finally, you understand Rails better. You can explore other areas of the source code, study other Action Controller and Active Models modules, check other generators implementations or read the source of Railties, Engines and Applications with detail! - Jose ValimFor the impatient readers, this is the best in-depth Ruby on Rails related book I have ever read and you should read this (only 172 pages).</description></item><item><title>Upgrading to Ruby on Rails 3 - beware!</title><link>http://smsohan.com/blog/2010/11/10/upgrading-to-ruby-on-rails-3-beware/</link><pubDate>Wed, 10 Nov 2010 00:00:00 +0000</pubDate><guid>http://smsohan.com/blog/2010/11/10/upgrading-to-ruby-on-rails-3-beware/</guid><description>Ryan Bates had a series of posts (1, 2&amp;nbsp;and&amp;nbsp;3) on upgrading your Rails 2.3.x apps to Rails 3.x and sure they are useful. But if you are really doing that, beware of the following changes that you will need to do. It will take a lot of time for sure if you you have a moderate sized app.
-Upgrading your models:
-Get rid of all validates_xxx_of with appropriate validatesGet rid of all def validate .</description></item><item><title>Using Authlogic and single access token for API access</title><link>http://smsohan.com/blog/2010/04/26/using-authlogic-and-single-access-token/</link><pubDate>Mon, 26 Apr 2010 00:00:00 +0000</pubDate><guid>http://smsohan.com/blog/2010/04/26/using-authlogic-and-single-access-token/</guid><description>Bynarylogic's authlogic has gained much popularity for its out of the box solution to ruby on rails authentication. Yesterday, I was working on giving API access to my ruby on rails application so that other apps can use my RESTful services. The authenticated API access usually involves the following steps:
-API_KEY or a token to identify/authenticate an API call.Authentication of an API caller using the API_KEY.Authlogic comes with in-built support for this.</description></item><item><title>flash.now - did you know?</title><link>http://smsohan.com/blog/2010/03/31/flashnow-did-you-know/</link><pubDate>Wed, 31 Mar 2010 00:00:00 +0000</pubDate><guid>http://smsohan.com/blog/2010/03/31/flashnow-did-you-know/</guid><description>Well, I didn't know this until late. If you are like me, you have often wondered when you saw those unwanted flash messages appearing after a request, sometimes after ajax requests when you do a redirect, all on a sudden that flash shows up!
-Well, as you have thought, the Ruby on Rails people have solved this problem way before now. The solution is to wisely use flash.now[] and flash[].</description></item><item><title>Ruby on Rails Security Review: An Experience Report</title><link>http://smsohan.com/blog/2010/03/11/ruby-on-rails-security-review/</link><pubDate>Thu, 11 Mar 2010 00:00:00 +0000</pubDate><guid>http://smsohan.com/blog/2010/03/11/ruby-on-rails-security-review/</guid><description>Image credits to Wink&amp;nbsp;on Flickr (creative commons)
-I was reviewing a Ruby on Rails source code to see the security implementations they have so far. They are about to launch their product for the first release and wanted to ensure they have the most obvious things checked. So, in a sense it was not supposed to be a hacking job for me, rather to check if the most well known security measures are in place.</description></item><item><title>Ruby on Rails or Rails on Ruby?</title><link>http://smsohan.com/blog/2010/03/09/ruby-on-rails-or-rails-on-ruby/</link><pubDate>Tue, 09 Mar 2010 00:00:00 +0000</pubDate><guid>http://smsohan.com/blog/2010/03/09/ruby-on-rails-or-rails-on-ruby/</guid><description>All on a sudden, this thing popped up in my mind. What we are calling Ruby on Rails, is this actually "Ruby" on "Rails" or the other way around? Is this upside down? Here's my mental picture of the RoR framework:
-Image credits to Foo Fighter&amp;nbsp;on Flickr(creative commons)
-Ruby is a self-sustained language. As a language this is completely ignorant of the Rails Framework. So, I think there is no dependency from Ruby to Rails.</description></item><item><title>Rails Source Code Walkthrough #1: the ActiveModel Module</title><link>http://smsohan.com/blog/2010/02/26/rails-source-code-walkthrough-1/</link><pubDate>Fri, 26 Feb 2010 00:00:00 +0000</pubDate><guid>http://smsohan.com/blog/2010/02/26/rails-source-code-walkthrough-1/</guid><description>I was taking a look into the fresh ActiveModel module of Rails 3 as of github revision #100644. Here is what I learned:
-Learned about new feature called autoload. Rails Inside has a small yet useful autoload example here. It is a mechanism to lazy load your modules, so delaying the load unless the module methods are actually called. A call to autoload simply marks it as a potential include, but the actual include takes place only when you first use something on that module.</description></item><item><title>Ruby on Rails Interview Questions: Advanced</title><link>http://smsohan.com/blog/2010/02/23/ruby-on-rails-interview-questions_23/</link><pubDate>Tue, 23 Feb 2010 00:00:00 +0000</pubDate><guid>http://smsohan.com/blog/2010/02/23/ruby-on-rails-interview-questions_23/</guid><description>In my previous post, I listed a few general interview questions for Ruby on Rails jobs. This one is intended to be more of an advanced level, not for the rookies :-)
-What is Rack?Sketch out a deployment architecture of a Ruby on Rails application utilizing multiple servers.How can you secure a rails application to counter for Session Fixation?Where can I get the core rails framework source code?How can you reuse the models from one rails project into another?</description></item><item><title>Ruby on Rails Interview Questions</title><link>http://smsohan.com/blog/2010/02/22/ruby-on-rails-interview-questions/</link><pubDate>Mon, 22 Feb 2010 00:00:00 +0000</pubDate><guid>http://smsohan.com/blog/2010/02/22/ruby-on-rails-interview-questions/</guid><description>Ruby Specific Questions
-The best place for learning ruby is to get started with the programming-ruby. It fairly covers the important bits in a very readable language. Here are a few quick questions on ruby:
-What is rubygems?What is a Symbol?What is the difference between a Symbol and String?What is the purpose of yield?How do you define class variables?How do you define instance variables?How do you define global variables?How can you dynamically define a method body?</description></item><item><title>Experience notes from a RoR code review job</title><link>http://smsohan.com/blog/2010/01/20/experience-notes-from-ror-code-review/</link><pubDate>Wed, 20 Jan 2010 00:00:00 +0000</pubDate><guid>http://smsohan.com/blog/2010/01/20/experience-notes-from-ror-code-review/</guid><description>Recently I had the opportunity to review a ruby on rails code. The project aims to create an online market place for experts, with a similar model to some other freelancing/outsourcing sites. Here is how and what I reviewed:
-I had a read-only access to the code and no download was allowed locally. So, I didn't get to run the code, tests or any tool to auto-generate some reports on the code.</description></item><item><title>acts_as_permalinkable: SEO friendly rails URLs using my first RoR plugin</title><link>http://smsohan.com/blog/2009/12/27/acts-as-permalinkable-seo-friendly/</link><pubDate>Sun, 27 Dec 2009 00:00:00 +0000</pubDate><guid>http://smsohan.com/blog/2009/12/27/acts-as-permalinkable-seo-friendly/</guid><description>As a byproduct of my work on www.campzero.com, I released my first ruby on rails plugin called acts_as_permalinkable on github athttp://github.com/smsohan/acts_as_permalinkableA comprehensive documentation is given at the github page. If you ever need to use search engine friendly urls or permalink like this blog, you may consider using the acts_as_permalinkable plugin. It takes less than 3 minutes to add the permalink feature to your rails model!Get started by the following and you are free to contribute!</description></item><item><title>Added Crummy to generate breadcrumbs for CampZero.com</title><link>http://smsohan.com/blog/2009/12/27/added-crummy-to-generate-breadcrumbs/</link><pubDate>Sun, 27 Dec 2009 00:00:00 +0000</pubDate><guid>http://smsohan.com/blog/2009/12/27/added-crummy-to-generate-breadcrumbs/</guid><description>According to google's SEO guideline, its a good idea to provide breadcrumbs to your web contents. This is good in two ways: a) It helps people to find path to move up the navigation stack and b) it helps the google and other search engines to get a feel about your web content's hierarchical organization.To add this breadcrumbs support, in my application www.campzero.com, a going to be online service marketplace for Bangladesh, I simply used the Crummy plugin.</description></item><item><title>Sitemap-generator for your Rails App and deployment solution</title><link>http://smsohan.com/blog/2009/12/24/sitemap-generator-for-your-rails-app/</link><pubDate>Thu, 24 Dec 2009 00:00:00 +0000</pubDate><guid>http://smsohan.com/blog/2009/12/24/sitemap-generator-for-your-rails-app/</guid><description>When talking about Search Engine Optimization for your public web pages, you probably try to follow the google guidelines for search engine optimization. Its a good one to get started with. For my recent project, www.campzero.com, I read the document and tried to follow the steps. Today, I worked on generating sitemap for www.campzero.com using the following:Installed the site-map generator plugin following this link at Aktagon's, github linkFor some reason, probably because of permission issues, my plugin install didn't generate the sample sitemap.</description></item><item><title>How to strip html tags, truncate and highlight texts in ruby on rails</title><link>http://smsohan.com/blog/2009/12/22/how-to-strip-html-tags-truncate-and/</link><pubDate>Tue, 22 Dec 2009 00:00:00 +0000</pubDate><guid>http://smsohan.com/blog/2009/12/22/how-to-strip-html-tags-truncate-and/</guid><description>Recently, I had the following requirements as I was working on CampZero.com - the going to be service marketplace of Bangladesh.Remove all html tags other than hyperlinks and new lines from a html fragmentTruncate the text to show only first 200 characters of the text and append ellipsis (...) in case the text was truncated.Highlight an array of words in the text to show the search query worlds that matchedThe first one, getting rid of all but hyperlinks and new lines was achieved by the following code:</description></item><item><title>Showing unread posts/comments: An example of rails ActiveRecord 'touch'</title><link>http://smsohan.com/blog/2009/09/21/showing-unread-postscomments-example-of/</link><pubDate>Mon, 21 Sep 2009 00:00:00 +0000</pubDate><guid>http://smsohan.com/blog/2009/09/21/showing-unread-postscomments-example-of/</guid><description>I worked on the following story:-"As a partner, when I visit a project's dashboard I want to see five most recently started or updated discussion threads with number of unread comments, if any. If any of these are new, I want to see them in a highlighted view. Next, if I open the thread, I want to see all new comments in a highlighted view as well. However, once seen, the threads/comments should no longer be highlighted from the rest.</description></item><item><title>Some useful plugins for RoR projects</title><link>http://smsohan.com/blog/2009/09/17/some-useful-plugins-for-ror-projects/</link><pubDate>Thu, 17 Sep 2009 00:00:00 +0000</pubDate><guid>http://smsohan.com/blog/2009/09/17/some-useful-plugins-for-ror-projects/</guid><description>Previously I used a few plugins in RoR projects including ScrumPad. On a more recent work, I found the following plugins to be really useful and easy to get started:-
-1. I18n: Rails Internationalization RailsCast at http://railscasts.com/episodes/138-i18n Guides post at http://guides.rubyonrails.org/i18n.html
-2. Seed-fu: Initial data loading for application (e.g. admin user, product categories)Tutorial http://github.com/mbleigh/seed-fu A support is now built in for Rails 2.3.4
-3. Thinking-sphinx: Full text search RailsCast http://railscasts.</description></item><item><title>Rails modeling guide#1: right structure of a ruby on rails model</title><link>http://smsohan.com/blog/2009/07/16/rails-modeling-guide1-right-structure/</link><pubDate>Thu, 16 Jul 2009 00:00:00 +0000</pubDate><guid>http://smsohan.com/blog/2009/07/16/rails-modeling-guide1-right-structure/</guid><description>Rails models are no exception compared to the super models! You are in the business if and only if you got a good physical structure and can stick to it for years...
-At Code71, we are keeping our rails models attractive following a few guidelines. I will be posting these guidelines in a series and here goes the first one - about the physical structure of the ruby on rails models.</description></item><item><title>Rails modeling guide#2: naming convention for ruby on rails model methods</title><link>http://smsohan.com/blog/2009/07/16/rails-modeling-guide2-naming-ruby-on/</link><pubDate>Thu, 16 Jul 2009 00:00:00 +0000</pubDate><guid>http://smsohan.com/blog/2009/07/16/rails-modeling-guide2-naming-ruby-on/</guid><description>Naming conventions play an important role to the software's overall architecture. It is not a rocket science, still, it may lead to unhappy consequences if not taken care of at the early stage of a project. This small best practices can make a code base significantly improved.
-Rails does a good job by using the dynamic power of ruby and providing with a handful of dynamic methods with the models.</description></item><item><title>Implementing breadcrumb in rails projects – a clean approach</title><link>http://smsohan.com/blog/2009/07/07/implementing-breadcrumb-in-rails/</link><pubDate>Tue, 07 Jul 2009 00:00:00 +0000</pubDate><guid>http://smsohan.com/blog/2009/07/07/implementing-breadcrumb-in-rails/</guid><description>In most web applications, breadcrumbs offer a nice way to trace back to previously visited pages. However, generating the breadcrumbs and showing them on dynamic pages sometimes need special care for the following reasons-
-The links of the breadcrumb may contain dynamic links. It is used in all the pages. So, changing the breadcrumb may trigger a series of changes. In ScrumPad, we are using ruby on rails. There are a few plugins to help rails projects in managing breadcrumbs, but none seemed to satisfy our need.</description></item><item><title>Unit/Functional Test Rails ActionController filters following DRY</title><link>http://smsohan.com/blog/2009/05/13/unit-test-actioncontroller-filters/</link><pubDate>Wed, 13 May 2009 00:00:00 +0000</pubDate><guid>http://smsohan.com/blog/2009/05/13/unit-test-actioncontroller-filters/</guid><description>At ScrumPad most of our controllers are bounded by filters for authentication/authorization. Some filters apply to all actions in a controller while others apply to only a few or leave out only a few. However, since we are following TDD, we need to test the filter is invoked before each of the desired action. This makes the test code MOIST (not DRY)!
-Example of Moist Code:
-The following example only captures two test methods.</description></item><item><title>Forget Me Not! Object Oriented Design in Custom Exception</title><link>http://smsohan.com/blog/2009/04/26/object-oriented-design-in-custom/</link><pubDate>Sun, 26 Apr 2009 00:00:00 +0000</pubDate><guid>http://smsohan.com/blog/2009/04/26/object-oriented-design-in-custom/</guid><description>When designing custom exceptions, you may forget about old school OO fundamentals. As a reminder, lets take a look into the following custom exception classes.
-StorySaveError
-StoryDescopeNotAllowedError
-StoryCompleteError
-StoryNotFoundError
-StoryDeleteError
-StoryDeleteNotAllowedErrorThese exceptions are really useful in my application. But the bad thing is, they all derive from StandardError class, whereas there should be a base class, may be StoryError, which is more meaningful and useful. So, we can have the following-</description></item><item><title>Unit Test eager loading in Rails ActiveRecord association</title><link>http://smsohan.com/blog/2009/04/21/unit-test-eager-loading-in-rails/</link><pubDate>Tue, 21 Apr 2009 00:00:00 +0000</pubDate><guid>http://smsohan.com/blog/2009/04/21/unit-test-eager-loading-in-rails/</guid><description>To avoid the n+1 problem, you need to use eager loading in ActiveRecord object associations. An easy implementation of eager loading can be done using named scope in the following way.
-class User &amp;lt; ActiveRecord::Base
-has_many :friends
-named_scope :eager_load_friends, :include =&amp;gt; :fiends
-end
-User.find(user_id).eager_load_friendsTo unit test the named scope, you can use this following helper method (keep it in test_helper.rb, if you like) that I wrote for ScrumPad
-def test_eager_loaded(model, association)</description></item><item><title>Implementing Template Method in Rails Controllers Using Module and Mixin</title><link>http://smsohan.com/blog/2009/04/15/implementing-template-method-in-rails/</link><pubDate>Wed, 15 Apr 2009 00:00:00 +0000</pubDate><guid>http://smsohan.com/blog/2009/04/15/implementing-template-method-in-rails/</guid><description>All rails controllers are subclasses of the ApplicationController class. A typical controller class declaration will look like the following-
-class LoginController &amp;lt; ApplicationController
-#the actions go here
-endWith this basic information, I would like to state the problem first.
-The Problem/Job in Hand
-Add an action switch_project to all the controllers (&amp;gt; 20) of the ScrumPad code base. The implementations of the switch_project method will be same for all the controllers only other than the fact that, the switching destination will be different.</description></item><item><title>assert_equal_float : assert_equal between two float objects with precision</title><link>http://smsohan.com/blog/2009/04/07/assertequalfloat-assertequal-between/</link><pubDate>Tue, 07 Apr 2009 00:00:00 +0000</pubDate><guid>http://smsohan.com/blog/2009/04/07/assertequalfloat-assertequal-between/</guid><description>In doing rails unit testing, sometime you need to assert the equality between two float objects in the following fashion
-assert_equal 32.8, object_under_test.method_returning_float
-The internal storage of float objects sometimes will contain 32.8 with additional lower precision decimal points and hence the assert may fail although the significant digits may be same. For example, the value of object_under_test.method_returning_float may be stored as 32.80000001 in memory and the above call may fail.</description></item><item><title>named_scope : Real life examples from ScrumPad</title><link>http://smsohan.com/blog/2009/03/30/namedscope-real-life-examples-from/</link><pubDate>Mon, 30 Mar 2009 00:00:00 +0000</pubDate><guid>http://smsohan.com/blog/2009/03/30/namedscope-real-life-examples-from/</guid><description>I am working on ScrumPad chat refactoring now. In rails 2, the named_scope feature works really great for ActiveRecord models. Lets start with the code first-
-The Source Code:
-class ChatUser &amp;lt; ActiveRecord::Base belongs_to :chat belongs_to :user belongs_to :chat_status, :foreign_key =&amp;gt; "status_id" named_scope :closed, lambda {|chat_id| {:conditions =&amp;gt; ["status_id = #{ChatStatus::CLOSED} AND chat_id = ? ", chat_id]}} do def invite() each { |chat_user| chat_user.update_attribute(:status_id, ChatStatus::INVITED) } end end named_scope :active_chats, lambda {|user_id| {:conditions =&amp;gt; ["</description></item><item><title>Comet and Server Push (Reverse Ajax) technology</title><link>http://smsohan.com/blog/2009/03/22/coment-and-server-push-reverse-ajax/</link><pubDate>Sun, 22 Mar 2009 00:00:00 +0000</pubDate><guid>http://smsohan.com/blog/2009/03/22/coment-and-server-push-reverse-ajax/</guid><description>I am re-implementing an ajax based chat system. Presently an ajax request is polled continuously to look for any updates/messages from the user’s browser. However, the plan is to use the server to push the messages to the clients to off-load the server from a huge number of useless ajax calls.
-I learned about Comet and found it interesting. You may read about comet here at WIKI.
-Juggernaut is a rails plug-in that uses Flash to implement the server push technology.</description></item><item><title>Juggernaut on Linux</title><link>http://smsohan.com/blog/2009/03/22/juggernaut-on-linux/</link><pubDate>Sun, 22 Mar 2009 00:00:00 +0000</pubDate><guid>http://smsohan.com/blog/2009/03/22/juggernaut-on-linux/</guid><description>I just installed Juggernaut on my linux box. The installation is simpler than windows. At least it gave me less pain.
-Just run the following commands-
-gem install json gem install activemachine gem install juggernaut juggernaut –g juggernaut.yml juggernaut –c juggernaut.yml I got a little pain regarding the g++ compiler that is required to build the activemachine. I did not have it installed in my Amazon EC2 instance and after some searches, I could install it using the following-</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Rails on Sohan&#39;s Blog</title>
+    <link>http://smsohan.com/categories/rails/</link>
+    <description>Recent content in Rails on Sohan&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 08 Oct 2013 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://smsohan.com/categories/rails/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Introducing Asset Pipeline to Older Apps?</title>
+      <link>http://smsohan.com/blog/2013/10/08/how-to-introduce-asset-pipeline-for-older-apps/</link>
+      <pubDate>Tue, 08 Oct 2013 00:00:00 +0000</pubDate>
+      <guid>http://smsohan.com/blog/2013/10/08/how-to-introduce-asset-pipeline-for-older-apps/</guid>
+      <description>Introducing Asset Pipeline to an old project is quite hard. Most pre-asset pipeline projects used small JavaScript/CSS files that are often scoped to a single page or a part of the application. A typical example is as follows:&#xA;$(function(){ $(&amp;#39;#login&amp;#39;).on(&amp;#39;click&amp;#39;, function(){ var isLoginValid = hasValue($(&amp;#39;#user_name&amp;#39;)) &amp;amp;&amp;amp; hasValue($(&amp;#39;#user_password&amp;#39;)); if(isLoginValid){ $(&amp;#39;#login_errors&amp;#39;).hide(); $(&amp;#39;#login_form&amp;#39;).submit(); } else { $(&amp;#39;#login_errors&amp;#39;).show(); return false; } }); }); Now, within the scope of the login page this code executes just fine.</description>
+    </item>
+    <item>
+      <title>Released streamy_csv gem</title>
+      <link>http://smsohan.com/blog/2013/05/10/released-streamy-csv-gem/</link>
+      <pubDate>Fri, 10 May 2013 00:00:00 +0000</pubDate>
+      <guid>http://smsohan.com/blog/2013/05/10/released-streamy-csv-gem/</guid>
+      <description>Following the previous post, I decided to spin off a little ruby gem for you folks. Get streamy_csv, and write only your application code while it&amp;rsquo;ll do the boilerplate work for you.&#xA;In a nutshell, with this gem in your application, all you need to do is this:&#xA;Class ExportsController def index stream_csv(&amp;#39;data.csv&amp;#39;, MyModel.header_row) do |rows| MyModel.find_each do |my_model| rows &amp;lt;&amp;lt; my_model.to_csv_row end end end end Find more at https://github.com/smsohan/streamy_csv</description>
+    </item>
+    <item>
+      <title>Generating and Streaming Potentially Large CSV files using Ruby on Rails</title>
+      <link>http://smsohan.com/blog/2013/05/09/genereating-and-streaming-potentially-large-csv-files-using-ruby-on-rails/</link>
+      <pubDate>Thu, 09 May 2013 00:00:00 +0000</pubDate>
+      <guid>http://smsohan.com/blog/2013/05/09/genereating-and-streaming-potentially-large-csv-files-using-ruby-on-rails/</guid>
+      <description>Most applications I&amp;rsquo;ve worked on at some point required that &amp;lsquo;Export&amp;rsquo; feature so people would be able to play with the data using the familiar Excel interface. I&amp;rsquo;m sharing some code here from a recent work that did the following:&#xA;Generate a CSV file for download with up to 100,000 rows in it. Since the contents of the file depends on some dynamic parameters, and the underlying data is changing all the time, the file must be generated live.</description>
+    </item>
+    <item>
+      <title>On ActiveRecord Query Enhancers</title>
+      <link>http://smsohan.com/blog/2013/01/21/on-activerecord-query-enhancers/</link>
+      <pubDate>Mon, 21 Jan 2013 00:00:00 +0000</pubDate>
+      <guid>http://smsohan.com/blog/2013/01/21/on-activerecord-query-enhancers/</guid>
+      <description>The question is, should we use the third-party ActiveRecord Query Enhancers like SearchLogic/Squeel/MetaSearch?&#xA;Quoting from Squeel&amp;rsquo;s Github README page,&#xA;Squeel lets you rewrite... Article.where [&amp;#39;created_at &amp;gt;= ?&amp;#39;, 2.weeks.ago] ...as... Article.where{created_at &amp;gt;= 2.weeks.ago} This is a good thing. If you don&amp;#39;t agree, Squeel might not be for you. At work, we are migrating a Rails 3.0 project into Rails 3.2. We used MetaSearch in the project quite extensively and now discussing if using Squeel (successor of MetaSearch for newer Rails versions) would be a good decision.</description>
+    </item>
+    <item>
+      <title>Deploying to TV Screens</title>
+      <link>http://smsohan.com/blog/2012/07/28/deploying-to-tv-screens/</link>
+      <pubDate>Sat, 28 Jul 2012 00:00:00 +0000</pubDate>
+      <guid>http://smsohan.com/blog/2012/07/28/deploying-to-tv-screens/</guid>
+      <description>Off late, I am working on a project to render real time business data with interesting visualizations, so people can feel the pulse of the business. For the last couple of months, I have been planning to write a detailed post about it. But after a few false starts, I am finally settling on smaller posts, telling a small part of the story each time.&#xA;So, have you ever worked on a web application that is primarily viewed through 55&amp;quot;+ 1080p TV screens?</description>
+    </item>
+    <item>
+      <title>Whats Coming in MvcMailer NuGet 1.0?</title>
+      <link>http://smsohan.com/blog/2011/03/04/whats-coming-in-mvcmailer-nuget-10/</link>
+      <pubDate>Fri, 04 Mar 2011 00:00:00 +0000</pubDate>
+      <guid>http://smsohan.com/blog/2011/03/04/whats-coming-in-mvcmailer-nuget-10/</guid>
+      <description>Thanks to 365+ downloads of the MvcMailer NuGet before it hit version 1.0 and now its time to wrap up the NuGet package for an official first release. I got several encouraging feedback on this package and here&#39;s what you get from this first release:&#xA;Use Scaffold Mailer to generate your mailers with views. Compose rich emails using your favorite ASP.NET MVC view engine.Use master pages and pass data using ViewData/ViewBag.</description>
+    </item>
+    <item>
+      <title>ActionMailer 3 - why do you call instance methods as class/self methods?</title>
+      <link>http://smsohan.com/blog/2011/01/28/actionmailer-3-why-do-you-call-instance/</link>
+      <pubDate>Fri, 28 Jan 2011 00:00:00 +0000</pubDate>
+      <guid>http://smsohan.com/blog/2011/01/28/actionmailer-3-why-do-you-call-instance/</guid>
+      <description>I didn&#39;t even notice this little trick! As long as I didn&#39;t have to call deliver_welcome_message (or deliver_*) methods that would magically call welcome_message, I was happy that now the magic is gone. Things are transparent!&#xA;Here&#39;s an example showing the change: Say you have the following mailer:&#xA;class Notifier &amp;lt; ActionMailer::Base&#xA;def welcome_message(new_user)&#xA;#a warm welcome message&#xA;end&#xA;endNow, prior to Rails 3, or ActionMailer 3, you would write the following to actually call this method to get the benefits of ActionMailer magics, such as finding the view based on method name and so on:</description>
+    </item>
+    <item>
+      <title>Book Review: Jose Valim&#39;s Crafting Rails Applications</title>
+      <link>http://smsohan.com/blog/2010/12/10/book-review-jose-valims-crafting-rails/</link>
+      <pubDate>Fri, 10 Dec 2010 00:00:00 +0000</pubDate>
+      <guid>http://smsohan.com/blog/2010/12/10/book-review-jose-valims-crafting-rails/</guid>
+      <description>Have you already read this?&#xA;The following excerpt &amp;nbsp;by Jose Valim at the end of the book nicely summarizes it:&#xA;Finally, you understand Rails better. You can explore other areas of the source code, study other Action Controller and Active Models modules, check other generators implementations or read the source of Railties, Engines and Applications with detail! - Jose ValimFor the impatient readers, this is the best in-depth Ruby on Rails related book I have ever read and you should read this (only 172 pages).</description>
+    </item>
+    <item>
+      <title>Upgrading to Ruby on Rails 3 - beware!</title>
+      <link>http://smsohan.com/blog/2010/11/10/upgrading-to-ruby-on-rails-3-beware/</link>
+      <pubDate>Wed, 10 Nov 2010 00:00:00 +0000</pubDate>
+      <guid>http://smsohan.com/blog/2010/11/10/upgrading-to-ruby-on-rails-3-beware/</guid>
+      <description>Ryan Bates had a series of posts (1, 2&amp;nbsp;and&amp;nbsp;3) on upgrading your Rails 2.3.x apps to Rails 3.x and sure they are useful. But if you are really doing that, beware of the following changes that you will need to do. It will take a lot of time for sure if you you have a moderate sized app.&#xA;Upgrading your models:&#xA;Get rid of all validates_xxx_of with appropriate validatesGet rid of all def validate .</description>
+    </item>
+    <item>
+      <title>Using Authlogic and single access token for API access</title>
+      <link>http://smsohan.com/blog/2010/04/26/using-authlogic-and-single-access-token/</link>
+      <pubDate>Mon, 26 Apr 2010 00:00:00 +0000</pubDate>
+      <guid>http://smsohan.com/blog/2010/04/26/using-authlogic-and-single-access-token/</guid>
+      <description>Bynarylogic&#39;s authlogic has gained much popularity for its out of the box solution to ruby on rails authentication. Yesterday, I was working on giving API access to my ruby on rails application so that other apps can use my RESTful services. The authenticated API access usually involves the following steps:&#xA;API_KEY or a token to identify/authenticate an API call.Authentication of an API caller using the API_KEY.Authlogic comes with in-built support for this.</description>
+    </item>
+    <item>
+      <title>flash.now - did you know?</title>
+      <link>http://smsohan.com/blog/2010/03/31/flashnow-did-you-know/</link>
+      <pubDate>Wed, 31 Mar 2010 00:00:00 +0000</pubDate>
+      <guid>http://smsohan.com/blog/2010/03/31/flashnow-did-you-know/</guid>
+      <description>Well, I didn&#39;t know this until late. If you are like me, you have often wondered when you saw those unwanted flash messages appearing after a request, sometimes after ajax requests when you do a redirect, all on a sudden that flash shows up!&#xA;Well, as you have thought, the Ruby on Rails people have solved this problem way before now. The solution is to wisely use flash.now[] and flash[].</description>
+    </item>
+    <item>
+      <title>Ruby on Rails Security Review: An Experience Report</title>
+      <link>http://smsohan.com/blog/2010/03/11/ruby-on-rails-security-review/</link>
+      <pubDate>Thu, 11 Mar 2010 00:00:00 +0000</pubDate>
+      <guid>http://smsohan.com/blog/2010/03/11/ruby-on-rails-security-review/</guid>
+      <description>Image credits to Wink&amp;nbsp;on Flickr (creative commons)&#xA;I was reviewing a Ruby on Rails source code to see the security implementations they have so far. They are about to launch their product for the first release and wanted to ensure they have the most obvious things checked. So, in a sense it was not supposed to be a hacking job for me, rather to check if the most well known security measures are in place.</description>
+    </item>
+    <item>
+      <title>Ruby on Rails or Rails on Ruby?</title>
+      <link>http://smsohan.com/blog/2010/03/09/ruby-on-rails-or-rails-on-ruby/</link>
+      <pubDate>Tue, 09 Mar 2010 00:00:00 +0000</pubDate>
+      <guid>http://smsohan.com/blog/2010/03/09/ruby-on-rails-or-rails-on-ruby/</guid>
+      <description>All on a sudden, this thing popped up in my mind. What we are calling Ruby on Rails, is this actually &#34;Ruby&#34; on &#34;Rails&#34; or the other way around? Is this upside down? Here&#39;s my mental picture of the RoR framework:&#xA;Image credits to Foo Fighter&amp;nbsp;on Flickr(creative commons)&#xA;Ruby is a self-sustained language. As a language this is completely ignorant of the Rails Framework. So, I think there is no dependency from Ruby to Rails.</description>
+    </item>
+    <item>
+      <title>Rails Source Code Walkthrough #1: the ActiveModel Module</title>
+      <link>http://smsohan.com/blog/2010/02/26/rails-source-code-walkthrough-1/</link>
+      <pubDate>Fri, 26 Feb 2010 00:00:00 +0000</pubDate>
+      <guid>http://smsohan.com/blog/2010/02/26/rails-source-code-walkthrough-1/</guid>
+      <description>I was taking a look into the fresh ActiveModel module of Rails 3 as of github revision #100644. Here is what I learned:&#xA;Learned about new feature called autoload. Rails Inside has a small yet useful autoload example here. It is a mechanism to lazy load your modules, so delaying the load unless the module methods are actually called. A call to autoload simply marks it as a potential include, but the actual include takes place only when you first use something on that module.</description>
+    </item>
+    <item>
+      <title>Ruby on Rails Interview Questions: Advanced</title>
+      <link>http://smsohan.com/blog/2010/02/23/ruby-on-rails-interview-questions_23/</link>
+      <pubDate>Tue, 23 Feb 2010 00:00:00 +0000</pubDate>
+      <guid>http://smsohan.com/blog/2010/02/23/ruby-on-rails-interview-questions_23/</guid>
+      <description>In my previous post, I listed a few general interview questions for Ruby on Rails jobs. This one is intended to be more of an advanced level, not for the rookies :-)&#xA;What is Rack?Sketch out a deployment architecture of a Ruby on Rails application utilizing multiple servers.How can you secure a rails application to counter for Session Fixation?Where can I get the core rails framework source code?How can you reuse the models from one rails project into another?</description>
+    </item>
+    <item>
+      <title>Ruby on Rails Interview Questions</title>
+      <link>http://smsohan.com/blog/2010/02/22/ruby-on-rails-interview-questions/</link>
+      <pubDate>Mon, 22 Feb 2010 00:00:00 +0000</pubDate>
+      <guid>http://smsohan.com/blog/2010/02/22/ruby-on-rails-interview-questions/</guid>
+      <description>Ruby Specific Questions&#xA;The best place for learning ruby is to get started with the programming-ruby. It fairly covers the important bits in a very readable language. Here are a few quick questions on ruby:&#xA;What is rubygems?What is a Symbol?What is the difference between a Symbol and String?What is the purpose of yield?How do you define class variables?How do you define instance variables?How do you define global variables?How can you dynamically define a method body?</description>
+    </item>
+    <item>
+      <title>Experience notes from a RoR code review job</title>
+      <link>http://smsohan.com/blog/2010/01/20/experience-notes-from-ror-code-review/</link>
+      <pubDate>Wed, 20 Jan 2010 00:00:00 +0000</pubDate>
+      <guid>http://smsohan.com/blog/2010/01/20/experience-notes-from-ror-code-review/</guid>
+      <description>Recently I had the opportunity to review a ruby on rails code. The project aims to create an online market place for experts, with a similar model to some other freelancing/outsourcing sites. Here is how and what I reviewed:&#xA;I had a read-only access to the code and no download was allowed locally. So, I didn&#39;t get to run the code, tests or any tool to auto-generate some reports on the code.</description>
+    </item>
+    <item>
+      <title>acts_as_permalinkable: SEO friendly rails URLs using my first RoR plugin</title>
+      <link>http://smsohan.com/blog/2009/12/27/acts-as-permalinkable-seo-friendly/</link>
+      <pubDate>Sun, 27 Dec 2009 00:00:00 +0000</pubDate>
+      <guid>http://smsohan.com/blog/2009/12/27/acts-as-permalinkable-seo-friendly/</guid>
+      <description>As a byproduct of my work on www.campzero.com, I released my first ruby on rails plugin called acts_as_permalinkable on github athttp://github.com/smsohan/acts_as_permalinkableA comprehensive documentation is given at the github page. If you ever need to use search engine friendly urls or permalink like this blog, you may consider using the acts_as_permalinkable plugin. It takes less than 3 minutes to add the permalink feature to your rails model!Get started by the following and you are free to contribute!</description>
+    </item>
+    <item>
+      <title>Added Crummy to generate breadcrumbs for CampZero.com</title>
+      <link>http://smsohan.com/blog/2009/12/27/added-crummy-to-generate-breadcrumbs/</link>
+      <pubDate>Sun, 27 Dec 2009 00:00:00 +0000</pubDate>
+      <guid>http://smsohan.com/blog/2009/12/27/added-crummy-to-generate-breadcrumbs/</guid>
+      <description>According to google&#39;s SEO guideline, its a good idea to provide breadcrumbs to your web contents. This is good in two ways: a) It helps people to find path to move up the navigation stack and b) it helps the google and other search engines to get a feel about your web content&#39;s hierarchical organization.To add this breadcrumbs support, in my application www.campzero.com, a going to be online service marketplace for Bangladesh, I simply used the Crummy plugin.</description>
+    </item>
+    <item>
+      <title>Sitemap-generator for your Rails App and deployment solution</title>
+      <link>http://smsohan.com/blog/2009/12/24/sitemap-generator-for-your-rails-app/</link>
+      <pubDate>Thu, 24 Dec 2009 00:00:00 +0000</pubDate>
+      <guid>http://smsohan.com/blog/2009/12/24/sitemap-generator-for-your-rails-app/</guid>
+      <description>When talking about Search Engine Optimization for your public web pages, you probably try to follow the google guidelines for search engine optimization. Its a good one to get started with. For my recent project, www.campzero.com, I read the document and tried to follow the steps. Today, I worked on generating sitemap for www.campzero.com using the following:Installed the site-map generator plugin following this link at Aktagon&#39;s, github linkFor some reason, probably because of permission issues, my plugin install didn&#39;t generate the sample sitemap.</description>
+    </item>
+    <item>
+      <title>How to strip html tags, truncate and highlight texts in ruby on rails</title>
+      <link>http://smsohan.com/blog/2009/12/22/how-to-strip-html-tags-truncate-and/</link>
+      <pubDate>Tue, 22 Dec 2009 00:00:00 +0000</pubDate>
+      <guid>http://smsohan.com/blog/2009/12/22/how-to-strip-html-tags-truncate-and/</guid>
+      <description>Recently, I had the following requirements as I was working on CampZero.com - the going to be service marketplace of Bangladesh.Remove all html tags other than hyperlinks and new lines from a html fragmentTruncate the text to show only first 200 characters of the text and append ellipsis (...) in case the text was truncated.Highlight an array of words in the text to show the search query worlds that matchedThe first one, getting rid of all but hyperlinks and new lines was achieved by the following code:</description>
+    </item>
+    <item>
+      <title>Showing unread posts/comments: An example of rails ActiveRecord &#39;touch&#39;</title>
+      <link>http://smsohan.com/blog/2009/09/21/showing-unread-postscomments-example-of/</link>
+      <pubDate>Mon, 21 Sep 2009 00:00:00 +0000</pubDate>
+      <guid>http://smsohan.com/blog/2009/09/21/showing-unread-postscomments-example-of/</guid>
+      <description>I worked on the following story:-&#34;As a partner, when I visit a project&#39;s dashboard I want to see five most recently started or updated discussion threads with number of unread comments, if any. If any of these are new, I want to see them in a highlighted view. Next, if I open the thread, I want to see all new comments in a highlighted view as well. However, once seen, the threads/comments should no longer be highlighted from the rest.</description>
+    </item>
+    <item>
+      <title>Some useful plugins for RoR projects</title>
+      <link>http://smsohan.com/blog/2009/09/17/some-useful-plugins-for-ror-projects/</link>
+      <pubDate>Thu, 17 Sep 2009 00:00:00 +0000</pubDate>
+      <guid>http://smsohan.com/blog/2009/09/17/some-useful-plugins-for-ror-projects/</guid>
+      <description>Previously I used a few plugins in RoR projects including ScrumPad. On a more recent work, I found the following plugins to be really useful and easy to get started:-&#xA;1. I18n: Rails Internationalization RailsCast at http://railscasts.com/episodes/138-i18n Guides post at http://guides.rubyonrails.org/i18n.html&#xA;2. Seed-fu: Initial data loading for application (e.g. admin user, product categories)Tutorial http://github.com/mbleigh/seed-fu A support is now built in for Rails 2.3.4&#xA;3. Thinking-sphinx: Full text search RailsCast http://railscasts.</description>
+    </item>
+    <item>
+      <title>Rails modeling guide#1: right structure of a ruby on rails model</title>
+      <link>http://smsohan.com/blog/2009/07/16/rails-modeling-guide1-right-structure/</link>
+      <pubDate>Thu, 16 Jul 2009 00:00:00 +0000</pubDate>
+      <guid>http://smsohan.com/blog/2009/07/16/rails-modeling-guide1-right-structure/</guid>
+      <description>Rails models are no exception compared to the super models! You are in the business if and only if you got a good physical structure and can stick to it for years...&#xA;At Code71, we are keeping our rails models attractive following a few guidelines. I will be posting these guidelines in a series and here goes the first one - about the physical structure of the ruby on rails models.</description>
+    </item>
+    <item>
+      <title>Rails modeling guide#2: naming convention for ruby on rails model methods</title>
+      <link>http://smsohan.com/blog/2009/07/16/rails-modeling-guide2-naming-ruby-on/</link>
+      <pubDate>Thu, 16 Jul 2009 00:00:00 +0000</pubDate>
+      <guid>http://smsohan.com/blog/2009/07/16/rails-modeling-guide2-naming-ruby-on/</guid>
+      <description>Naming conventions play an important role to the software&#39;s overall architecture. It is not a rocket science, still, it may lead to unhappy consequences if not taken care of at the early stage of a project. This small best practices can make a code base significantly improved.&#xA;Rails does a good job by using the dynamic power of ruby and providing with a handful of dynamic methods with the models.</description>
+    </item>
+    <item>
+      <title>Implementing breadcrumb in rails projects – a clean approach</title>
+      <link>http://smsohan.com/blog/2009/07/07/implementing-breadcrumb-in-rails/</link>
+      <pubDate>Tue, 07 Jul 2009 00:00:00 +0000</pubDate>
+      <guid>http://smsohan.com/blog/2009/07/07/implementing-breadcrumb-in-rails/</guid>
+      <description>In most web applications, breadcrumbs offer a nice way to trace back to previously visited pages. However, generating the breadcrumbs and showing them on dynamic pages sometimes need special care for the following reasons-&#xA;The links of the breadcrumb may contain dynamic links. It is used in all the pages. So, changing the breadcrumb may trigger a series of changes. In ScrumPad, we are using ruby on rails. There are a few plugins to help rails projects in managing breadcrumbs, but none seemed to satisfy our need.</description>
+    </item>
+    <item>
+      <title>Unit/Functional Test Rails ActionController filters following DRY</title>
+      <link>http://smsohan.com/blog/2009/05/13/unit-test-actioncontroller-filters/</link>
+      <pubDate>Wed, 13 May 2009 00:00:00 +0000</pubDate>
+      <guid>http://smsohan.com/blog/2009/05/13/unit-test-actioncontroller-filters/</guid>
+      <description>At ScrumPad most of our controllers are bounded by filters for authentication/authorization. Some filters apply to all actions in a controller while others apply to only a few or leave out only a few. However, since we are following TDD, we need to test the filter is invoked before each of the desired action. This makes the test code MOIST (not DRY)!&#xA;Example of Moist Code:&#xA;The following example only captures two test methods.</description>
+    </item>
+    <item>
+      <title>Forget Me Not! Object Oriented Design in Custom Exception</title>
+      <link>http://smsohan.com/blog/2009/04/26/object-oriented-design-in-custom/</link>
+      <pubDate>Sun, 26 Apr 2009 00:00:00 +0000</pubDate>
+      <guid>http://smsohan.com/blog/2009/04/26/object-oriented-design-in-custom/</guid>
+      <description>When designing custom exceptions, you may forget about old school OO fundamentals. As a reminder, lets take a look into the following custom exception classes.&#xA;StorySaveError&#xA;StoryDescopeNotAllowedError&#xA;StoryCompleteError&#xA;StoryNotFoundError&#xA;StoryDeleteError&#xA;StoryDeleteNotAllowedErrorThese exceptions are really useful in my application. But the bad thing is, they all derive from StandardError class, whereas there should be a base class, may be StoryError, which is more meaningful and useful. So, we can have the following-</description>
+    </item>
+    <item>
+      <title>Unit Test eager loading in Rails ActiveRecord association</title>
+      <link>http://smsohan.com/blog/2009/04/21/unit-test-eager-loading-in-rails/</link>
+      <pubDate>Tue, 21 Apr 2009 00:00:00 +0000</pubDate>
+      <guid>http://smsohan.com/blog/2009/04/21/unit-test-eager-loading-in-rails/</guid>
+      <description>To avoid the n+1 problem, you need to use eager loading in ActiveRecord object associations. An easy implementation of eager loading can be done using named scope in the following way.&#xA;class User &amp;lt; ActiveRecord::Base&#xA;has_many :friends&#xA;named_scope :eager_load_friends, :include =&amp;gt; :fiends&#xA;end&#xA;User.find(user_id).eager_load_friendsTo unit test the named scope, you can use this following helper method (keep it in test_helper.rb, if you like) that I wrote for ScrumPad&#xA;def test_eager_loaded(model, association)</description>
+    </item>
+    <item>
+      <title>Implementing Template Method in Rails Controllers Using Module and Mixin</title>
+      <link>http://smsohan.com/blog/2009/04/15/implementing-template-method-in-rails/</link>
+      <pubDate>Wed, 15 Apr 2009 00:00:00 +0000</pubDate>
+      <guid>http://smsohan.com/blog/2009/04/15/implementing-template-method-in-rails/</guid>
+      <description>All rails controllers are subclasses of the ApplicationController class. A typical controller class declaration will look like the following-&#xA;class LoginController &amp;lt; ApplicationController&#xA;#the actions go here&#xA;endWith this basic information, I would like to state the problem first.&#xA;The Problem/Job in Hand&#xA;Add an action switch_project to all the controllers (&amp;gt; 20) of the ScrumPad code base. The implementations of the switch_project method will be same for all the controllers only other than the fact that, the switching destination will be different.</description>
+    </item>
+    <item>
+      <title>assert_equal_float : assert_equal between two float objects with precision</title>
+      <link>http://smsohan.com/blog/2009/04/07/assertequalfloat-assertequal-between/</link>
+      <pubDate>Tue, 07 Apr 2009 00:00:00 +0000</pubDate>
+      <guid>http://smsohan.com/blog/2009/04/07/assertequalfloat-assertequal-between/</guid>
+      <description>In doing rails unit testing, sometime you need to assert the equality between two float objects in the following fashion&#xA;assert_equal 32.8, object_under_test.method_returning_float&#xA;The internal storage of float objects sometimes will contain 32.8 with additional lower precision decimal points and hence the assert may fail although the significant digits may be same. For example, the value of object_under_test.method_returning_float may be stored as 32.80000001 in memory and the above call may fail.</description>
+    </item>
+    <item>
+      <title>named_scope : Real life examples from ScrumPad</title>
+      <link>http://smsohan.com/blog/2009/03/30/namedscope-real-life-examples-from/</link>
+      <pubDate>Mon, 30 Mar 2009 00:00:00 +0000</pubDate>
+      <guid>http://smsohan.com/blog/2009/03/30/namedscope-real-life-examples-from/</guid>
+      <description>I am working on ScrumPad chat refactoring now. In rails 2, the named_scope feature works really great for ActiveRecord models. Lets start with the code first-&#xA;The Source Code:&#xA;class ChatUser &amp;lt; ActiveRecord::Base belongs_to :chat belongs_to :user belongs_to :chat_status, :foreign_key =&amp;gt; &#34;status_id&#34; named_scope :closed, lambda {|chat_id| {:conditions =&amp;gt; [&#34;status_id = #{ChatStatus::CLOSED} AND chat_id = ? &#34;, chat_id]}} do def invite() each { |chat_user| chat_user.update_attribute(:status_id, ChatStatus::INVITED) } end end named_scope :active_chats, lambda {|user_id| {:conditions =&amp;gt; [&#34;</description>
+    </item>
+    <item>
+      <title>Comet and Server Push (Reverse Ajax) technology</title>
+      <link>http://smsohan.com/blog/2009/03/22/coment-and-server-push-reverse-ajax/</link>
+      <pubDate>Sun, 22 Mar 2009 00:00:00 +0000</pubDate>
+      <guid>http://smsohan.com/blog/2009/03/22/coment-and-server-push-reverse-ajax/</guid>
+      <description>I am re-implementing an ajax based chat system. Presently an ajax request is polled continuously to look for any updates/messages from the user’s browser. However, the plan is to use the server to push the messages to the clients to off-load the server from a huge number of useless ajax calls.&#xA;I learned about Comet and found it interesting. You may read about comet here at WIKI.&#xA;Juggernaut is a rails plug-in that uses Flash to implement the server push technology.</description>
+    </item>
+    <item>
+      <title>Juggernaut on Linux</title>
+      <link>http://smsohan.com/blog/2009/03/22/juggernaut-on-linux/</link>
+      <pubDate>Sun, 22 Mar 2009 00:00:00 +0000</pubDate>
+      <guid>http://smsohan.com/blog/2009/03/22/juggernaut-on-linux/</guid>
+      <description>I just installed Juggernaut on my linux box. The installation is simpler than windows. At least it gave me less pain.&#xA;Just run the following commands-&#xA;gem install json gem install activemachine gem install juggernaut juggernaut –g juggernaut.yml juggernaut –c juggernaut.yml I got a little pain regarding the g++ compiler that is required to build the activemachine. I did not have it installed in my Amazon EC2 instance and after some searches, I could install it using the following-</description>
+    </item>
+  </channel>
+</rss>

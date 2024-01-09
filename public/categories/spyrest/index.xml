@@ -1,2 +1,19 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>SpyREST on Sohan's Blog</title><link>http://smsohan.com/categories/spyrest/</link><description>Recent content in SpyREST on Sohan's Blog</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Tue, 13 Jan 2015 00:00:00 +0000</lastBuildDate><atom:link href="http://smsohan.com/categories/spyrest/index.xml" rel="self" type="application/rss+xml"/><item><title>You Can Haz Automated REST API Documentation</title><link>http://smsohan.com/blog/2015/01/13/you-can-haz-automated-rest-api-documentation/</link><pubDate>Tue, 13 Jan 2015 00:00:00 +0000</pubDate><guid>http://smsohan.com/blog/2015/01/13/you-can-haz-automated-rest-api-documentation/</guid><description>Let&amp;rsquo;s face it, the manual process of documenting REST APIs sucks big time. The process goes like this:
-Craft a cURL request for an API Endpoint. Copy the response. Narrate the API, paste the cURL and response on an editor. Edit the response, describe necessary request and response headers, query parameters etc. Repeat steps 1-4 for each of your tens of Endpoints. Publish the documentation on the web. Repeat these steps for each release.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>SpyREST on Sohan&#39;s Blog</title>
+    <link>http://smsohan.com/categories/spyrest/</link>
+    <description>Recent content in SpyREST on Sohan&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 13 Jan 2015 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://smsohan.com/categories/spyrest/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>You Can Haz Automated REST API Documentation</title>
+      <link>http://smsohan.com/blog/2015/01/13/you-can-haz-automated-rest-api-documentation/</link>
+      <pubDate>Tue, 13 Jan 2015 00:00:00 +0000</pubDate>
+      <guid>http://smsohan.com/blog/2015/01/13/you-can-haz-automated-rest-api-documentation/</guid>
+      <description>Let&amp;rsquo;s face it, the manual process of documenting REST APIs sucks big time. The process goes like this:&#xA;Craft a cURL request for an API Endpoint. Copy the response. Narrate the API, paste the cURL and response on an editor. Edit the response, describe necessary request and response headers, query parameters etc. Repeat steps 1-4 for each of your tens of Endpoints. Publish the documentation on the web. Repeat these steps for each release.</description>
+    </item>
+  </channel>
+</rss>

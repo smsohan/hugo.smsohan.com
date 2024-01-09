@@ -1,3 +1,33 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Management on Sohan's Blog</title><link>http://smsohan.com/categories/management/</link><description>Recent content in Management on Sohan's Blog</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Mon, 31 Aug 2020 00:00:00 +0000</lastBuildDate><atom:link href="http://smsohan.com/categories/management/index.xml" rel="self" type="application/rss+xml"/><item><title>Change</title><link>http://smsohan.com/blog/2020/08/31/change/</link><pubDate>Mon, 31 Aug 2020 00:00:00 +0000</pubDate><guid>http://smsohan.com/blog/2020/08/31/change/</guid><description>Manager&amp;rsquo;s Mind As managers, we have the benefit of view because we have our eyes on longer term goals. To achieve those goals, we often have to introduce a change. For example, we may want to change how a team is formed or what product a team works on based on new business needs or opportunities. So, we put a lot of thought into it and propose our plan to the team hoping the following reaction:</description></item><item><title>When I Applied KonMari to My Calendar</title><link>http://smsohan.com/blog/2020/07/17/when-i-applied-kon-mari-to-my-calendar/</link><pubDate>Fri, 17 Jul 2020 00:00:00 +0000</pubDate><guid>http://smsohan.com/blog/2020/07/17/when-i-applied-kon-mari-to-my-calendar/</guid><description>“I&amp;rsquo;d like to tidy up the entire planet. I would go anywhere if there were something that needs tidying.” - Marie Kondo
-Well, she came to my work calendar in spirit. Let’s start with some backstory.
-When I was developer, my typical day looked like this: one standup meeting and then pretty much the rest of the day in coding. Sometimes I paired up or jumped on a whiteboard session with my coworkers to hash things out.</description></item><item><title>People Management and Diagnosing Low Performance</title><link>http://smsohan.com/blog/2020/05/18/engineering-management-and-diagnosing-low-performance/</link><pubDate>Mon, 18 May 2020 00:00:00 +0000</pubDate><guid>http://smsohan.com/blog/2020/05/18/engineering-management-and-diagnosing-low-performance/</guid><description>Beginning with a story here. Back in 2008, I was a couple of years out of college and working for a software company in Dhaka, Bangladesh. Like many of my classmates from my college, I was studying GRE alongside my job for a PhD admission in a reputable US university. That process being long and uncertain, I also applied for an MBA program at the University of Dhaka as a backup plan.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Management on Sohan&#39;s Blog</title>
+    <link>http://smsohan.com/categories/management/</link>
+    <description>Recent content in Management on Sohan&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 31 Aug 2020 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://smsohan.com/categories/management/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Change</title>
+      <link>http://smsohan.com/blog/2020/08/31/change/</link>
+      <pubDate>Mon, 31 Aug 2020 00:00:00 +0000</pubDate>
+      <guid>http://smsohan.com/blog/2020/08/31/change/</guid>
+      <description>Manager&amp;rsquo;s Mind As managers, we have the benefit of view because we have our eyes on longer term goals. To achieve those goals, we often have to introduce a change. For example, we may want to change how a team is formed or what product a team works on based on new business needs or opportunities. So, we put a lot of thought into it and propose our plan to the team hoping the following reaction:</description>
+    </item>
+    <item>
+      <title>When I Applied KonMari to My Calendar</title>
+      <link>http://smsohan.com/blog/2020/07/17/when-i-applied-kon-mari-to-my-calendar/</link>
+      <pubDate>Fri, 17 Jul 2020 00:00:00 +0000</pubDate>
+      <guid>http://smsohan.com/blog/2020/07/17/when-i-applied-kon-mari-to-my-calendar/</guid>
+      <description>“I&amp;rsquo;d like to tidy up the entire planet. I would go anywhere if there were something that needs tidying.” - Marie Kondo&#xA;Well, she came to my work calendar in spirit. Let’s start with some backstory.&#xA;When I was developer, my typical day looked like this: one standup meeting and then pretty much the rest of the day in coding. Sometimes I paired up or jumped on a whiteboard session with my coworkers to hash things out.</description>
+    </item>
+    <item>
+      <title>People Management and Diagnosing Low Performance</title>
+      <link>http://smsohan.com/blog/2020/05/18/engineering-management-and-diagnosing-low-performance/</link>
+      <pubDate>Mon, 18 May 2020 00:00:00 +0000</pubDate>
+      <guid>http://smsohan.com/blog/2020/05/18/engineering-management-and-diagnosing-low-performance/</guid>
+      <description>Beginning with a story here. Back in 2008, I was a couple of years out of college and working for a software company in Dhaka, Bangladesh. Like many of my classmates from my college, I was studying GRE alongside my job for a PhD admission in a reputable US university. That process being long and uncertain, I also applied for an MBA program at the University of Dhaka as a backup plan.</description>
+    </item>
+  </channel>
+</rss>

@@ -2,12 +2,13 @@ baseURL = 'http://smsohan.com/'
 languageCode = 'en-us'
 title = "Sohan's Blog"
 theme = 'ananke'
+Paginate = 10
+
 [markup.goldmark.renderer]
   unsafe = true
 [permalinks]
   posts = '/blog/:year/:month/:day/:filename/'
-Paginate = 10
-
+  
 [params]
   text_color = ""
   author = ""

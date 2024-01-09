@@ -1,2 +1,19 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>MvcMailer on Sohan's Blog</title><link>http://smsohan.com/categories/mvcmailer/</link><description>Recent content in MvcMailer on Sohan's Blog</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Tue, 02 Oct 2012 00:00:00 +0000</lastBuildDate><atom:link href="http://smsohan.com/categories/mvcmailer/index.xml" rel="self" type="application/rss+xml"/><item><title>MvcMailer new API</title><link>http://smsohan.com/blog/2012/10/02/mvcmailer-new-api/</link><pubDate>Tue, 02 Oct 2012 00:00:00 +0000</pubDate><guid>http://smsohan.com/blog/2012/10/02/mvcmailer-new-api/</guid><description>With the help of @TylerMercier, and many active users of MvcMailer, we have just released the new API for MvcMailer. This is a summary post capturing the work and lessons learned in the process.
-The bulk of the work has been done on removing hard dependencies on dll files for 3rd party libraries in favor of NuGet packages. For example, we used NUnit, for running our tests. Instead of referencing the dlls directly, we are now using the NuGet package.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>MvcMailer on Sohan&#39;s Blog</title>
+    <link>http://smsohan.com/categories/mvcmailer/</link>
+    <description>Recent content in MvcMailer on Sohan&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 02 Oct 2012 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://smsohan.com/categories/mvcmailer/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>MvcMailer new API</title>
+      <link>http://smsohan.com/blog/2012/10/02/mvcmailer-new-api/</link>
+      <pubDate>Tue, 02 Oct 2012 00:00:00 +0000</pubDate>
+      <guid>http://smsohan.com/blog/2012/10/02/mvcmailer-new-api/</guid>
+      <description>With the help of @TylerMercier, and many active users of MvcMailer, we have just released the new API for MvcMailer. This is a summary post capturing the work and lessons learned in the process.&#xA;The bulk of the work has been done on removing hard dependencies on dll files for 3rd party libraries in favor of NuGet packages. For example, we used NUnit, for running our tests. Instead of referencing the dlls directly, we are now using the NuGet package.</description>
+    </item>
+  </channel>
+</rss>

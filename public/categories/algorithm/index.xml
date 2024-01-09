@@ -1,2 +1,19 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Algorithm on Sohan's Blog</title><link>http://smsohan.com/categories/algorithm/</link><description>Recent content in Algorithm on Sohan's Blog</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Mon, 12 Aug 2013 00:00:00 +0000</lastBuildDate><atom:link href="http://smsohan.com/categories/algorithm/index.xml" rel="self" type="application/rss+xml"/><item><title>Algorithms Need Better UI</title><link>http://smsohan.com/blog/2013/08/12/algorithms-need-better-ui/</link><pubDate>Mon, 12 Aug 2013 00:00:00 +0000</pubDate><guid>http://smsohan.com/blog/2013/08/12/algorithms-need-better-ui/</guid><description>Since 2006, as I became a professional software engineer, I spent a fair amount of time reading books and online articles about software. Most topics were around Object Orientation, Web technologies, Software design, Testing, Automation, Agile and Lean, etc. Last year, I decided to take a break from such topics on purpose. So, I cleared all my RSS subscriptions.
-Instead, I thought I would revisit some of the algorithms that I learned during my undergraduate courses.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Algorithm on Sohan&#39;s Blog</title>
+    <link>http://smsohan.com/categories/algorithm/</link>
+    <description>Recent content in Algorithm on Sohan&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 12 Aug 2013 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://smsohan.com/categories/algorithm/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Algorithms Need Better UI</title>
+      <link>http://smsohan.com/blog/2013/08/12/algorithms-need-better-ui/</link>
+      <pubDate>Mon, 12 Aug 2013 00:00:00 +0000</pubDate>
+      <guid>http://smsohan.com/blog/2013/08/12/algorithms-need-better-ui/</guid>
+      <description>Since 2006, as I became a professional software engineer, I spent a fair amount of time reading books and online articles about software. Most topics were around Object Orientation, Web technologies, Software design, Testing, Automation, Agile and Lean, etc. Last year, I decided to take a break from such topics on purpose. So, I cleared all my RSS subscriptions.&#xA;Instead, I thought I would revisit some of the algorithms that I learned during my undergraduate courses.</description>
+    </item>
+  </channel>
+</rss>

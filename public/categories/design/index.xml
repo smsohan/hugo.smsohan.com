@@ -1,3 +1,26 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Design on Sohan's Blog</title><link>http://smsohan.com/categories/design/</link><description>Recent content in Design on Sohan's Blog</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Wed, 29 May 2019 00:00:00 +0000</lastBuildDate><atom:link href="http://smsohan.com/categories/design/index.xml" rel="self" type="application/rss+xml"/><item><title>Micro Design Critic: Microsoft Word vs. Apple Pages</title><link>http://smsohan.com/blog/2019/05/29/microsoft-word-vs-apple-pages/</link><pubDate>Wed, 29 May 2019 00:00:00 +0000</pubDate><guid>http://smsohan.com/blog/2019/05/29/microsoft-word-vs-apple-pages/</guid><description>Showing a Screenshot of Microsoft Word for Mac and Apple Pages
-This is what you get by default when you open a blank document on both editors. I love that Apple Pages puts a deep focus on the content. If you haven&amp;rsquo;t used it, I&amp;rsquo;d recommend trying it out. I know Microsoft Word has a known face, so you&amp;rsquo;re likely used to all the distractions that sorrounds the content. But, if you can, give Apple Pages a try.</description></item><item><title>Configure Me Not</title><link>http://smsohan.com/blog/2013/11/03/configure-me-not/</link><pubDate>Sun, 03 Nov 2013 00:00:00 +0000</pubDate><guid>http://smsohan.com/blog/2013/11/03/configure-me-not/</guid><description>Configuration in software provides a method to build systems that can adapt to different configurations. For example, if a website&amp;rsquo;s language and date/currency formats are configurable, then it can be configured to support multiple languages and regional formats. Configuration makes it possible to deliver such features without needing a log of change in the application source code.
-However, this notion of flexibility that configuration provides can be a trap at times.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Design on Sohan&#39;s Blog</title>
+    <link>http://smsohan.com/categories/design/</link>
+    <description>Recent content in Design on Sohan&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 29 May 2019 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://smsohan.com/categories/design/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Micro Design Critic: Microsoft Word vs. Apple Pages</title>
+      <link>http://smsohan.com/blog/2019/05/29/microsoft-word-vs-apple-pages/</link>
+      <pubDate>Wed, 29 May 2019 00:00:00 +0000</pubDate>
+      <guid>http://smsohan.com/blog/2019/05/29/microsoft-word-vs-apple-pages/</guid>
+      <description>Showing a Screenshot of Microsoft Word for Mac and Apple Pages&#xA;This is what you get by default when you open a blank document on both editors. I love that Apple Pages puts a deep focus on the content. If you haven&amp;rsquo;t used it, I&amp;rsquo;d recommend trying it out. I know Microsoft Word has a known face, so you&amp;rsquo;re likely used to all the distractions that sorrounds the content. But, if you can, give Apple Pages a try.</description>
+    </item>
+    <item>
+      <title>Configure Me Not</title>
+      <link>http://smsohan.com/blog/2013/11/03/configure-me-not/</link>
+      <pubDate>Sun, 03 Nov 2013 00:00:00 +0000</pubDate>
+      <guid>http://smsohan.com/blog/2013/11/03/configure-me-not/</guid>
+      <description>Configuration in software provides a method to build systems that can adapt to different configurations. For example, if a website&amp;rsquo;s language and date/currency formats are configurable, then it can be configured to support multiple languages and regional formats. Configuration makes it possible to deliver such features without needing a log of change in the application source code.&#xA;However, this notion of flexibility that configuration provides can be a trap at times.</description>
+    </item>
+  </channel>
+</rss>

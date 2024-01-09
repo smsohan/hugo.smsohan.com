@@ -1,2 +1,19 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>SQL Server on Sohan's Blog</title><link>http://smsohan.com/categories/sql-server/</link><description>Recent content in SQL Server on Sohan's Blog</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Sun, 22 Feb 2009 00:00:00 +0000</lastBuildDate><atom:link href="http://smsohan.com/categories/sql-server/index.xml" rel="self" type="application/rss+xml"/><item><title>Working on a Data Warehouse project</title><link>http://smsohan.com/blog/2009/02/22/working-on-data-warehouse-project/</link><pubDate>Sun, 22 Feb 2009 00:00:00 +0000</pubDate><guid>http://smsohan.com/blog/2009/02/22/working-on-data-warehouse-project/</guid><description>I have been busy for the last month as we, at Code71, rolled out the first release of the Business Intelligence project for Vuneu Media. I will give you a brief on my project here so that you can follow my coming posts.
-The used vehicle dealers buy their vehicles from different Auctions across the country. When making a buy decision, they try to find answer to these questions-</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>SQL Server on Sohan&#39;s Blog</title>
+    <link>http://smsohan.com/categories/sql-server/</link>
+    <description>Recent content in SQL Server on Sohan&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 22 Feb 2009 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://smsohan.com/categories/sql-server/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Working on a Data Warehouse project</title>
+      <link>http://smsohan.com/blog/2009/02/22/working-on-data-warehouse-project/</link>
+      <pubDate>Sun, 22 Feb 2009 00:00:00 +0000</pubDate>
+      <guid>http://smsohan.com/blog/2009/02/22/working-on-data-warehouse-project/</guid>
+      <description>I have been busy for the last month as we, at Code71, rolled out the first release of the Business Intelligence project for Vuneu Media. I will give you a brief on my project here so that you can follow my coming posts.&#xA;The used vehicle dealers buy their vehicles from different Auctions across the country. When making a buy decision, they try to find answer to these questions-</description>
+    </item>
+  </channel>
+</rss>
